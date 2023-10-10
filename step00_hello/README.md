@@ -26,4 +26,16 @@ Install:
 ## Install pinecone-client
 
     pip install pinecone-client
+
+## Envirnoment Variables
+
+Rename .env_bak to .env and save your keys in this file
+
+Get Open API Keys:
+
+https://platform.openai.com/account/api-keys 
+
+Signup for a Account on Pinecone and get API keys:
+
+https://www.pinecone.io/ 
     
