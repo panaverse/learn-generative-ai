@@ -27,6 +27,10 @@ Install:
 
     pip install pinecone-client
 
+## Install Python OpenAI
+
+    pip install openai
+
 ## Envirnoment Variables
 
 Rename .env_bak to .env and save your keys in this file
