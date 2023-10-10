@@ -1,1 +1,1 @@
-# learn-generative-ai
+# Learn Generative AI
