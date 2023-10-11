@@ -51,7 +51,7 @@ You will be able to make ~750 API calls with the $5 credit.
 
 Also note, you only get free credits for the first account associated with your phone number. Subsequent accounts are not granted free credits.
 
-# Get Pinecone API Keys
+### Get Pinecone API Keys
 
 Signup for a Account on Pinecone and get API keys:
 
