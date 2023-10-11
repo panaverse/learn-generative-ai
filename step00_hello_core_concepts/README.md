@@ -1,6 +1,6 @@
-# LangChain Explained in 13 Minutes | QuickStart Tutorial for Beginners
+# LangChain Hello Core Concepts
 
-Tutorial: https://www.youtube.com/watch?v=aywZrzNaKjs
+[Tutorial Video](https://www.youtube.com/watch?v=aywZrzNaKjs)
 
 ## Create a Python 3.12+ Conda Envirnoment 
 
