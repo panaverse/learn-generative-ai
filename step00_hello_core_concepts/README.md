@@ -27,6 +27,10 @@ Install:
 
     pip install pinecone-client
 
+## Install tiktoken
+
+pip install tiktoken
+
 ## Install Python OpenAI
 
     pip install openai
