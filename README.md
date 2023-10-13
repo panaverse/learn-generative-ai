@@ -31,7 +31,7 @@ https://www.bloomberg.com/news/newsletters/2023-10-02/silicon-valley-sees-a-new-
 
 [The LangChain Cookbook - Beginner Guide To 7 Essential Concepts](https://www.youtube.com/watch?v=2xxziIWmaSA&list=PLqZXAkvF1bPNQER9mLmDbntNfSpzdDIU5&index=4&t=1092s)
 
-[Greg Kamradt’s LangChain Youtube Playlist](https://www.youtube.com/playlist?list=PLqZXAkvF1bPNQER9mLmDbntNfSpzdDIU5]
+[Greg Kamradt’s LangChain Youtube Playlist](https://www.youtube.com/playlist?list=PLqZXAkvF1bPNQER9mLmDbntNfSpzdDIU5)
 
 [1littlecoder LangChain Youtube Playlist](https://www.youtube.com/playlist?list=PLpdmBGJ6ELUK-v0MK-t4wZmVEbxM5xk6L)
 
@@ -63,15 +63,15 @@ https://flask.palletsprojects.com/en/2.3.x/tutorial/
 
 https://flask.palletsprojects.com/en/2.3.x/ 
 
-	Reference Material:
+Reference Material:
 	
-	[LangChain Official Docs](https://python.langchain.com/docs/get_started/introduction)
+[LangChain Official Docs](https://python.langchain.com/docs/get_started/introduction)
 
-	[LangChain AI Handbook](https://www.pinecone.io/learn/series/langchain/)
+[LangChain AI Handbook](https://www.pinecone.io/learn/series/langchain/)
 
-	[Top 5 Resources to learn LangChain](https://medium.com/@ankity09/top-5-resources-to-learn-langchain-e2bdbbd11702)
+[Top 5 Resources to learn LangChain](https://medium.com/@ankity09/top-5-resources-to-learn-langchain-e2bdbbd11702)
 
-	[Official LangChain YouTube channel](https://python.langchain.com/docs/additional_resources/youtube)
+[Official LangChain YouTube channel](https://python.langchain.com/docs/additional_resources/youtube)
 
 
 
