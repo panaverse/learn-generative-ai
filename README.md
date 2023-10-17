@@ -17,8 +17,6 @@ https://www.bloomberg.com/news/newsletters/2023-10-02/silicon-valley-sees-a-new-
 
 [LangChain Explained in 13 Minutes | QuickStart Tutorial for Beginners](https://www.youtube.com/watch?v=aywZrzNaKjs)
 
-[What is LangChain? Easier development around LLMs](https://www.infoworld.com/article/3706289/what-is-langchain-easier-development-around-llms.html] 
-
 [LangChain Crash Course for Beginners](https://www.freecodecamp.org/news/learn-langchain-for-llm-development/) 
 
 [LangChain Crash Course for Beginners Video](https://www.youtube.com/watch?v=lG7Uxts9SXs)
