@@ -22,6 +22,7 @@ https://www.bloomberg.com/news/newsletters/2023-10-02/silicon-valley-sees-a-new-
 5. [Generative AI in Accounting Guide: Explore the possibilities of generative AI in accounting](https://www.icaew.com/technical/technology/artificial-intelligence/generative-ai-guide)
 6. [Using Generative AI in Business Whitepaper](https://resources.multiply.ai/en-gb/multiply-white-paper-chatgpt-and-generative-ai-download)
 7. [Generative AI: what accountants need to know in 2023](https://www.amazon.com/Generative-AI-what-accountants-need/dp/B0CCL1P8XP)
+8. [100 Practical Applications and Use Cases of Generative AI](https://ai.gov.ae/wp-content/uploads/2023/04/406.-Generative-AI-Guide_ver1-EN.pdf)
 
 ## Learn Langchain, Pinecone, and LLMs
 
