@@ -13,11 +13,20 @@ https://www.bloomberg.com/news/newsletters/2023-10-02/silicon-valley-sees-a-new-
 
 [Artificial General Intelligence Is Already Here](https://www.noemamag.com/artificial-general-intelligence-is-already-here/)
 
+## Text Books
+
+1. [Generative AI with LangChain: Build large language model (LLM) apps with Python, ChatGPT and other LLMs](https://www.amazon.com/Generative-AI-LangChain-language-ChatGPT/dp/1835083463/ref=sr_1_3)
+2. [LangChain Crash Course: Build OpenAI LLM powered Apps](https://www.amazon.com/LangChain-Crash-Course-powered-building-ebook/dp/B0CHHHX118/ref=sr_1_2)
+3. [Build and Learn: AI App Development for Beginners: Unleashing ChatGPT API with LangChain & Streamlit](https://www.amazon.com/Build-Learn-Development-Beginners-Unleashing/dp/B0CDNNC5Z1/ref=sr_1_1)
+4. [Generative AI in Healthcare - The ChatGPT Revolution](https://leanpub.com/generative-ai-in-healthcare)
+5. [Generative AI in Accounting Guide: Explore the possibilities of generative AI in accounting](https://www.icaew.com/technical/technology/artificial-intelligence/generative-ai-guide)
+6. [Using Generative AI in Business Whitepaper](https://resources.multiply.ai/en-gb/multiply-white-paper-chatgpt-and-generative-ai-download)
+7. [Generative AI: what accountants need to know in 2023](https://www.amazon.com/Generative-AI-what-accountants-need/dp/B0CCL1P8XP)
+8. [100 Practical Applications and Use Cases of Generative AI](https://ai.gov.ae/wp-content/uploads/2023/04/406.-Generative-AI-Guide_ver1-EN.pdf)
+
 ## Learn Langchain, Pinecone, and LLMs
 
 [LangChain Explained in 13 Minutes | QuickStart Tutorial for Beginners](https://www.youtube.com/watch?v=aywZrzNaKjs)
-
-[What is LangChain? Easier development around LLMs](https://www.infoworld.com/article/3706289/what-is-langchain-easier-development-around-llms.html] 
 
 [LangChain Crash Course for Beginners](https://www.freecodecamp.org/news/learn-langchain-for-llm-development/) 
 
