@@ -15,6 +15,15 @@ https://www.bloomberg.com/news/newsletters/2023-10-02/silicon-valley-sees-a-new-
 
 [Artificial General Intelligence Is Already Here](https://www.noemamag.com/artificial-general-intelligence-is-already-here/)
 
+## Convergence of Generative AI and Web 3.0
+
+[The Convergence of AI and Web3: A New Era of Decentralized Intelligence](https://medium.com/@dhruvil7694/the-convergence-of-ai-and-web3-a-new-era-of-decentralized-intelligence-ca86aef481d)
+
+[What is the potential of Generative AI and Web 3.0 when combined?](https://blog.softtek.com/en/what-is-the-potential-of-generative-ai-and-web-3.0-when-combined)
+
+[How Web3 Can Unleash the Power of Generative AI](https://www.linkedin.com/pulse/how-web3-can-unleash-power-generative-ai-iman-sheikhansari/)
+
+
 ## Text Books
 
 1. [Generative AI with LangChain: Build large language model (LLM) apps with Python, ChatGPT and other LLMs](https://www.amazon.com/Generative-AI-LangChain-language-ChatGPT/dp/1835083463/ref=sr_1_3)
