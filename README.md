@@ -11,6 +11,8 @@ Before starting to learn from this repo [Learn Modern Python](https://github.com
 [Silicon Valley Sees a New Kind of Mobile Device Powered by GenAI](
 https://www.bloomberg.com/news/newsletters/2023-10-02/silicon-valley-sees-a-new-kind-of-mobile-device-powered-by-ai)
 
+[Microsoft CEO: AI is "bigger than the PC, bigger than mobile" - but is he right?](https://www.techradar.com/computing/artificial-intelligence/microsoft-ceo-ai-is-bigger-than-the-pc-bigger-than-mobile-but-is-he-right)
+
 [Artificial General Intelligence Is Already Here](https://www.noemamag.com/artificial-general-intelligence-is-already-here/)
 
 ## Text Books
