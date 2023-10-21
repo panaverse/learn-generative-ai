@@ -11,7 +11,18 @@ Before starting to learn from this repo [Learn Modern Python](https://github.com
 [Silicon Valley Sees a New Kind of Mobile Device Powered by GenAI](
 https://www.bloomberg.com/news/newsletters/2023-10-02/silicon-valley-sees-a-new-kind-of-mobile-device-powered-by-ai)
 
+[Microsoft CEO: AI is "bigger than the PC, bigger than mobile" - but is he right?](https://www.techradar.com/computing/artificial-intelligence/microsoft-ceo-ai-is-bigger-than-the-pc-bigger-than-mobile-but-is-he-right)
+
 [Artificial General Intelligence Is Already Here](https://www.noemamag.com/artificial-general-intelligence-is-already-here/)
+
+## Convergence of Generative AI and Web 3.0
+
+[The Convergence of AI and Web3: A New Era of Decentralized Intelligence](https://medium.com/@dhruvil7694/the-convergence-of-ai-and-web3-a-new-era-of-decentralized-intelligence-ca86aef481d)
+
+[What is the potential of Generative AI and Web 3.0 when combined?](https://blog.softtek.com/en/what-is-the-potential-of-generative-ai-and-web-3.0-when-combined)
+
+[How Web3 Can Unleash the Power of Generative AI](https://www.linkedin.com/pulse/how-web3-can-unleash-power-generative-ai-iman-sheikhansari/)
+
 
 ## Text Books
 
