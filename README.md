@@ -4,6 +4,14 @@ Before starting to learn from this repo [Learn Modern Python](https://github.com
 
 ## The Future of Generative AI
 
+“AI will be the greatest wealth creator in history because artificial intelligence doesn’t care where you were born, whether you have money, whether you have a PhD,” Higgins tells CNBC Make It. “It’s going to destroy barriers that have prevented people from moving up the ladder, and pursuing their dream of economic freedom.”
+
+It’s already valued at almost $100 billion, and expected to contribute $15.7 trillion to the global economy by 2030.
+
+“It’s not that if you don’t jump on it now, you never can,” Higgins says. “It’s that now is the greatest opportunity for you to capitalize on it.”
+
+[A.I. will be the biggest wealth creator in history](https://www.cnbc.com/2023/07/10/how-to-use-ai-to-make-money-right-now-say-experts.html)
+
 [Generative AI could add up to $4.4 trillion annually to the global economy](https://www.zdnet.com/article/generative-ai-could-add-up-to-4-4-trillion-annually-to-global-economy/)
 
 [Research Report](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier#key-insights)
