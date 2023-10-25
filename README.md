@@ -4,7 +4,7 @@ Before starting to learn from this repo [Learn Modern Python](https://github.com
 
 ## Introduction to Generative AI
 
-[Introduction to Generative AI](https://www.youtube.com/watch?v=G2fqAlgmoPo)
+[Watch Introduction to Generative AI](https://www.youtube.com/watch?v=G2fqAlgmoPo)
 
 ## The Future of Generative AI
 
