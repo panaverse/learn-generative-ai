@@ -27,7 +27,7 @@ https://www.bloomberg.com/news/newsletters/2023-10-02/silicon-valley-sees-a-new-
 
 [Artificial General Intelligence Is Already Here](https://www.noemamag.com/artificial-general-intelligence-is-already-here/)
 
-## Generative AI
+## Generative BI
 
 [Business intelligence in the era of GenAI](https://www.youtube.com/watch?v=m0-ul3O3GwA)
 
