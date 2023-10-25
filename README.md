@@ -2,6 +2,10 @@
 
 Before starting to learn from this repo [Learn Modern Python](https://github.com/panaverse/learn-modern-python)
 
+## Introduction to Generative AI
+
+[Introduction to Generative AI](https://www.youtube.com/watch?v=G2fqAlgmoPo)
+
 ## The Future of Generative AI
 
 “AI will be the greatest wealth creator in history because artificial intelligence doesn’t care where you were born, whether you have money, whether you have a PhD,” Higgins tells CNBC Make It. “It’s going to destroy barriers that have prevented people from moving up the ladder, and pursuing their dream of economic freedom.”
