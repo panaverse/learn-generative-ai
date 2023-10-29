@@ -9,6 +9,14 @@ Before starting to learn from this repo [Learn Modern Python](https://github.com
 ![Alt text](genai_fit.jpeg "Where Does GenAI Fit")
 
 
+## What is the OPL stack in AI?
+
+The OPL Stack stands for OpenAI, Pinecone, and Langchain. It's a collection of open-source tools and libraries that make building and deploying LLMs a breeze. 
+
+
+![Alt text](opl.jpeg "OPL")
+
+
 ## The Future of Generative AI
 
 “AI will be the greatest wealth creator in history because artificial intelligence doesn’t care where you were born, whether you have money, whether you have a PhD,” Higgins tells CNBC Make It. “It’s going to destroy barriers that have prevented people from moving up the ladder, and pursuing their dream of economic freedom.”

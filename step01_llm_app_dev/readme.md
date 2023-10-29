@@ -2,6 +2,8 @@
 
 [Follow LangChain for LLM Application Development](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/)
 
+[How popular is LangChain](https://snyk.io/advisor/python/langchain)
+
 
 ## Create a Python 3.12+ Conda Envirnoment 
 
