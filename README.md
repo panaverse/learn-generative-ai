@@ -38,6 +38,8 @@ https://www.bloomberg.com/news/newsletters/2023-10-02/silicon-valley-sees-a-new-
 
 [Artificial General Intelligence Is Already Here](https://www.noemamag.com/artificial-general-intelligence-is-already-here/)
 
+[Inside the race to build an ‘operating system’ for generative AI](https://venturebeat.com/ai/inside-the-race-to-build-an-operating-system-for-generative-ai/)
+
 ## Generative BI
 
 [Business intelligence in the era of GenAI](https://www.youtube.com/watch?v=m0-ul3O3GwA)
