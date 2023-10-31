@@ -47,4 +47,8 @@ Also note, you only get free credits for the first account associated with your 
 Signup for a Account on Pinecone and get API keys:
 
 https://www.pinecone.io/ 
+
+### Upgrade Offen
+
+    pip install --upgrade langchain
     
