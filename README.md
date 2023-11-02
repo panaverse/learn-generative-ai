@@ -9,6 +9,17 @@ Before starting to learn from this repo [Learn Modern Python](https://github.com
 ![Alt text](genai_fit.jpeg "Where Does GenAI Fit")
 
 
+## Generative AI and the Economy
+
+1. [McKinsey: The economic potential of generative AI: The next productivity frontier](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier#introduction), McKinsey Digital report, June 2023 
+
+2. [GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models](https://arxiv.org/pdf/2303.10130.pdf), Tyna Eloundou, Sam Manning, Pamela Miskin, and Daniel Rock, March 2023 (arXiv:2303.10130)
+
+3. [Goldman Sachs: The Potentially Large Effects of Artificial Intelligence on Economic Growth](https://www.gspublishing.com/content/research/en/reports/2023/03/27/d64e052b-0f6e-45d7-967b-d7be35fabd16.html), Joseph Briggs and Devesh Kodnani, March 2023
+
+
+
+
 ## What is the OPL stack in AI?
 
 The OPL Stack stands for OpenAI, Pinecone, and Langchain. It's a collection of open-source tools and libraries that make building and deploying LLMs a breeze. 
