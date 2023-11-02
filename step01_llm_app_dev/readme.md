@@ -4,6 +4,14 @@
 
 [How popular is LangChain](https://snyk.io/advisor/python/langchain)
 
+### Reading Material
+
+[Introduction](https://python.langchain.com/docs/get_started/introduction.html)
+
+[LangChain: The Future of LLM-powered Applications — Part 1 (Background)](https://anirbansen2709.medium.com/langchain-the-future-of-llm-powered-applications-ded5cbf0f0fc)
+
+[LangChain: The Future of LLM-powered Applications — Part 2 (Application)](https://anirbansen2709.medium.com/langchain-the-future-of-llm-powered-applications-part-2-application-2d483c22b2a)
+
 
 ## Create a Python 3.12+ Conda Envirnoment 
 
@@ -51,4 +59,6 @@ https://www.pinecone.io/
 ### Upgrade Offen
 
     pip install --upgrade langchain
+
+
     
