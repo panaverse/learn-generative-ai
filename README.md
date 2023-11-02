@@ -4,7 +4,7 @@ Before starting to learn from this repo [Learn Modern Python](https://github.com
 
 [The Year in Tech, 2024: The Insights You Need from Harvard Business Review](https://www.hbsp.harvard.edu/product/10673-PDF-ENG)
 
-The Year in Tech 2024: The Insights You Need about Generative AI and Web 3.0 from Harvard Business Review" will help you understand what the latest and most important tech innovations mean for your organization and how you can use them to compete and win in today's turbulent business environment. Business is changing. Will you adapt or be left behind? Get up to speed and deepen your understanding of the topics that are shaping your company's future with the Insights You Need from Harvard Business Review series. You can't afford to ignore how these issues will transform the landscape of business and society. The Insights You Need series will help you grasp these critical ideas--and prepare you and your company for the future.
+The Year in Tech 2024: The Insights You Need about Generative AI and Web 3.0 from Harvard Business Review will help you understand what the latest and most important tech innovations mean for your organization and how you can use them to compete and win in today's turbulent business environment. Business is changing. Will you adapt or be left behind? Get up to speed and deepen your understanding of the topics that are shaping your company's future with the Insights You Need from Harvard Business Review series. You can't afford to ignore how these issues will transform the landscape of business and society. The Insights You Need series will help you grasp these critical ideas--and prepare you and your company for the future.
 
 ## Introduction to Generative AI
 
