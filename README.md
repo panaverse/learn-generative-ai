@@ -1,6 +1,10 @@
 # Learn Generative AI
 
+This course is part of the [GenAI, Web 3, and Metaverse Program](https://docs.google.com/presentation/d/1XVSZhmv4XH14YpyDxJIvYWiUrF1EO9tsUnle17wCLIc/edit?usp=sharing)
+
 Before starting to learn from this repo [Learn Modern Python](https://github.com/panaverse/learn-modern-python)
+
+## Technology from the Business and Top Management Perspective
 
 [The Year in Tech, 2024: The Insights You Need from Harvard Business Review](https://www.hbsp.harvard.edu/product/10673-PDF-ENG)
 
