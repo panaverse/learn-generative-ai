@@ -4,6 +4,6 @@
 
 ![software app](app.png)
 
-[Using generative AI in software applications](https://www.coursera.org/learn/generative-ai-for-everyone/lecture/LfGc4/using-generative-ai-in-software-applications)
+## [Using generative AI in software applications](https://www.coursera.org/learn/generative-ai-for-everyone/lecture/LfGc4/using-generative-ai-in-software-applications)
 
-[Lifecycle of a generative AI project](https://www.coursera.org/learn/generative-ai-for-everyone/lecture/t2aQM/lifecycle-of-a-generative-ai-project)
+## [Lifecycle of a generative AI project](https://www.coursera.org/learn/generative-ai-for-everyone/lecture/t2aQM/lifecycle-of-a-generative-ai-project)
