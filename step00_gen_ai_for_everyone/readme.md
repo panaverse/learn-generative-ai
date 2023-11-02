@@ -8,8 +8,8 @@
 
 ## [Lifecycle of a generative AI project](https://www.coursera.org/learn/generative-ai-for-everyone/lecture/t2aQM/lifecycle-of-a-generative-ai-project)
 
-Our Technology stack is OPL
+## Our Technology stack is OPL (OpenAI, Pinecone, and Langchain)
 
-We will develop prototype UI with [Streamlit](https://streamlit.io/)
+## We will develop prototype UI with [Streamlit](https://streamlit.io/)
 
-We will develop production apps using [Next.js](https://vercel.com/templates/next.js/langchain-starter)
+## We will develop production apps using [Next.js](https://vercel.com/templates/next.js/langchain-starter)
