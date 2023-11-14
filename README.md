@@ -4,6 +4,8 @@ This course is part of the [GenAI, Web 3, and Metaverse Program](https://docs.go
 
 Before starting to learn from this repo [Learn Modern Python](https://github.com/panaverse/learn-modern-python)
 
+[Must Read: OpenAI DevDay - a pivotal moment for AI](https://www.aitidbits.ai/p/openai-devday)
+
 ## Technology from the Business and Top Management Perspective
 
 [The Year in Tech, 2024: The Insights You Need from Harvard Business Review](https://www.hbsp.harvard.edu/product/10673-PDF-ENG)
