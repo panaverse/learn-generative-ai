@@ -1,4 +1,4 @@
-# Learn Generative AI
+# Learn Generative AI Application Development
 
 This course is part of the [GenAI, Web 3, and Metaverse Program](https://docs.google.com/presentation/d/1XVSZhmv4XH14YpyDxJIvYWiUrF1EO9tsUnle17wCLIc/edit?usp=sharing)
 
