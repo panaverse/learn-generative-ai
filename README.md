@@ -29,8 +29,52 @@ The Year in Tech 2024: The Insights You Need about Generative AI and Web 3.0 fro
 
 3. [Goldman Sachs: The Potentially Large Effects of Artificial Intelligence on Economic Growth](https://www.gspublishing.com/content/research/en/reports/2023/03/27/d64e052b-0f6e-45d7-967b-d7be35fabd16.html), Joseph Briggs and Devesh Kodnani, March 2023
 
+## "ChatGPT API" or correctly: OpenAI API
 
+OpenAI API is a collection of APIs
 
+APIs offer access to various Large Language Models (LLMs)
+
+LLM: Program trained to understand human language
+
+ChatGPT is a web service using the Chat completion API
+Uses:
+
+1. gpt-3.5-turbo (free tier)
+2. gpt-4.0 (paid tier)
+
+## OpenAI API endpoints
+
+Chat completion:
+Given a series of messages, generate a response
+
+Function calling: 
+Choose which function to call
+
+Image generation:
+Given a text description generate an image
+
+Speech to text:
+Given an audio file and a prompt generate a transcript
+
+Fine tuning:
+Train a model using input and output examples
+
+## OpenAI Assistants API
+
+The new Assistants API is a stateful evolution of Chat Completions API meant to simplify the creation of assistant-like experiences, and enable developer access to powerful tools like Code Interpreter and Retrieval.
+
+![Alt text](assistants.png "Assistants")
+
+## Chat Completions API vs Assistants API
+
+The primitives of the Chat Completions API are Messages, on which you perform a Completion with a Model (gpt-3.5-turbo, gpt-4, etc). It is lightweight and powerful, but inherently stateless, which means you have to manage conversation state, tool definitions, retrieval documents, and code execution manually.
+
+The primitives of the Assistants API are
+
+1. Assistants, which encapsulate a base model, instructions, tools, and (context) documents,
+2. Threads, which represent the state of a conversation, and
+3. Runs, which power the execution of an Assistant on a Thread, including textual responses and multi-step tool use.
 
 ## What is the OPL stack in AI?
 
