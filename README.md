@@ -45,19 +45,19 @@ Uses:
 
 ## OpenAI API endpoints
 
-Chat completion:
+1. Chat completion:
 Given a series of messages, generate a response
 
-Function calling: 
+2. Function calling: 
 Choose which function to call
 
-Image generation:
+3. Image generation:
 Given a text description generate an image
 
-Speech to text:
+4. Speech to text:
 Given an audio file and a prompt generate a transcript
 
-Fine tuning:
+5. Fine tuning:
 Train a model using input and output examples
 
 ## OpenAI Assistants API
