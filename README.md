@@ -6,9 +6,14 @@ Before starting to learn from this repo [Learn Modern Python](https://github.com
 
 # The New Era
 
+[The Age of AI has begun](https://www.gatesnotes.com/The-Age-of-AI-Has-Begun)
+
+[Nvidia says generative AI will be bigger than the internet](https://www.theverge.com/2023/11/15/23962497/nvidia-says-generative-ai-will-be-bigger-than-the-internet)
+
+[Generative AI and Its Economic Impact: What You Need to Know](https://www.investopedia.com/economic-impact-of-generative-ai-7976252)
+
 [Must Read: OpenAI DevDay - a pivotal moment for AI](https://www.aitidbits.ai/p/openai-devday)
 
-[The Age of AI has begun](https://www.gatesnotes.com/The-Age-of-AI-Has-Begun)
 
 ## Technology from the Business and Top Management Perspective
 
