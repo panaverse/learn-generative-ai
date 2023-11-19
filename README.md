@@ -14,6 +14,12 @@ Before starting to learn from this repo [Learn Modern Python](https://github.com
 
 [Must Read: OpenAI DevDay - a pivotal moment for AI](https://www.aitidbits.ai/p/openai-devday)
 
+# Latest News
+
+[What Elon Musk has said about Ilya Sutskever, the chief scientist at the center of OpenAI’s leadership upheaval](https://finance.yahoo.com/news/elon-musk-said-ilya-sutskever-171726023.html)
+
+[Who is OpenAI chief scientist Ilya Sutskever, and what does he think about the future of AI and ChatGPT?](https://www.fastcompany.com/90985752/ilya-sutskever-openai-chief-scientist)
+
 
 ## Technology from the Business and Top Management Perspective
 
