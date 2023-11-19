@@ -10,6 +10,8 @@ Before starting to learn from this repo [Learn Modern Python](https://github.com
 
 [The Age of AI has begun](https://www.gatesnotes.com/The-Age-of-AI-Has-Begun)
 
+[Nvidia says generative AI will be bigger than the internet](https://www.theverge.com/2023/11/15/23962497/nvidia-says-generative-ai-will-be-bigger-than-the-internet)
+
 ## Technology from the Business and Top Management Perspective
 
 [The Year in Tech, 2024: The Insights You Need from Harvard Business Review](https://www.hbsp.harvard.edu/product/10673-PDF-ENG)
