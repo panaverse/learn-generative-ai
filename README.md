@@ -20,6 +20,8 @@ Before starting to learn from this repo [Learn Modern Python](https://github.com
 
 [Who is OpenAI chief scientist Ilya Sutskever, and what does he think about the future of AI and ChatGPT?](https://www.fastcompany.com/90985752/ilya-sutskever-openai-chief-scientist)
 
+[Sam Altman to return as CEO of OpenAI](https://www.theverge.com/2023/11/22/23967223/sam-altman-returns-ceo-open-ai)
+
 
 ## Technology from the Business and Top Management Perspective
 
