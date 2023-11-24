@@ -6,5 +6,5 @@ https://twitter.com/TooTallNate/status/1727392596614664535
 
 Text Book:
 
-https://www.amazon.com/Getting-Started-Docker-Nigel-Poulton-ebook/dp/B0CLD95K6T/ref=sr_1_16 
+https://www.amazon.com/Docker-Deep-Dive-Nigel-Poulton/dp/1916585256/ref=tmm_pap_swatch_0 
 
