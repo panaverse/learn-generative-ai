@@ -1,5 +1,7 @@
 # AI Agents
 
+[OpenAI's Bet on a Cognitive Architecture](https://blog.langchain.dev/openais-bet-on-a-cognitive-architecture/)
+
 [OpenAI takes ‘baby step’ toward AI agents with Assistants API](https://venturebeat.com/ai/openai-takes-baby-step-toward-ai-agents-with-assistants-api/)
 
 [Opportunities in Agents after GPT-4 Turbo](https://www.linkedin.com/pulse/opportunities-agents-after-gpt-4-turbo-wei-min-lu-z63fc/)
