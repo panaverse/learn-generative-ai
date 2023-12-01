@@ -18,6 +18,8 @@ Before starting to learn from this repo [Learn Modern Python](https://github.com
 
 [The rise of GenEng: How AI changes the developer role](https://cloud.google.com/blog/products/ai-machine-learning/the-rise-of-geneng-how-ai-changes-the-developer-role)
 
+[Watch: The Rise of GenEng](https://www.youtube.com/watch?v=RLUrvgfEeUc)
+
 # Latest News
 
 [What Elon Musk has said about Ilya Sutskever, the chief scientist at the center of OpenAI’s leadership upheaval](https://finance.yahoo.com/news/elon-musk-said-ilya-sutskever-171726023.html)
