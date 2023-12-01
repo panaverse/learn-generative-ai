@@ -14,6 +14,10 @@ Before starting to learn from this repo [Learn Modern Python](https://github.com
 
 [Must Read: OpenAI DevDay - a pivotal moment for AI](https://www.aitidbits.ai/p/openai-devday)
 
+# Generative Engineering (GenEng)
+
+[The rise of GenEng: How AI changes the developer role](https://cloud.google.com/blog/products/ai-machine-learning/the-rise-of-geneng-how-ai-changes-the-developer-role)
+
 # Latest News
 
 [What Elon Musk has said about Ilya Sutskever, the chief scientist at the center of OpenAI’s leadership upheaval](https://finance.yahoo.com/news/elon-musk-said-ilya-sutskever-171726023.html)
