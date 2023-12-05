@@ -10,3 +10,6 @@ https://help.zapier.com/hc/en-us/articles/20965705530125-Use-OpenAI-s-Assistants
 
 https://zapier.com/blog/gpt-assistant/
 
+Watch (23:29 to 25:44)
+https://www.youtube.com/watch?v=U9mJuUkhUzk
+
