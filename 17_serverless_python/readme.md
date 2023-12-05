@@ -4,6 +4,10 @@
 
 [Getting started building serverless SaaS architectures](https://www.youtube.com/watch?v=Cag8cDbi-sk)
 
+https://blog.awsfundamentals.com/aws-lambda-with-terraform
+
+## Archtecture for Serverless Python
+
 [The pragmatic serverless Python developer](https://www.youtube.com/watch?v=52W3Qyg242Y)
 
-[Powertools for AWS Lambda - Python](https://github.com/aws-powertools/powertools-lambda-python)
+[Complete Presentation for Material](https://gist.github.com/heitorlessa/09e8bf8eb28d0e8dd96faf8db564f4a9)
