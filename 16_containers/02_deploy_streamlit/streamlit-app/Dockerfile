@@ -2,7 +2,7 @@
 
 FROM python:3.9-slim
 
-# Copy app to /src
+# Copy app to /app
 COPY . /app
 
 
