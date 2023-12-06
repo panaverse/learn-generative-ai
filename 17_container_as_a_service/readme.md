@@ -21,7 +21,7 @@ Note: All customers get 2 million requests free per month, not charged against y
 [Install the gcloud CLI](https://cloud.google.com/sdk/docs/install)
 
 
-## Follow these Tutorials to Deploy helloword project:
+## Follow these Tutorials to Deploy 00_helloword project:
 
 [Deploy a Python service to Cloud Run](https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-service)
 
@@ -36,5 +36,30 @@ My container was deployed at:
 https://helloworld-oqgectyvca-wl.a.run.app
 
 Note: In deploying I selected us-west2 as the region
+
+### Container Image will be in Artifact Registary (Container Registry)
+
+Artifact Registry is the recommended service for managing container images
+
+https://console.cloud.google.com/artifacts?project=project_name
+
+### Cloud Run Dashboard
+
+https://console.cloud.google.com/home/dashboard?project=project_name
+
+### Build using a Docker File
+
+    gcloud auth configure-docker
+    gcloud components install docker-credential-gcr
+
+https://cloud.google.com/run/docs/building/containers#building_using_a_dockerfile
+
+### Manually Deploy
+
+[Watch: Manually Deploy to Cloud Run - Updated for Artifact Registry](https://www.youtube.com/watch?v=MM4viHa7k4w)
+
+[Work with container images](https://cloud.google.com/artifact-registry/docs/docker)
+
+[Multi-platform images](https://docs.docker.com/build/building/multi-platform/)
 
 
