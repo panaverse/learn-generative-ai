@@ -1,0 +1,15 @@
+{
+  "name": "container-web-test",
+  "private": true,
+  "version": "0.0.5",
+  "description": "Demo app for web container demonstrations",
+  "main": "app.js",
+  "author": "Nigel Poulton <nigelpoulton@hotmail.com> (https://nigelpoulton.com)",
+  "license": "May contain vulnerabilities!",
+  "dependencies": {
+    "express": "4.18.2",
+    "pug": "3.0.2",
+    "mocha": "10.2.0",
+    "supertest": "6.3.3"
+  }
+}
