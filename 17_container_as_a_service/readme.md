@@ -27,6 +27,8 @@ Note: All customers get 2 million requests free per month, not charged against y
 
 [Flask: A Minimal Application](https://flask.palletsprojects.com/en/3.0.x/quickstart/#a-minimal-application)
 
+[Google Hello World Sample](https://github.com/GoogleCloudPlatform/python-docs-samples/tree/main/run/helloworld)
+
 Change directory to helloworld and run the following command:
 
     gcloud run deploy
