@@ -28,6 +28,10 @@ GenEng revolution being led by developers who build deep proficiency in how to b
 
 # Latest News
 
+[Google launches its largest and ‘most capable’ AI model, Gemini](https://www.cnbc.com/2023/12/06/google-launches-its-largest-and-most-capable-ai-model-gemini.html)
+
+[Meta, IBM and Intel join alliance for open AI development while Google and Microsoft sit out](https://www.scmp.com/tech/big-tech/article/3244012/meta-ibm-and-intel-join-alliance-open-ai-development-while-google-and-microsoft-sit-out)
+
 [What Elon Musk has said about Ilya Sutskever, the chief scientist at the center of OpenAI’s leadership upheaval](https://finance.yahoo.com/news/elon-musk-said-ilya-sutskever-171726023.html)
 
 [Who is OpenAI chief scientist Ilya Sutskever, and what does he think about the future of AI and ChatGPT?](https://www.fastcompany.com/90985752/ilya-sutskever-openai-chief-scientist)
