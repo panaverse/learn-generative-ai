@@ -1,4 +1,20 @@
-# Serverless Containers
+# Container as a Service
+
+All Faculty and Students please Register for Microsoft Azure and Google Cloud Accounts:
+
+
+1. Microsoft Azure Account
+https://azure.microsoft.com/en-us/free/ai-services/
+
+Note: If possible register your account with a company email address.
+
+Once you have a subscription id apply for Azure Open AI Service here:
+
+https://azure.microsoft.com/en-us/products/ai-services/openai-service
+
+
+2. Google Cloud Account
+https://cloud.google.com/free
 
 Serverless CaaS (Container as a Service) is quickly growing in prominence. Datadog’s 2022 “The State of Serverless” report shows that in 2022, Google Cloud Run was the fastest-growing method for deploying serverless applications in Google Cloud. The 2023 report indicates that serverless CaaS adoption has continued to intensify across all major cloud providers.
 
@@ -15,6 +31,8 @@ We will be mainly using Cloud Run to develop API's using Python or TypeScript.
 Create Account: https://cloud.google.com/run
 
 [What is Google Cloud Run](https://youtu.be/1t94tdyojs0)
+
+[GCP Cloud Run: What is it? What’s it for?](https://datascientest.com/en/gcp-cloud-run-what-is-it-whats-it-for)
 
 Note: All customers get 2 million requests free per month, not charged against your credits or to you.
 
