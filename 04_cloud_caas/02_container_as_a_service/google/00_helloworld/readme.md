@@ -1,5 +1,21 @@
 # Serverless Containers
 
+All Faculty and Students please Register for Microsoft Azure and Google Cloud Accounts:
+
+
+1. Microsoft Azure Account
+https://azure.microsoft.com/en-us/free/ai-services/
+
+Note: If possible register your account with a company email address.
+
+Once you have a subscription id apply for Azure Open AI Service here:
+
+https://azure.microsoft.com/en-us/products/ai-services/openai-service
+
+
+2. Google Cloud Account
+https://cloud.google.com/free
+
 Serverless CaaS (Container as a Service) is quickly growing in prominence. Datadog’s 2022 “The State of Serverless” report shows that in 2022, Google Cloud Run was the fastest-growing method for deploying serverless applications in Google Cloud. The 2023 report indicates that serverless CaaS adoption has continued to intensify across all major cloud providers.
 
 [How to Run a Docker Container on the Cloud: Top 5 CaaS Solutions](https://bluelight.co/blog/how-to-run-a-docker-container-on-the-cloud)
