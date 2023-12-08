@@ -1,4 +1,4 @@
-# Serverless Containers
+# Container as a Service
 
 All Faculty and Students please Register for Microsoft Azure and Google Cloud Accounts:
 
@@ -31,6 +31,8 @@ We will be mainly using Cloud Run to develop API's using Python or TypeScript.
 Create Account: https://cloud.google.com/run
 
 [What is Google Cloud Run](https://youtu.be/1t94tdyojs0)
+
+[GCP Cloud Run: What is it? What’s it for?](https://datascientest.com/en/gcp-cloud-run-what-is-it-whats-it-for)
 
 Note: All customers get 2 million requests free per month, not charged against your credits or to you.
 
