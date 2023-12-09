@@ -13,7 +13,22 @@ Test Docker Installation:
 
     docker run hello-world
 
-For Mac, if docker command not running:
+**For Windows:**
+
+- 64-bit version of Windows 10/11
+- Hardware virtualization support must be enabled in your system’s BIOS
+- WSL 2
+
+[How to Install WSL2 with Ubuntu](https://youtu.be/J2PQuVAI99c?si=X-lg60sGq6PkkD5P)
+
+[Docker for Windows Installation and Troubleshooting for Beginners](https://youtu.be/R4uy6Oqiy5I?si=DglDYuvf-zvFY9bS)
+
+**Multipass:**
+
+[Running a container with the Docker blueprint in Multipass](https://multipass.run/docs/docker-tutorial)
+
+
+**For Mac**, if docker command not running:
 
 https://stackoverflow.com/questions/64009138/docker-command-not-found-when-running-on-mac
 
@@ -26,6 +41,8 @@ Play with Docker (PWD) is a fully functional internet-based Docker playground th
 https://labs.play-with-docker.com/
 
 4. The Big Picture (Chapter 4)
+
+### The Ops Perspective
 
 https://docs.anaconda.com/free/anaconda/applications/docker/
 
@@ -81,6 +98,7 @@ of the container — your shell is now inside of the new container!
 * Kill the Container:
 
     docker rm container_name
+
 
 ### TestContainers
 
