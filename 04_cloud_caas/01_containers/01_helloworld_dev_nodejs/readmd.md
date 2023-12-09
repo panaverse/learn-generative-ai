@@ -21,3 +21,6 @@
 * Open the browser on the following URL:
 
     http://localhost:8080/
+
+
+![Dockerfile](./figure8.8.png)
