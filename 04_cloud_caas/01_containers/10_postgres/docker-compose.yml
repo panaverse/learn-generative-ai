@@ -1,0 +1,13 @@
+# Use postgres/example user/password credentials
+version: '1.1'
+services:
+  db:
+    container_name: db_postgres_dev
+    image: postgres:15.5
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: mysecretpassword
+    volumes:
+    - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
