@@ -1,19 +1,7 @@
-# Container as a Service
+# Container as a Service (CaaS)
 
-All Faculty and Students please Register for Microsoft Azure and Google Cloud Accounts:
+Google Cloud Account
 
-
-1. Microsoft Azure Account
-https://azure.microsoft.com/en-us/free/ai-services/
-
-Note: If possible register your account with a company email address.
-
-Once you have a subscription id apply for Azure Open AI Service here:
-
-https://azure.microsoft.com/en-us/products/ai-services/openai-service
-
-
-2. Google Cloud Account
 https://cloud.google.com/free
 
 Serverless CaaS (Container as a Service) is quickly growing in prominence. Datadog’s 2022 “The State of Serverless” report shows that in 2022, Google Cloud Run was the fastest-growing method for deploying serverless applications in Google Cloud. The 2023 report indicates that serverless CaaS adoption has continued to intensify across all major cloud providers.
@@ -22,11 +10,23 @@ Serverless CaaS (Container as a Service) is quickly growing in prominence. Datad
 
 [Container as a Service (CaaS) Market Projections for 2030: Size, Share, and Growth](https://medium.com/@watsonmac944/container-as-a-service-caas-market-projections-for-2030-size-share-and-growth-e30b663dbcd9)
 
-We will used Google Cloud Run to deploy serverless containers in the cloud. Cloud Run is a managed compute platform that lets you run containers directly on top of Google's scalable infrastructure. You can deploy code written in Python, TypeScript, or any other programming language on Cloud Run if you can build a container image from it. These serverless containers must be stateless.
+We will use Google Cloud Run to deploy serverless containers in the cloud. Cloud Run is a managed compute platform that lets you run containers directly on top of Google's scalable infrastructure. You can deploy code written in Python, TypeScript, or any other programming language on Cloud Run if you can build a container image from it. These serverless containers must be stateless.
 
 You can run not only serverless containers but also Cloud Run jobs. A Cloud Run job only runs its tasks and exits when finished. A job does not listen for or serve requests. After you create or update a job, you can: Execute the job as a one-off, on a schedule, or as part of a workflow.
 
 We will be mainly using Cloud Run to develop API's using Python or TypeScript.
+
+## Deploy Locally
+
+[Deploy a Cloud Run service with Cloud Code for VS Code](https://cloud.google.com/code/docs/vscode/deploy-cloud-run-app)
+
+[Installing](https://cloud.google.com/code/docs/vscode/install#installing)
+
+https://cloud.google.com/code/docs/vscode/cloud-run-overview
+
+https://cloud.google.com/code/docs/vscode/develop-service
+
+## Deploy on the Cloud
 
 Create Account: https://cloud.google.com/run
 
@@ -75,6 +75,7 @@ https://console.cloud.google.com/home/dashboard?project=project_name
     gcloud components install docker-credential-gcr
 
 https://cloud.google.com/run/docs/building/containers#building_using_a_dockerfile
+
 
 ### Manually Deploy
 
