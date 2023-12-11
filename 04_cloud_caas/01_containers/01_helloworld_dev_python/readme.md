@@ -14,9 +14,11 @@ https://flask.palletsprojects.com/en/3.0.x/quickstart/
 2. cd web
 3. Write a simple Flask App in web/app.py that creates a simple Flask application that returns “Hello from Zia!” when the root path is accessed.
 4. Install dependencies
-    pip install -r requirements.txt
+
+    ```pip install -r requirements.txt```
 5. Run
-    flask --app app --port 5000 run 
+
+    ```python -m flask run``` 
 6. Open in browser:
     http://127.0.0.1:5000
 
