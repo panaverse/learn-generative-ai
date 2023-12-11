@@ -1,0 +1,10 @@
+version: '1.0'
+services:
+    web:
+        build: .
+        ports:
+        - "5000:5000"
+        volumes:
+        - type: bind
+          source: .\        # For Linux, use / backward slash to navigate to the current directory.
+          target: /app
