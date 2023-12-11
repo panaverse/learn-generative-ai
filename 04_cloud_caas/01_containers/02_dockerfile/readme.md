@@ -31,7 +31,7 @@ EXPOSE
 
 The Dockerfile EXPOSE instruction documents the network port an application uses.
 
-WORKDIR — set working directory
+WORKDIR — set working di    rectory
 
 VOLUME — create mount-point for a volume
 
