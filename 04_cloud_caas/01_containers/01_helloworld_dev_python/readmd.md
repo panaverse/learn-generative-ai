@@ -29,4 +29,8 @@ Now we will create a Dockerfile for our Flask Application. A Dockerfile is a fil
     docker images
 4. Run the Docker Container
     docker run -p 5000:5000 flask-app
+5. Check to see if the container is running:
+    docker ps
+6. Open in browser:
+    http://127.0.0.1:5000
 
