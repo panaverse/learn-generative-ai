@@ -4,29 +4,27 @@ networks:
   todo-net:
 
 volumes:
-  pgdata:
+  api-vol:
   
 services:
   web-api:
     build: ./web
     command: python app.py
     ports:
-      - target: 5000
+      - target: 8080
         published: 5002
     expose:
-      - "5000"
+      - "8080"
     networks:
       - todo-net
-    
-  db:
-    container_name: db_postgres_dev
-    image: postgres:15.5
-    restart: always
-    environment:
-      POSTGRES_PASSWORD: mysecretpassword
     volumes:
-      - pgdata:/var/lib/postgresql/data
-    networks:
-      - todo-net
+      - type: volume
+        source: api-vol
+        target: /app
+      - type: bind
+        source: ./app    # For Linux, use / backward slash to navigate to the current directory.
+        
+    
+  
     
   

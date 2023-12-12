@@ -1,18 +1,16 @@
-FROM continuumio/miniconda3:latest
+# Base image
+FROM python:alpine
 
-LABEL maintainer="ameen@gmail.com"
+# Copy app, templates and views
+COPY . /app
 
-# Create app directory
+# Set working directory for subsequent commands
 WORKDIR /app
- 
-# Install app dependencies
-COPY requirements.txt ./
- 
-RUN pip install -r requirements.txt
- 
-# Bundle app source
-COPY . .
- 
-EXPOSE 5000
 
-CMD [ "python", "-m" , "flask", "run", "--host=0.0.0.0"]
+# Install dependencies
+RUN pip install -r requirements.txt
+
+EXPOSE 8080
+
+# Command to run when container starts
+ENTRYPOINT ["python", "app.py"]
