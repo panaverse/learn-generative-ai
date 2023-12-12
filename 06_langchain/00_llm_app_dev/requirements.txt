@@ -1,0 +1,7 @@
+python-dotenv
+openai
+langchain
+pinecone-client
+tiktoken
+IPython
+docarray

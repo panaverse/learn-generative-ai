@@ -1,0 +1,27 @@
+networks:
+  counter-net:
+
+volumes:
+  counter-vol:
+  
+services:
+  web-fe:
+    build: .
+    command: python app.py
+    ports:
+      - target: 8080
+        published: 5001
+    networks:
+      - counter-net
+    volumes:
+      - type: volume
+        source: counter-vol
+        target: /app
+      - type: bind
+        source: .\    # For Linux, use / backward slash to navigate to the current directory.
+        target: /app
+  redis:
+    image: "redis:alpine"
+    networks:
+      counter-net:
+
