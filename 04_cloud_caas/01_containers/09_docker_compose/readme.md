@@ -35,7 +35,7 @@ You need to have Docker Engine and Docker Compose on your machine. You can eithe
 
 * Go to the developer directory:
 
-    cd flask_docker
+    cd multi-container
 
 Let’s quickly describe each file:
 
