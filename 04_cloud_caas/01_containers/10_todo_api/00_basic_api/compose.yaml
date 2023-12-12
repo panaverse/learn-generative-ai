@@ -2,9 +2,6 @@ version: '3.8'
 
 networks:
   todo-net:
-
-volumes:
-  api-vol:
   
 services:
   web-api:
@@ -17,12 +14,7 @@ services:
       - "8080"
     networks:
       - todo-net
-    volumes:
-      - type: volume
-        source: api-vol
-        target: /app
-      - type: bind
-        source: ./app    # For Linux, use / backward slash to navigate to the current directory.
+    
         
     
   
