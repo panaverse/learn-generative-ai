@@ -11,10 +11,10 @@ services:
     build: ./web
     command: python app.py
     ports:
-      - target: 8080
+      - target: 5000
         published: 5002
     expose:
-      - "8080"
+      - "5000"
     networks:
       - todo-net
     
