@@ -118,6 +118,14 @@ From your project directory, type docker compose up to build the app with the up
 
     docker compose up
 
+* Common Errors:
+
+  ```python: can't open file '/app/app/app.py': [Errno 2] No such file or directory```
+
+  Line number 20 to 22 - compose.yaml
+  
+  For Linux, use ```/``` backward slash to navigate to the current directory.
+
 * List Images
 
     docker images
@@ -213,6 +221,10 @@ Use your favourite text editor to edit the index.html.
 
 Change text on line 16 to the following and save your changes.
 ```<h2>Your Name</h2>```
+
+* Reload following base URL:
+
+    http://127.0.0.1:5001/
 
 * Now that you’ve updated the app, you need to copy it into the volume on the Docker host. Each Docker volume exists at a location within the Docker host’s filesystem. Use the following docker inspect command to find where the volume is exposed on the Docker host.
 

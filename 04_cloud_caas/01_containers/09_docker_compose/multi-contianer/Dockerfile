@@ -1,5 +1,7 @@
-# Base image
-FROM python:alpine
+# base image
+FROM continuumio/miniconda3:latest
+
+LABEL maintainer="ameen@gmail.com"
 
 # Copy app, templates and views
 COPY . /app
