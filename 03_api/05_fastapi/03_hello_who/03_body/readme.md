@@ -17,3 +17,7 @@ Test with HTTPie
 Test with Requests
 
     python test_body.py
+
+### Automated Documentation: Open in browser:
+
+    http://localhost:8000/docs
