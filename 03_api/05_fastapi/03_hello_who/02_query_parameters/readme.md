@@ -14,6 +14,6 @@ Test with HTTPie
 
     http -b localhost:8000/hi?who=Mom
 
-Test /hi/Mom with Requests
+Test with Requests
 
     python test_query_param.py
