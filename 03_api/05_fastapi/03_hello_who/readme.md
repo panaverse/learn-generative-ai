@@ -1,5 +1,7 @@
 # Different ways to pass new parameter
 
+[Read Pages 33-41, 43-46 FastAPI Textbook](https://www.amazon.com/FastAPI-Bill-Lubanovic-ebook/dp/B0CLKZJSGV/ref=sr_1_1)
+
 Let’s make our earlier application a little more personal by adding a parameter called who that addresses that plaintive Hello? to someone. We’ll try different ways to pass
 this new parameter:
 
