@@ -4,6 +4,8 @@ OpenAI's Assistants API allows developers to use the same qualities that make Ch
 
 [OpenAI Assistant API Quickstart: Streamlit & Python | Building a custom Cat AI in Just 13 Minutes](https://www.youtube.com/watch?v=mErptZiNaN0)
 
+[OpenAI Assistants API Unleashed: Building Streamlit Applications for Next-Gen Financial Insights and PDF Analysis](https://lablab.ai/t/openai-assistants-api-unleashed)
+
 [How Python Devs Can Build AI Chatbot Interfaces](https://www.youtube.com/watch?v=nSeQl6Ehfk0)
 
 [Build AI Agents with OpenAI's Assistant API - Quick Streamlit Tutorial](https://www.toolify.ai/gpts/build-ai-agents-with-openais-assistant-api-quick-streamlit-tutorial-48395)
@@ -18,7 +20,7 @@ OpenAI's Assistants API allows developers to use the same qualities that make Ch
 
 [Retrieval Q&A with Streamlit and OpenAI’s Assistants API](https://medium.com/towards-ai-engineering/retrieval-q-a-with-streamlit-and-openais-assistants-api-1de464f10e5f)
 
-[OpenAI Assistants API Unleashed: Building Streamlit Applications for Next-Gen Financial Insights and PDF Analysis](https://lablab.ai/t/openai-assistants-api-unleashed)
+
 
 
 
