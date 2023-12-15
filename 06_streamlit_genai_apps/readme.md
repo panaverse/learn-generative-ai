@@ -16,5 +16,9 @@ OpenAI's Assistants API allows developers to use the same qualities that make Ch
 
 [Let’s Code an AI Data Scientist — Open AI Assistants API Tutorial](https://blog.devgenius.io/lets-code-an-ai-data-scientist-open-ai-assistants-api-tutorial-ad9d9276647b)
 
+[Retrieval Q&A with Streamlit and OpenAI’s Assistants API](https://medium.com/towards-ai-engineering/retrieval-q-a-with-streamlit-and-openais-assistants-api-1de464f10e5f)
+
+[OpenAI Assistants API Unleashed: Building Streamlit Applications for Next-Gen Financial Insights and PDF Analysis](https://lablab.ai/t/openai-assistants-api-unleashed)
+
 
 
