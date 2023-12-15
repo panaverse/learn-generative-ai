@@ -22,6 +22,8 @@ https://cloud.google.com/free
 
 # The New Era
 
+[From Microsoft to MIT MBA, the AI reeducation boot camp is coming for every worker and executive](https://www.cnbc.com/2023/12/15/from-microsoft-to-mit-mba-an-ai-boot-camp-for-every-worker-executive.html)
+
 [The Age of AI has begun](https://www.gatesnotes.com/The-Age-of-AI-Has-Begun)
 
 [Nvidia says generative AI will be bigger than the internet](https://www.theverge.com/2023/11/15/23962497/nvidia-says-generative-ai-will-be-bigger-than-the-internet)
