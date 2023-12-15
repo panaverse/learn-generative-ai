@@ -1,8 +1,32 @@
-# Learn Python Basics From Scratch in 1 Month
+# Learn Python Python As Fast as Possible From Scratch For GenAI App Development
 
-
+1. Introduction
+2. Setup & Installation
+3. Python For GenAI
+4. Data Types
+5. Type Hints
+6. Output & Printing
+7. User Input
+8. Arithmetic Operator
+9. F Strings and String Methods
+10. Conditional Operators
+11. Chained Conditionals
+12. If/Else/Elif
+13. List/Tuples
+14. For Loops
+15. While Loops
+17. Dicts
+18. Functions and Lambda
+19. *args & **kwargs
+20. Exceptions
+21. Handling Exceptions
+20. Object Oriented Programing
 
 [Python Cheat Sheet for Beginners](https://www.datacamp.com/cheat-sheet/getting-started-with-python-cheat-sheet)
+
+### References
+
+[How to Learn Python From Scratch in 2023: An Expert Guide](https://www.datacamp.com/blog/how-to-learn-python-expert-guide)
 
 
 ## Tools for Teaching
@@ -63,7 +87,3 @@ We will be using Google’s Jamboard during my sessions, as it’s free and inte
 https://jamboard.google.com/
 
 Note: We can using the Apple iPad with the Apple Pencil with the Jamboard app, which works very well. 
-
-### References
-
-[How to Learn Python From Scratch in 2023: An Expert Guide](https://www.datacamp.com/blog/how-to-learn-python-expert-guide)
