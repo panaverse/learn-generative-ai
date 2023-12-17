@@ -4,8 +4,8 @@ Install streamlit package
 
     pip install -r requirements.txt    
 
- Create hello.py and run it:   
+ Run the app:   
     
-    streamlit run cat.py
+    streamlit run app.py
 
 Open http://localhost:8501/
