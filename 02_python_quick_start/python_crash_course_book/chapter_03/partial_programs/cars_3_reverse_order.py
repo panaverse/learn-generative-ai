@@ -1,4 +1,4 @@
-cars = ['bmw', 'audi', 'toyota', 'subaru']
+cars: list[str] = ['bmw', 'audi', 'toyota', 'subaru']
 print(cars)
 
 cars.reverse()

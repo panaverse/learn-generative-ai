@@ -1,5 +1,5 @@
-message = "Hello Python world!"
+message:str = "Hello Python world!"
 print(message)
 
-message = "Hello Python Crash Course world!"
+message:str = "Hello Python Crash Course world!"
 print(message)

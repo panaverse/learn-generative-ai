@@ -1,4 +1,4 @@
-cars = ['bmw', 'audi', 'toyota', 'subaru']
+cars:list[str] = ['bmw', 'audi', 'toyota', 'subaru']
 
 print("Here is the original list:")
 print(cars)

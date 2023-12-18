@@ -1,4 +1,4 @@
-motorcycles = []
+motorcycles:list[str] = []
 
 motorcycles.append('honda')
 motorcycles.append('yamaha')

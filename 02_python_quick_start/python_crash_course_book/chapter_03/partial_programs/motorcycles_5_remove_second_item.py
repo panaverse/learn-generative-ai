@@ -1,4 +1,4 @@
-motorcycles = ['honda', 'yamaha', 'suzuki']
+motorcycles:list[str] = ['honda', 'yamaha', 'suzuki']
 print(motorcycles)
 
 del motorcycles[1]

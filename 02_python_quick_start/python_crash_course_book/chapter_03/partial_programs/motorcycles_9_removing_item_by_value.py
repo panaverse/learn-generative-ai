@@ -1,4 +1,4 @@
-motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+motorcycles:list[str] = ['honda', 'yamaha', 'suzuki', 'ducati']
 print(motorcycles)
 
 motorcycles.remove('ducati')
