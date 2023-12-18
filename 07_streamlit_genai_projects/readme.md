@@ -4,11 +4,13 @@ OpenAI's Assistants API allows developers to use the same qualities that make Ch
 
 ## Projects for Students
 
+Use the apps we developed in the last step and build the following projects using them as a base. 
+
 ### Knowledge Retrieval Projects
 
 1. [OpenAI Assistants API Unleashed: Building Streamlit Applications for Next-Gen Financial Insights and PDF Analysis](https://lablab.ai/t/openai-assistants-api-unleashed)
 
-2. [OpenAI Assistants API Streamlit Application from Scratch: Knowledge Retrival App](https://www.youtube.com/watch?v=94zqbQ4JjjY)
+2. [OpenAI Assistants API Streamlit Application from Scratch: Knowledge Retrieval App](https://www.youtube.com/watch?v=94zqbQ4JjjY)
 
 ### Scraping Data and Knowledge Retrieval Projects
 
