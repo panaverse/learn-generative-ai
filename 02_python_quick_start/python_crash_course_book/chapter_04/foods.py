@@ -1,4 +1,4 @@
-my_foods = ['pizza', 'falafel', 'carrot cake']
+my_foods: list[str] = ['pizza', 'falafel', 'carrot cake']
 friend_foods = my_foods[:]
 
 my_foods.append('cannoli')

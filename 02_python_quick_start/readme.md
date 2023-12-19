@@ -24,6 +24,8 @@
 
 [Python Cheat Sheet for Beginners](https://www.datacamp.com/cheat-sheet/getting-started-with-python-cheat-sheet)
 
+[Typing Cheat Sheet](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)
+
 ### References
 
 [How to Learn Python From Scratch in 2023: An Expert Guide](https://www.datacamp.com/blog/how-to-learn-python-expert-guide)
