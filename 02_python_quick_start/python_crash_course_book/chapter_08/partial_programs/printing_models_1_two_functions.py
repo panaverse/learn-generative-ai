@@ -1,4 +1,4 @@
-def print_models(unprinted_designs, completed_models):
+def print_models(unprinted_designs:list, completed_models:list)->None:
     """
     Simulate printing each design, until none are left.
     Move each design to completed_models after printing.

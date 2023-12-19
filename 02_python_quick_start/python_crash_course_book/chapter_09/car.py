@@ -3,21 +3,21 @@ class Car:
 
     def __init__(self, make, model, year):
         """Initialize attributes to describe a car."""
-        self.make = make
-        self.model = model
-        self.year = year
-        self.odometer_reading = 0
+        self.make : str = make
+        self.model : str = model
+        self.year : int = year
+        self.odometer_reading : int = 0
 
-    def get_descriptive_name(self):
+    def get_descriptive_name(self)->str:
         """Return a neatly formatted descriptive name."""
-        long_name = f"{self.year} {self.make} {self.model}"
+        long_name : str = f"{self.year} {self.make} {self.model}"
         return long_name.title()
 
-    def read_odometer(self):
+    def read_odometer(self)->None:
         """Print a statement showing the car's mileage."""
         print(f"This car has {self.odometer_reading} miles on it.")
 
-    def update_odometer(self, mileage):
+    def update_odometer(self, mileage:int)->None:
         """
         Set the odometer reading to the given value.
         Reject the change if it attempts to roll the odometer back.
@@ -27,7 +27,7 @@ class Car:
         else:
             print("You can't roll back an odometer!")
 
-    def increment_odometer(self, miles):
+    def increment_odometer(self, miles:int)->None:
         """Add the given amount to the odometer reading."""
         self.odometer_reading += miles
 
