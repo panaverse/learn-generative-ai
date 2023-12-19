@@ -10,3 +10,5 @@ with st.empty():
         st.write(f"⏳ {seconds} seconds have passed")
         time.sleep(1)
     st.write("✔️ 10 seconds over!")
+
+st.write("Pakistan zinda bad")

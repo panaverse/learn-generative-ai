@@ -61,7 +61,7 @@ if st.checkbox("Show/Hide"):
 # second argument is the options for the radio button
 status = st.radio("Select Gender: ", ('Male', 'Female'))
  
-
+# st.title(status)
 # conditional statement to print 
 # Male if male is selected else print female
 # show the result using the success function
