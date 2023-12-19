@@ -32,7 +32,7 @@ The goal of Type Hints is to help developer tools find bugs in Python codebases 
 
 [Install mypy VS Code Extension](https://marketplace.visualstudio.com/items?itemName=matangover.mypy)
 
-## Commands to Upgrade to Latest Python 3.12 in Anaconda
+### Commands to Upgrade to Latest Python 3.12 in Anaconda
 
 First Check if you have Python 3.12 installed by default after installing Anaconda:
 
@@ -55,7 +55,7 @@ We will using the following tools for teaching in our classes:
 
 https://zoom.us/
 
-## Goolge Class Room
+### Goolge Class Room
 
 https://classroom.google.com/
 
