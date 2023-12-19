@@ -47,9 +47,13 @@ If you do not have Python 3.12 or higher create a new envirnoment and check agai
 
 
 
-## Tools for Teaching
+## Tools for Teaching and Learning
 
 We will using the following tools for teaching in our classes:
+
+### AI-assisted application development
+
+https://cloud.google.com/duet-ai?hl=en
 
 ### Zoom
 
