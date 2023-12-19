@@ -1,4 +1,4 @@
-requested_toppings = []
+requested_toppings:list[str] = []
 
 if requested_toppings:
     for requested_topping in requested_toppings:

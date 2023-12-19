@@ -1,4 +1,4 @@
-requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
+requested_toppings:list[str] = ['mushrooms', 'green peppers', 'extra cheese']
 
 for requested_topping in requested_toppings:
     if requested_topping == 'green peppers':

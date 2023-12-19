@@ -1,4 +1,4 @@
-cars = ['audi', 'bmw', 'subaru', 'toyota']
+cars:list[str] = ['audi', 'bmw', 'subaru', 'toyota']
 
 for car in cars:
     if car == 'bmw':

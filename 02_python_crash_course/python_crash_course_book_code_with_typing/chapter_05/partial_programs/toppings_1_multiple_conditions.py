@@ -1,4 +1,4 @@
-requested_toppings = ['mushrooms', 'extra cheese']
+requested_toppings:list[str] = ['mushrooms', 'extra cheese']
 
 if 'mushrooms' in requested_toppings:
     print("Adding mushrooms.")
