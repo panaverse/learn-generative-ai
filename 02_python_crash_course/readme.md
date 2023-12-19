@@ -51,9 +51,9 @@ If you do not have Python 3.12 or higher create a new envirnoment and check agai
 
 We will using the following tools for teaching in our classes:
 
-### AI-assisted application development
+### AI-assisted Coding
 
-https://cloud.google.com/duet-ai?hl=en
+https://marketplace.visualstudio.com/items?itemName=Codeium.codeium
 
 ### Zoom
 
