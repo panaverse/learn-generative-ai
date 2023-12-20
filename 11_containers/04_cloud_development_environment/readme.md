@@ -12,3 +12,5 @@ Cloud development is the process of building, testing, deploying, and running so
 [Comparing Coder vs. Codespaces vs. GitPod vs. DevPod](https://loft.sh/blog/comparing-coder-vs-codespaces-vs-gitpod-vs-devpod/)
 
 [How to Choose a Cloud Development Environment](https://thenewstack.io/how-to-choose-a-cloud-development-environment/)
+
+[Development Containers Standard](https://containers.dev/)
