@@ -1,8 +1,7 @@
-# Learn Generative AI Engineering (GenEng)
+# Learn Cloud Applied Generative AI Engineering (GenEng)
 
-This course is part of the [GenAI, Web 3, and Metaverse Program](https://docs.google.com/presentation/d/1XVSZhmv4XH14YpyDxJIvYWiUrF1EO9tsUnle17wCLIc/edit?usp=sharing)
+This course is part of the [Certified Cloud Applied Generative AI Engineer (GenEng)](https://docs.google.com/document/d/1EWfKU5hSlsXPzTptMgrcc10kzaknxmQjiCEGF4P2BQk/edit?usp=sharing)
 
-Before starting to learn from this repo [Learn Modern Python](https://github.com/panaverse/learn-modern-python)
 
 ## All Faculty and Students please Register for Microsoft Azure and Google Cloud Accounts:
 
