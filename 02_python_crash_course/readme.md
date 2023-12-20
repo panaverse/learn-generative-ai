@@ -4,13 +4,16 @@ We will learn Modern Python from this text book:
 
 [Python Crash Course - Third Edition Chapters 1-10](https://www.amazon.com/Python-Crash-Course-Eric-Matthes/dp/1718502702)
 
-There is only one issue with the book, it has been recentely published but doesnot cover type hints, we have enhanced the source code for the book with type hints.
+There is only one issue with the book, it has been recently published but doesn't cover type hints, we have enhanced the source code for the book with type hints.
 
 To learn type hints you may refer to this Typing Cheat Sheet while reading the book:
 
 [Typing Cheat Sheet](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)
 
 [Python Cheat Sheet for Beginners](https://www.datacamp.com/cheat-sheet/getting-started-with-python-cheat-sheet)
+
+Those who want to do an extensive course in Python refer to this repo [Learn Modern Python](https://github.com/panaverse/learn-modern-python)
+
 
 
 ### Type Hints should be used by Professional Developers
