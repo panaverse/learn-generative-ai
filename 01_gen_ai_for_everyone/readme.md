@@ -10,7 +10,7 @@
 
 ## [Lifecycle of a generative AI project](https://www.coursera.org/learn/generative-ai-for-everyone/lecture/t2aQM/lifecycle-of-a-generative-ai-project)
 
-## Our Technology stack is OPL (OpenAI, Pinecone, and Langchain)
+## Our Technology stack is OpenAI, Gemini, Pinecone,Langchain, FastAPI, Docker Containers, Docker Compose, Serverless Containers, and Kubernetes
 
 ## We will develop prototype UI with [Streamlit](https://streamlit.io/)
 
