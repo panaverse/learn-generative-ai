@@ -10,6 +10,7 @@ df = pd.DataFrame({'col1': [1,2,3]})
 df  # 👈 Draw the dataframe
 
 x = 10
+
 'x', x  # 👈 Draw the string 'x' and then the value of x
 
 # Also works with most supported chart types
@@ -21,3 +22,6 @@ fig, ax = plt.subplots()
 ax.hist(arr, bins=20)
 
 fig  # 👈 Draw a Matplotlib chart
+
+'# Pakistan zinda bad'
+# hello world
