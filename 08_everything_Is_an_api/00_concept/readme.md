@@ -265,6 +265,8 @@ Overall, the relationship between API-as-a-product and the API economy is symbio
 
 # To Conclude
 
-An API-as-a-Product is a type of Software-as-a-Service that monetizes niche functionality, typically served over HTTP. OpenAI APIs are themselves this kind of service. An application programming interface economy, or API economy, refers to the business structure where APIs are the distribution channel for products and services. Now we will learn to develop APIs not just as a backend for our frontend but also as a product itself, for the API Economy. In this model, the API is at the core of the business's value.
+An API-as-a-Product is a type of Software-as-a-Service that monetizes niche functionality, typically served over HTTP. OpenAI APIs are themselves this kind of service. An application programming interface economy, or API economy, refers to the business structure where APIs are the distribution channel for products and services. Now we will learn to develop APIs not just as a backend for our frontend but also as a product itself, for the API Economy. In this model, the API is at the core of the business's value. 
+
+In The Age Of AI, Everything Is An API and we are the builders of these APIs.
 
 
