@@ -89,3 +89,13 @@ New users should use the --mount syntax. Experienced users may be more familiar 
 ``` docker run -d -it  --mount type=bind, source="$(pwd)"/target, target=/app panacloud/test:latest ```
 
 ``` docker run -d -it -v "$(pwd)"/target:/app:z panacloud/test:latest ```
+
+## Docker & Dev Containers Extensions
+
+* Open VS Code and go to Extensions > Search Extensions. Search for Docker and install the Docker: Makes it easy to create, manage, and debug containerized applications.
+
+* Open VS Code and go to Extensions > Search Extensions. Search for Dev Containers and install the Dev Containers: Open any folder or repository inside a Docker container and take advantage of Visual Studio Code's full feature set.
+
+[Developing inside a Container](https://code.visualstudio.com/docs/devcontainers/containers)
+
+[Docker Extension](https://marketplace.visualstudio.com/items)
