@@ -64,7 +64,7 @@ APIs act as a kind of lingua franca for different software components, providing
 
 
 
-# Everything will become an API
+# Everything Will Become an API
 
 The precise meaning of "everything becoming an API" can be interpreted in various ways, including:
 
@@ -74,8 +74,6 @@ The precise meaning of "everything becoming an API" can be interpreted in variou
 * **Metaphor for modularity and composability:** Everything being broken down into smaller, well-defined units with accessible interfaces for flexibility and innovation.
 
 The specific implications of this prediction depend on how we choose to design and utilize APIs. Open, accessible, and user-friendly APIs can lead to a more interconnected and collaborative world, while neglecting these aspects might raise concerns about control and equity.
-
-Ultimately, "everything becoming an API" is a complex and multifaceted concept with no single source or definitive meaning. It's an idea worth exploring and discussing as we navigate the evolving landscape of technology and its interaction with our lives.
 
 Unfortunately, pinning down a single person who definitively predicted "everything will become an API" isn't easy, as the concept likely evolved organically from observations about increasing abstraction and modularity in technology. It's more like a collective prediction shared by several thinkers and technologists.
 
