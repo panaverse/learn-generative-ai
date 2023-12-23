@@ -1,3 +1,5 @@
-# FastAPI
+# Core Features
 
-[FastAPI Textbook](https://www.amazon.com/FastAPI-Bill-Lubanovic-ebook/dp/B0CLKZJSGV/ref=sr_1_1)
+[Chapter 2 of Building Python Microservices with FastAPI](https://www.amazon.com/Building-Python-Microservices-FastAPI-infrastructure/dp/1803245964)
+
+[Code](https://github.com/PacktPublishing/Building-Python-Microservices-with-FastAPI/tree/main/ch02)
