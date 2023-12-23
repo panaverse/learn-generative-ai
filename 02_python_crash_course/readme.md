@@ -35,6 +35,8 @@ The goal of Type Hints is to help developer tools find bugs in Python codebases 
 
 [Install mypy VS Code Extension](https://marketplace.visualstudio.com/items?itemName=matangover.mypy)
 
+[Install Docker Desktop](https://desktop.github.com/)
+
 ### Commands to Upgrade to Latest Python 3.12 in Anaconda
 
 First Check if you have Python 3.12 installed by default after installing Anaconda:

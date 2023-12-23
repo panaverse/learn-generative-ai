@@ -254,3 +254,80 @@ def test_create_todo(session):
 - Adapt these tests to your specific implementation and testing requirements.
 - Expand test coverage for different API endpoints and functionalities.
 - Use mocking techniques effectively
+
+## Containerize your Realtime Todo API
+
+Here's how to containerize your Realtime Todo API using Docker:
+
+**1. Dockerfile:**
+
+```dockerfile
+FROM python:3.11
+
+WORKDIR /app
+
+COPY requirements.txt ./
+RUN pip install -r requirements.txt
+
+COPY . .
+
+EXPOSE 8000
+
+CMD ["uvicorn", "app.py", "--host", "0.0.0.0", "--port", "8000"]
+```
+
+**2. docker-compose.yml:**
+
+```yaml
+version: "3.8"
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app
+
+  postgres:
+    image: postgres:14
+    environment:
+      POSTGRES_USER: "user"
+      POSTGRES_PASSWORD: "password"
+      POSTGRES_DB: "database"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+```
+
+**Explanation:**
+
+- The Dockerfile sets up a Python image with your dependencies installed and runs the FastAPI application on port 8000.
+- The docker-compose.yml defines two services:
+    - `app`: Builds the image from the Dockerfile and exposes port 8000.
+    - `postgres`: Uses a pre-built PostgreSQL image and configures it with your credentials and database name.
+- Volumes persist the database data and your application code across container restarts.
+
+**Building and Running:**
+
+1. Save the code snippets as `Dockerfile` and `docker-compose.yml` in your project directory.
+2. Run `docker-compose build` to build both images.
+3. Run `docker-compose up` to start the services.
+4. Your API will be accessible at http://localhost:8000/docs.
+
+**Benefits of Containerization:**
+
+- Isolates the application from the host environment.
+- Simplifies deployment and scaling across different environments.
+- Makes it easier to collaborate and reproduce environments.
+
+**Additional Tips:**
+
+- Use environment variables for sensitive information like database credentials.
+- Consider adding a health check script to automatically monitor your application.
+- Explore Docker Hub for pre-built images for various components like Kafka and Node.js.
+
+Remember to adapt the configurations to your specific setup and requirements. This provides a basic example to get you started with containerizing your Realtime Todo API.
+
