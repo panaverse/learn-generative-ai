@@ -32,6 +32,8 @@ The possibilities are vast, but here are some common use cases:
 
 **If you need to deal with continuous streams of data and enable real-time reactions, Kafka is a powerful tool to consider.** It can revolutionize your applications and unlock new possibilities in data-driven ecosystems.
 
+**[The Apache Kafka Handbook – How to Get Started Using Kafka](https://www.freecodecamp.org/news/apache-kafka-handbook/)**
+
 
 ## **FastAPI and Apache Kafka** form a powerful duo for building **real-time applications**. Here's what they bring to the table and how they work together:
 
