@@ -34,6 +34,8 @@ The possibilities are vast, but here are some common use cases:
 
 **[The Apache Kafka Handbook – How to Get Started Using Kafka](https://www.freecodecamp.org/news/apache-kafka-handbook/)**
 
+**[Watch: Intro to Confluent-Kafka Python](https://www.youtube.com/playlist?list=PLa7VYi0yPIH1odVnZC430071CVD_4Sx1e)
+
 
 ## **FastAPI and Apache Kafka** form a powerful duo for building **real-time applications**. Here's what they bring to the table and how they work together:
 
