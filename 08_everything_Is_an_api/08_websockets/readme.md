@@ -146,3 +146,138 @@ async def handle_message(websocket: websockets.WebSocket, message: str):
 - Deploy FastAPI with an ASGI server that supports WebSockets (Uvicorn, Hypercorn).
 - Consider libraries like `aioredis` or `aiokafka` for asynchronous message queues with WebSockets.
 
+# **Using WebSockets in Streamlit Apps**
+
+ **While Streamlit doesn't natively support WebSockets, here are effective workarounds to achieve real-time functionality in your app:**
+
+**1. Asyncio and WebSocket Libraries:**
+
+- **Import necessary libraries:**
+
+```python
+import streamlit as st
+import asyncio
+import websockets
+```
+
+- **Define a function for handling WebSocket communication:**
+
+```python
+async def connect_websocket():
+    uri = "wss://your-websocket-endpoint"
+    async with websockets.connect(uri) as websocket:
+        while True:
+            data = await websocket.recv()
+            st.write(data)  # Process and display received data
+```
+
+- **Initiate the WebSocket connection within a Streamlit session:**
+
+```python
+asyncio.run(connect_websocket())
+```
+
+**2. Third-Party Libraries:**
+
+- **Streamlit-Websocket-GUI:**
+    - Install: `pip install streamlit-websocket-gui`
+    - Example usage:
+
+```python
+from streamlit_websocket_gui import websocket_app
+
+@websocket_app.route("/data")
+def data_listener(ws):
+    while True:
+        data = ws.recv()
+        st.write(data)
+```
+
+**3. Server-Side WebSockets with Streamlit:**
+
+- **Set up a separate server (e.g., Flask or FastAPI) to handle WebSocket connections.**
+- **Streamlit app communicates with this server through HTTP requests.**
+
+**Key Considerations:**
+
+- **Security:** Implement appropriate authentication and authorization measures for WebSocket connections.
+- **Concurrency:** Ensure proper handling of multiple clients and potential race conditions.
+- **Scalability:** Consider performance implications for large-scale real-time applications.
+
+**Choose the method that best suits your project's requirements and complexity.**
+
+# **Using WebSockets in TypeScript**
+
+
+ **Here's a general approach to using WebSockets in TypeScript, covering both server-side and client-side aspects:**
+
+**1. Dependencies:**
+
+- Install the `ws` library for server-side WebSocket handling:
+  `npm install ws`
+- Install the `socket.io-client` library for client-side WebSocket connections:
+  `npm install socket.io-client`
+- Install type definitions for both libraries:
+  `npm install --save-dev @types/ws @types/socket.io-client`
+
+**2. Server-Side Setup (Using the `ws` library):**
+
+```typescript
+import WebSocket, { WebSocketServer } from 'ws';
+
+const wss = new WebSocketServer({ port: 8080 });
+
+wss.on('connection', (ws) => {
+  ws.on('message', (message) => {
+    console.log('Received message:', message);
+    // Broadcast message to all clients
+    wss.clients.forEach((client) => {
+      if (client !== ws && client.readyState === WebSocket.OPEN) {
+        client.send(message);
+      }
+    });
+  });
+});
+```
+
+**3. Client-Side Connection (Using `socket.io-client`):**
+
+```typescript
+import io from 'socket.io-client';
+
+const socket = io('http://localhost:8080'); // Connect to the server
+
+// Send messages to the server
+socket.emit('chat message', 'Hello from the client!');
+
+// Receive messages from the server
+socket.on('chat message', (message) => {
+  console.log('Received message:', message);
+});
+```
+
+**4. Type Safety:**
+
+- Define interfaces for socket events and data to ensure type safety and code clarity:
+
+```typescript
+interface ChatMessage {
+  message: string;
+  sender: string;
+}
+```
+
+**5. Error Handling:**
+
+- Implement proper error handling for both server-side and client-side WebSocket interactions.
+
+**6. Scalability:**
+
+- Consider using a library like Socket.IO for more advanced features and scalability in large-scale applications.
+
+**7. Frameworks/Libraries:**
+
+- If you're using a framework like React or Angular, explore their specific integrations for WebSockets (e.g., React's `useEffect` hook for connecting/disconnecting sockets).
+
+
+
