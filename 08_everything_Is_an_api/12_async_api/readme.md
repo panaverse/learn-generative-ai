@@ -42,40 +42,18 @@ AsyncAPI is an open-source initiative working to improve the current state of **
 * **Tools and libraries:** [https://www.asyncapi.com/tools](https://www.asyncapi.com/tools)
 * **AsyncAPI Initiative for event-driven APIs:** [https://www.asyncapi.com/](https://www.asyncapi.com/)
 
-## Event-Driven Architecture Explained: A World of Reactions
+
+## Tutorial Series
+
+[Getting Started](https://www.asyncapi.com/docs/tutorials/getting-started)
 
 [Event-Driven Architectures](https://www.asyncapi.com/docs/tutorials/getting-started/event-driven-architectures)
 
-Event-driven architecture (EDA) is a software design pattern that fundamentally shifts the focus from **commands** to **events**, changing how applications communicate and react. Instead of directly requesting services to perform actions, EDA emphasizes **publishing and subscribing to events**, triggering relevant reactions in independent services whenever something significant happens.
+[Coming from OpenAPI](https://www.asyncapi.com/docs/tutorials/getting-started/coming-from-openapi)
 
-**Here's how it works:**
+[Hello World](https://www.asyncapi.com/docs/tutorials/getting-started/hello-world)
 
-1. **Events occur:** Significant changes or occurrences generate events, like a user logging in, placing an order, or a sensor recording a temperature change.
-2. **Events are published:** These events are broadcasted on a central platform called an **event broker**.
-3. **Services subscribe:** Independent services register their interest in specific types of events.
-4. **Reactions triggered:** When an event matching a service's interest is published, the event broker routes it to that service.
-5. **Services react independently:** Each service processes the event and performs its own internal logic without relying on direct interaction with the publisher or other services.
-
-**Benefits of EDA:**
-
-* **Decoupling:** Services are loosely coupled, promoting scalability, maintainability, and resilience. Changes in one service don't directly affect others.
-* **Real-time responsiveness:** Events trigger immediate reactions, enabling real-time applications and faster response times.
-* **Flexibility and agility:** Adding new services or modifying existing ones becomes easier, as they simply subscribe to relevant events.
-* **Scalability:** Services can be scaled independently to handle varying event volumes.
-
-**Common use cases:**
-
-* **Microservices architecture:** EDA is ideal for building and managing microservices with clear boundaries and asynchronous communication.
-* **Real-time systems:** Applications like chat, stock tickers, and IoT platforms benefit from the reactivity of EDA.
-* **Data pipelines:** Processing and reacting to real-time data streams like sensor measurements or social media feeds is well-suited for EDA.
-
-**Challenges of EDA:**
-
-* **Complexity:** Debugging and monitoring distributed systems based on events can be complex.
-* **Data consistency:** Maintaining data consistency across services can be challenging due to asynchronous interactions.
-* **Testing and observability:** Testing and monitoring event-driven systems require specialized tools and practices.
-
-**Remember:** EDA is not a one-size-fits-all solution, and its suitability depends on your specific needs and requirements. However, for systems demanding real-time responsiveness, scalability, and flexible communication, EDA offers a powerful and promising architecture model.
+[Request/reply pattern](https://www.asyncapi.com/docs/tutorials/getting-started/request-reply)
 
 
 ## Implementing AsyncAPI using FastAPI
