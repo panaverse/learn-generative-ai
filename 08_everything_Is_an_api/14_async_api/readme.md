@@ -55,6 +55,10 @@ AsyncAPI is an open-source initiative working to improve the current state of **
 
 [Request/reply pattern](https://www.asyncapi.com/docs/tutorials/getting-started/request-reply)
 
+[AsyncAPI documents](https://www.asyncapi.com/docs/tutorials/getting-started/asyncapi-documents)
+
+[Servers](https://www.asyncapi.com/docs/tutorials/getting-started/servers)
+
 
 ## Implementing AsyncAPI using FastAPI
 
