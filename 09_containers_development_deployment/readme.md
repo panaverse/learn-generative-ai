@@ -2,7 +2,7 @@
 
 Welcome to the **Containers** section of your **Generative AI** learning journey!
 
-Containers are a key component of modern app development. They are executable units of software that contain all the necessary elements to run in any environment. Containers can virtualize the operating system and run anywhere, from a private data center to the public cloud or even on a developer's personal laptop. 
+Containers are a key component of modern app development. **They are executable units of software that contain all the necessary elements to run in any environment.** Containers can virtualize the operating system and run anywhere, from a private data center to the public cloud or even on a developer's personal laptop. 
 
 Containers allow developers to package everything required to run an app into one convenient location. This permits developers to create the applications and deploy them on servers with the operating system itself, which makes containers very lightweight and portable.
 
