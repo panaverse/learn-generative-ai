@@ -68,6 +68,8 @@ AsyncAPI is an open-source initiative working to improve the current state of **
 
 [Generate code](https://www.asyncapi.com/docs/tutorials/generate-code)
 
+[FastAPI-AsyncAPI](https://github.com/Kludex/fastapi-asyncapi)
+
 
 [Interact with AsyncAPI from the comfort of your CLI](https://www.asyncapi.com/tools/cli) **Here's an AsyncAPI example document implementing a request-response pattern, adhering to specification 3.0.0:**
 
