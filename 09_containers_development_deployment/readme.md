@@ -2,6 +2,20 @@
 
 [The Docker’s Impact: Transforming the Landscape of Application Development and Deployment](https://blog.stackademic.com/the-dockers-impact-transforming-the-landscape-of-application-development-and-deployment-7116d4c86bee)
 
+* According to a recent report by Gartner, by 2027, more than 90% of global organizations will be running containerized applications in production.
+
+* Industry reports and surveys suggest around 70% of organizations currently use containers in development.
+
+* Docker has market share of 82.32% in containerization market.
+
+* Over 391,375 companies are using Containers And Microservices tools.
+
+* Research by Forrester suggests that 71% of DevOps adopters use microservices and containers.
+
+* The adoption of containerization technology allows programs to run consistently in development, testing, and production settings.
+
+* The application container market is on the rise, primarily fueled by the adoption of microservices architecture, where large applications are fragmented into smaller, autonomous services. This approach, facilitated by containerization technology, minimizes the complexities in development and deployment, enabling the independent launch and scaling of services.
+
 Welcome to the **Containers** section of your **Generative AI** learning journey!
 
 This folder houses all the resources you need to dive into the world of containerized development and deployment for generative AI applications. You'll find comprehensive guidance on:
