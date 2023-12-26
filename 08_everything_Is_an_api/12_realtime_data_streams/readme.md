@@ -1,8 +1,10 @@
 # FastAPI and Apache Kafka: Powering Real-Time Applications
 
-Per Confluent’s [2023 Data Streaming Report](https://assets.confluent.io/m/52436fc9cd4844f4/original/20230510-RPT-Data_Streaming_Report.pdf), data streaming is high on the IT investment agenda. 89% of respondents say investments in data streaming are important, with 44% citing it as a top strategic priority.
+Per Confluent’s [2023 Data Streaming Report](https://assets.confluent.io/m/52436fc9cd4844f4/original/20230510-RPT-Data_Streaming_Report.pdf), data streaming is high on the IT investment agenda. **89% of respondents say investments in data streaming are important, with 44% citing it as a top strategic priority.**
 
 Organizations looking to embrace data streaming have plenty of solutions to choose from. Due to its proven reliability, scalability, high performance and rich ecosystem, Apache Kafka is usually the first name that comes to mind. 
+
+**Kafka acts as a central data backbone, enabling real-time data synchronization among microservices.** Services can publish events representing state changes, and other services can consume and react to those events accordingly.
 
 ## Kafka: The Stream Processing Powerhouse
 
