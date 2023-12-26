@@ -1,0 +1,5 @@
+plotly
+requests
+streamlit
+python-dotenv
+streamlit-lottie
