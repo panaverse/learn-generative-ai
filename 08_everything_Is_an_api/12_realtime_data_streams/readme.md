@@ -4,7 +4,7 @@ Per Confluent’s [2023 Data Streaming Report](https://assets.confluent.io/m/524
 
 Organizations looking to embrace data streaming have plenty of solutions to choose from. Due to its proven reliability, scalability, high performance and rich ecosystem, Apache Kafka is usually the first name that comes to mind. 
 
-**Kafka acts as a central data backbone, enabling real-time data synchronization among microservices.** Services can publish events representing state changes, and other services can consume and react to those events accordingly.
+**Kafka acts as a central data backbone, enabling real-time data synchronization among microservices.** Services can publish events representing state changes, and other services can consume and react to those events accordingly.[Online Talk: Microservices and Apache Kafka](https://www.confluent.io/online-talks/microservices-and-apache-kafka/)
 
 ## Kafka: The Stream Processing Powerhouse
 
