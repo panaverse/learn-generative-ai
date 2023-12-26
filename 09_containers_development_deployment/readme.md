@@ -4,9 +4,15 @@ Welcome to the **Containers** section of your **Generative AI** learning journey
 
 Containers are a key component of modern app development. **They are executable units of software that contain all the necessary elements to run in any environment.** Containers can virtualize the operating system and run anywhere, from a private data center to the public cloud or even on a developer's personal laptop. 
 
-Containers allow developers to package everything required to run an app into one convenient location. This permits developers to create the applications and deploy them on servers with the operating system itself, which makes containers very lightweight and portable.
+Containers allow developers to package everything required to run an app into one convenient location. This permits developers to create the applications and deploy them on servers with the operating system itself, which makes containers very lightweight and portable. This makes it easy to move the contained application between environments (dev, test, production, etc.) while retaining full functionality. Containers share the same operating system kernel and isolate the application processes from the rest of the system so the whole **thing can be moved, opened, and used across development, testing, and production configurations.**
 
-[The Docker’s Impact: Transforming the Landscape of Application Development and Deployment](https://blog.stackademic.com/the-dockers-impact-transforming-the-landscape-of-application-development-and-deployment-7116d4c86bee)
+Containers are also an **important part of IT security.** By building security into the container pipeline and defending infrastructure, containers stay reliable, scalable, and trusted. 
+
+You can also **easily move the containerized application between public, private and hybrid cloud environments and data centers (or on-premises)** with consistent behavior and functionality. Because they are lightweight and portable, containers provide the opportunity for faster development and meeting business needs as they arise.
+
+If you're **building a microservices architecture, containers are the ideal deployment unit for each microservice and the service mesh network that connects them.**
+
+When a business needs the **ultimate portability across multiple environments**, using containers might be the easiest decision ever.
 
 ## Containers: The Foundational Technology in Software Development
 
