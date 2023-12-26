@@ -1,22 +1,27 @@
-# End-to-End Cloud GenAI Travel App Streaming Project
+# End-to-End Cloud GenAI Travel App Project
 
 In this project we will architect and develop an end to end streaming travel agent microservice and web app.
 
-We will use OpenAI SDK power GenAI assistant. The Assistant can provide travel suggestions and will update map locations based in real time based on our prompt.
+We will use OpenAI python SDK to power GenAI assistant. The Assistant can provide travel suggestions and will update map locations based in real time based on our prompt.
 
-### TLDR - what's so special about this project?
+### TLDR - what's so different about this project?
 
 Speed and Streaming are the marvels of Gen AI magic. At its core, streaming involves sending information in manageable chunks. 
 
 Consider transmitting a 7 GB movie file. Rather than sending it as a whole, it's broken down into smaller, manageable 10 KB chunks. This approach provides numerous benefits!
 
-By completing this project you will have an End to End Streaming GenAI Cloud Project. 
+Your FastAPI will take prompt - connect with llms, perform function calling all while Streaming chunks back to the client. The possibilities are endless, and the experience, unparalleled.
 
-Your FastAPI will take prompt - connect with llms, perform function calling all while Streaming chunks back to the client.
+By the end of this project, you will have a fully functional streaming GenAI travel app suited for Single User that runs on the cloud. You will use the following tools and technologies:
 
-The possibilities are endless, and the experience, unparalleled.
+- FastAPI: A modern and fast web framework for building APIs in Python.
+- OpenAI SDK: A library that lets you access OpenAI’s powerful language models in Python.
+- Streamlit: A framework that lets you create beautiful and interactive web apps in Python.
+- NextJS: A framework that lets you create fast and dynamic web pages in JavaScript.
+- Google Cloud Run: A service that lets you run your containerized applications on the cloud.
+- Docker: A tool that lets you package your applications and their dependencies into containers.
 
-You will learn to create Streaming FastAPI and consume streams in both python environment (Streamlit) and TS landscape (NextJS14).
+and you can easily extend it to a multo user app by building an authtentication system and extending data layer of Open AI Travel Agent.
 
 ## Development Steps
 
