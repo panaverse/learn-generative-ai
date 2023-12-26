@@ -1,21 +1,5 @@
 # AI NPCs
 
-[The first minds to be controlled by generative AI will live inside video games](https://www.cnbc.com/2023/12/23/the-first-minds-controlled-by-gen-ai-will-live-inside-video-games.html)
-
-[Inworld](https://inworld.ai/)
-
-## Far Beyond Chatbots and LLMs
-
-In order to accomplish its lofty vision, Inworld’s technology and experiences go far beyond existing large language models (LLMs): the company supports multimodal character expression by orchestrating multiple machine-learning models that are designed to mimic the full range of human communication.
-
-Unlike chatbots (like GPT or other AI conversation platforms), the platform allows developers to link Inworld’s character brains to their animation and rigging systems, including in 3D environments. Thanks to Inworld’s Character Bain and Contextual Mesh design paradigms, smart NPCs can learn and adapt, navigate relationships with emotional intelligence, have memory and recall, and are capable of autonomously initiating goals, performing actions, and following their own motivations that can drive the narrative and integrate with the broader player experience.
-
-[Inworld, a generative AI platform for creating NPCs, lands fresh investment](https://techcrunch.com/2023/08/02/inworld-a-generative-ai-platform-for-creating-npcs-lands-fresh-investment/)
-
-**"Inworld has its eye on experiences beyond games, such as marketing campaigns, automated customer service agents and broader entertainment. There’s arguably more competition in those sectors — but, on the other hand, there’s a larger addressable market."**
-
-**[How to Use Inworld AI](https://aitoolmall.com/news/how-to-use-inworld-ai-and-is-it-safe/?expand_article=1])**
-
 
 "AI NPCs" can refer to two different concepts:
 
@@ -53,19 +37,6 @@ The future of AI NPCs in the era of generative AI promises exciting possibilitie
 * **The potential for manipulating player emotions and creating addictive gameplay experiences through AI-powered NPCs necessitates responsible development and ethical considerations.**
 
 **Overall, the future of AI NPCs in the era of generative AI is brimming with potential. They can become more than just scripted characters, evolving into complex, dynamic individuals that contribute to richer, more personal, and emotionally engaging experiences in virtual worlds and beyond. However, responsible development and ethical considerations are crucial to ensure these advancements benefit users and contribute to a positive future for human-AI interaction.**
-
-## What are AI NPC Character Engines?
-
-[Why Character Engines are game engines for AI NPCs](https://inworld.ai/blog/what-is-a-character-engine-a-game-engine-for-ai-npcs)
-
-A Character Engine is a development environment that offers a suite of tools and features that help game developers create and deploy real-time generative AI-powered NPCs in video games. Essentially, it’s like a game engine but for generative AI character creation. 
-
-**Without a Character Engine, developers would have to integrate a large language model API directly, add in speech-to-text, set up text-to-speech, build an emotions engine, connect a character’s emotions to their lip sync, facial expressions, and animations, engineer an efficient backend architecture to ensure low latency, build in scalability, create ways to support concurrent sessions, customize their safety settings, write dynamic prompts, tackle LLM hallucinations, and much more. That’s a lot of additional work!**
-
-Like game engines, Character Engines are efficient and cost-effective ways for developers to add dynamic interaction capabilities to their gaming experiences without having to hire a machine learning team and architect it all themselves for every game they create.
-
-[Streamlining character creation with Studio REST API](https://inworld.ai/blog/studiorestapi)
-
 
 **How Businesses and Organizations will use AI NPCs in the era of Generative AI?**
 
@@ -111,6 +82,40 @@ Several organizations across various fields are actively involved in developing 
 * **Tech giants:** Companies like Google, Amazon, and Microsoft are exploring AI for various applications, including virtual assistants and chatbots, which can be considered forms of AI "NPCs" within their specific domains.
 
 The field of AI NPCs is rapidly evolving, with constant advancements in AI technology. As the boundaries between the virtual and real worlds blur, understanding and interacting with AI-powered characters will likely become increasingly common.
+
+
+## Inworld
+
+[The first minds to be controlled by generative AI will live inside video games](https://www.cnbc.com/2023/12/23/the-first-minds-controlled-by-gen-ai-will-live-inside-video-games.html)
+
+[Inworld](https://inworld.ai/)
+
+## Far Beyond Chatbots and LLMs
+
+In order to accomplish its lofty vision, Inworld’s technology and experiences go far beyond existing large language models (LLMs): the company supports multimodal character expression by orchestrating multiple machine-learning models that are designed to mimic the full range of human communication.
+
+Unlike chatbots (like GPT or other AI conversation platforms), the platform allows developers to link Inworld’s character brains to their animation and rigging systems, including in 3D environments. Thanks to Inworld’s Character Bain and Contextual Mesh design paradigms, smart NPCs can learn and adapt, navigate relationships with emotional intelligence, have memory and recall, and are capable of autonomously initiating goals, performing actions, and following their own motivations that can drive the narrative and integrate with the broader player experience.
+
+[Inworld, a generative AI platform for creating NPCs, lands fresh investment](https://techcrunch.com/2023/08/02/inworld-a-generative-ai-platform-for-creating-npcs-lands-fresh-investment/)
+
+**"Inworld has its eye on experiences beyond games, such as marketing campaigns, automated customer service agents and broader entertainment. There’s arguably more competition in those sectors — but, on the other hand, there’s a larger addressable market."**
+
+**[How to Use Inworld AI](https://aitoolmall.com/news/how-to-use-inworld-ai-and-is-it-safe/?expand_article=1])**
+
+## What are AI NPC Character Engines?
+
+[Why Character Engines are game engines for AI NPCs](https://inworld.ai/blog/what-is-a-character-engine-a-game-engine-for-ai-npcs)
+
+A Character Engine is a development environment that offers a suite of tools and features that help game developers create and deploy real-time generative AI-powered NPCs in video games. Essentially, it’s like a game engine but for generative AI character creation. 
+
+**Without a Character Engine, developers would have to integrate a large language model API directly, add in speech-to-text, set up text-to-speech, build an emotions engine, connect a character’s emotions to their lip sync, facial expressions, and animations, engineer an efficient backend architecture to ensure low latency, build in scalability, create ways to support concurrent sessions, customize their safety settings, write dynamic prompts, tackle LLM hallucinations, and much more. That’s a lot of additional work!**
+
+Like game engines, Character Engines are efficient and cost-effective ways for developers to add dynamic interaction capabilities to their gaming experiences without having to hire a machine learning team and architect it all themselves for every game they create.
+
+[Streamlining character creation with Studio REST API](https://inworld.ai/blog/studiorestapi)
+
+
+
 
 # Talking Avatar
 
