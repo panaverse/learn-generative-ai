@@ -102,6 +102,8 @@ Unlike chatbots (like GPT or other AI conversation platforms), the platform allo
 
 **[How to Use Inworld AI](https://aitoolmall.com/news/how-to-use-inworld-ai-and-is-it-safe/?expand_article=1])**
 
+**[Web SDK](https://docs.inworld.ai/docs/tutorial-integrations/web/)**
+
 ## What are AI NPC Character Engines?
 
 [Why Character Engines are game engines for AI NPCs](https://inworld.ai/blog/what-is-a-character-engine-a-game-engine-for-ai-npcs)
