@@ -108,58 +108,31 @@ Now in browser visit: http://localhost:8000/openai_streaming/ and you will "Hell
 Now in your web/openai_streaming.py add the following code:
 
 ```
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
+import asyncio
 
 from fastapi.responses import StreamingResponse
 
-from threading import Thread
-from queue import Queue
-
-import asyncio
-import time
-
-router = APIRouter(prefix="/openai_streaming")
-
-some_i = 30
-
-streamer_queue: Queue = Queue()
-
-
-def put_data():
-    global some_i
-    for i in range(10):
-        streamer_queue.put(some_i + i)
-
-
-def start_generation():
-    thread = Thread(target=put_data)
-    time.sleep(0.05)
-    thread.start()
-
-
-async def serve_data():
-
-    start_generation()
-
-    while True:
-        if streamer_queue.empty():
-            break
-        else:
-            value = streamer_queue.get()
-            yield str(value)
-            streamer_queue.task_done()
-        await asyncio.sleep(2)
+async def data_streamer():
+    for i in range(9):
+        yield f"count: {i}\n\n"
+        await asyncio.sleep(1)
 
 
 @router.get('/')
-async def stream():
-    return StreamingResponse(serve_data(), media_type='text/event-stream')
+async def stream_response():
+    headers = {"Cache-Control": "no-store"}
+    try:
+        return StreamingResponse(data_streamer(), media_type="text/event-stream", headers=headers)
+    except Exception as e:
+        # Log the error or take other appropriate actions
+        raise HTTPException(status_code=500, detail=str(e))
 
 ```
 
 Visit the browser again and you will see streaming Numbers.
 
-This setup in enough to get our Step 00 LLM streaming response and create Streaming API's. To understand how it's working like quickly Open ChatGPT and ask it to explain each line of code.
+This setup in enough to get our Step 00 LLM streaming response and create Streaming API's. To understand how it's working in more detail quickly Open ChatGPT and ask it to explain each line of code.
 
 ## Complete OpenAI Streaming Microservice.
 
@@ -198,19 +171,22 @@ import `BASE_PROMPT` from openai service layer
 Now let's create a simple function that will take `prompt` from web layer and communicate with OpenAI server, data layer (update database & map coordinates) and stream the response back to web layer
 
 ```
-def openai_streaming_travel_ai(prompt: str):
-    # Collect Streaming CHunks for modal Response
+async def openai_streaming_travel_ai(prompt: str):
     complete_response = ""
-
-    # Example usage
-    for response in bot.run_streaming_assistant(prompt):
-        yield(response)
-        if response == "__END__":
-            break
-        complete_response += response  # Accumulate the response
-
-    print('complete_response', complete_response)
-    bot.messages.append({"role": "assistant", "content": complete_response})
+    try:
+        for response in bot.run_streaming_assistant(prompt):
+            if response == "__END__":
+                break
+            yield response
+            await asyncio.sleep(0.05)  # Adjust delay as needed
+            complete_response += response
+    except Exception as e:
+        # Handle specific exceptions as needed
+        print(f"Error during streaming: {e}")
+        yield "An error occurred: " + str(e)
+    finally:
+        print('complete_response', complete_response)
+        bot.messages.append({"role": "assistant", "content": complete_response})
 ```
 
 Let's define additional functions here. We will create their routes as well in web layer.
@@ -256,55 +232,24 @@ We will import `openai_streaming_travel_ai` from service layer and use it to str
 Update the code:
 
 ```
-from fastapi import APIRouter
-from fastapi.responses import StreamingResponse, JSONResponse
-from threading import Thread
-from queue import Queue
-import asyncio
-import time
+from fastapi import APIRouter, HTTPException
 
-from ..service.openai_streaming import openai_streaming_travel_ai
+from fastapi.responses import StreamingResponse, JSONResponse
+
+from ..service.openai_streaming import openai_streaming_travel_ai, get_map_coordinates, save_chat_to_db, load_database_chat_history, get_all_messages, delete_chat_history
 
 router = APIRouter(prefix="/openai-streaming")
-
-streamer_queue: Queue = Queue()
-
-
-def put_data(query):
-    # process and stream the query itself
-    for part_res in openai_streaming_travel_ai(query):
-        # Put each character into the queue
-        streamer_queue.put(part_res)
-
-
-def start_generation(query):
-    thread = Thread(target=put_data, args=(query,))
-    time.sleep(0.005)
-    thread.start()
-
-
-async def serve_data(query):
-
-    start_generation(query)
-
-    while True:
-        if not streamer_queue.empty():
-            value = streamer_queue.get()
-            if value == "__END__":
-                break  # End the stream
-            yield str(value)
-            streamer_queue.task_done()
-        await asyncio.sleep(0.005)
-
 
 @router.get('/')
 async def stream(query: str):
     print("query", query)
-    # validate query is string
-    if not isinstance(query, str):
-        return {"error": "query must be string"}
-    headers = {"Cache-Control": "no-store, max-age=0"}
-    return StreamingResponse(serve_data(query), media_type='text/event-stream', headers=headers)
+    # no-store directive instructs response must not be stored in any cache
+    headers = {"Cache-Control": "no-store"}
+    try:
+        return StreamingResponse(openai_streaming_travel_ai(query), media_type="text/event-stream", headers=headers)
+    except Exception as e:
+        # Log the error or take other appropriate actions
+        raise HTTPException(status_code=500, detail=str(e))
 
 ```
 
