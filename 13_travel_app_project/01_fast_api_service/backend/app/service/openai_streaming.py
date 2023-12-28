@@ -9,6 +9,7 @@ from openai.types.chat.chat_completion_chunk import ChatCompletionChunk
 from typing import Any
 
 import json
+import asyncio
 
 from ..models.openai_streaming import MapState, MarkersState
 from ..data.openai_streaming import update_map_and_markers, ai_powered_map, Database, BASE_PROMPT
@@ -235,20 +236,23 @@ class OpenAITravelBotModel:
 bot = OpenAITravelBotModel("My Travel Assistant")
 
 
-def openai_streaming_travel_ai(prompt: str):
-    # Collect Streaming CHunks for modal Response
+
+async def openai_streaming_travel_ai(prompt: str):
     complete_response = ""
-
-    # Example usage
-    for response in bot.run_streaming_assistant(prompt):
-        #  We will get chunks of response from the assistant and will stream it in web layer.
-        yield (response)
-        if response == "__END__":
-            break
-        complete_response += response  # Accumulate the response
-
-    print('complete_response', complete_response)
-    bot.messages.append({"role": "assistant", "content": complete_response})
+    try:
+        for response in bot.run_streaming_assistant(prompt):
+            if response == "__END__":
+                break
+            yield response
+            await asyncio.sleep(0.05)  # Adjust delay as needed
+            complete_response += response
+    except Exception as e:
+        # Handle specific exceptions as needed
+        print(f"Error during streaming: {e}")
+        yield "An error occurred: " + str(e)
+    finally:
+        print('complete_response', complete_response)
+        bot.messages.append({"role": "assistant", "content": complete_response})
 
 
 # a. Get Map Control Values

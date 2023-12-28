@@ -1,55 +1,21 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
 
 from fastapi.responses import StreamingResponse, JSONResponse
-
-from threading import Thread
-from queue import Queue
-
-import asyncio
-import time
 
 from ..service.openai_streaming import openai_streaming_travel_ai, get_map_coordinates, save_chat_to_db, load_database_chat_history, get_all_messages, delete_chat_history
 
 router = APIRouter(prefix="/openai-streaming")
 
-streamer_queue: Queue = Queue()
-
-
-def put_data(query):
-    # process and stream the query itself
-    for part_res in openai_streaming_travel_ai(query):
-        # Put each character into the queue
-        streamer_queue.put(part_res)
-
-
-def start_generation(query):
-    thread = Thread(target=put_data, args=(query,))
-    time.sleep(0.005)
-    thread.start()
-
-
-async def serve_data(query):
-
-    start_generation(query)
-
-    while True:
-        if not streamer_queue.empty():
-            value = streamer_queue.get()
-            if value == "__END__":
-                break  # End the stream
-            yield str(value)
-            streamer_queue.task_done()
-        await asyncio.sleep(0.005)
-
-
 @router.get('/')
 async def stream(query: str):
     print("query", query)
-    # validate query is string
-    if not isinstance(query, str):
-        return {"error": "query must be string"}
-    headers = {"Cache-Control": "no-store, max-age=0"}
-    return StreamingResponse(serve_data(query), media_type='text/event-stream', headers=headers)
+    # no-store directive instructs response must not be stored in any cache
+    headers = {"Cache-Control": "no-store"}
+    try:
+        return StreamingResponse(openai_streaming_travel_ai(query), media_type="text/event-stream", headers=headers)
+    except Exception as e:
+        # Log the error or take other appropriate actions
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 @router.get("/map-coordinates")
