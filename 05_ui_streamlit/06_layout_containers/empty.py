@@ -5,6 +5,9 @@
 import streamlit as st
 import time
 
+st.title("Pakistan")
+
+
 with st.empty():
     for seconds in range(10):
         st.write(f"⏳ {seconds} seconds have passed")

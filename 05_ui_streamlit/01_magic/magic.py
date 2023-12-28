@@ -4,12 +4,14 @@
 
 This is some _markdown_.
 '''
+import streamlit as st
 
 import pandas as pd
-df = pd.DataFrame({'col1': [1,2,3]})
+df : pd.DataFrame = pd.DataFrame({'col1': [1,2,3],'col2':list('abc')})
 df  # 👈 Draw the dataframe
 
-x = 10
+
+x : int = 100
 
 'x', x  # 👈 Draw the string 'x' and then the value of x
 
@@ -19,9 +21,15 @@ import numpy as np
 
 arr = np.random.normal(1, 1, size=100)
 fig, ax = plt.subplots()
-ax.hist(arr, bins=20)
+ax.hist(arr, bins=30)
 
 fig  # 👈 Draw a Matplotlib chart
 
 '# Pakistan zinda bad'
+
 # hello world
+'''
+# This is the document title
+
+This is some _markdown_.
+'''

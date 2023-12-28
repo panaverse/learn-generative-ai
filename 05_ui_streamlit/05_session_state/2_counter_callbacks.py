@@ -9,4 +9,8 @@ def increment_counter():
 
 st.button('Increment', on_click=increment_counter)
 
+# st.button('Increment logic1', on_click=increment_counter)
+
+# st.button('Increment logic2', on_click=increment_counter)
+
 st.write('Count = ', st.session_state.count)
