@@ -6,6 +6,10 @@
 - Language-agnostic, meaning it can be understood by humans and machines regardless of the programming language used to build the API.
 - Facilitates communication, understanding, and interaction between API providers and consumers.
 
+## **Learn OpenAPI**
+
+[Our Text Book: Chapters 1-12 of Designing APIs with Swagger and OpenAPI](https://www.oreilly.com/library/view/designing-apis-with/9781617296284/)
+
 **Key benefits:**
 
 - **Clear and consistent API documentation:** Provides a detailed, machine-readable overview of API endpoints, operations, parameters, data models, authentication methods, and more.
@@ -62,9 +66,6 @@ The OpenAPI Specification is a powerful tool that brings clarity, consistency, a
 
 FastAPI's integration with the OpenAPI Specification makes it an excellent choice for building modern, well-documented, and easily consumable APIs.
 
-## Learn OpenAPI
-
-[OpenAPI 3.0 Tutorial](https://support.smartbear.com/swaggerhub/docs/en/get-started/openapi-3-0-tutorial.html)
 
  **Here are the ways to access the OpenAPI document in FastAPI:**
 
