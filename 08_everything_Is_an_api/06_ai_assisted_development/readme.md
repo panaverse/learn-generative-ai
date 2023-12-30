@@ -13,6 +13,6 @@
 
 2. [Watch and Follow: Learn Amazon CodeWhisperer in 16 Minutes](https://www.youtube.com/watch?v=X8pxN8TLQ8o)
 
-5. [CodeWhisperer in Action: Automating Unit Test Generation with CodeWhisperer in Python](https://www.packtpub.com/article-hub/getting-started-with-aws-codewhisperer)
+3. [CodeWhisperer in Action: Automating Unit Test Generation with CodeWhisperer in Python](https://www.packtpub.com/article-hub/getting-started-with-aws-codewhisperer)
 
 

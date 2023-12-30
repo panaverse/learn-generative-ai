@@ -58,7 +58,14 @@ We will using the following tools for teaching in our classes:
 
 ### AI-assisted Coding
 
-https://marketplace.visualstudio.com/items?itemName=Codeium.codeium
+**We want a totally free option for our students which is also backed by major company, therefore CodeWhisperer is our choice to be taught in all our classes.**
+
+1. [Signup and create an AWS Builder ID](https://docs.aws.amazon.com/signin/latest/userguide/sign-in-aws_builder_id.html)
+
+2. [Watch and Follow: Learn Amazon CodeWhisperer in 16 Minutes](https://www.youtube.com/watch?v=X8pxN8TLQ8o)
+
+3. [CodeWhisperer in Action: Automating Unit Test Generation with CodeWhisperer in Python](https://www.packtpub.com/article-hub/getting-started-with-aws-codewhisperer)
+
 
 ### Zoom
 
