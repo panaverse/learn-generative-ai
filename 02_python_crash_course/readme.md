@@ -64,7 +64,8 @@ We will using the following tools for teaching in our classes:
 
 2. [Watch and Follow: Learn Amazon CodeWhisperer in 16 Minutes](https://www.youtube.com/watch?v=X8pxN8TLQ8o)
 
-3. [CodeWhisperer in Action: Automating Unit Test Generation with CodeWhisperer in Python](https://www.packtpub.com/article-hub/getting-started-with-aws-codewhisperer)
+3. [AWS re:Invent 2023 - Best practices for Amazon CodeWhisperer](https://www.youtube.com/watch?v=F_dSkRHCXBc)
+
 
 
 ### Zoom
