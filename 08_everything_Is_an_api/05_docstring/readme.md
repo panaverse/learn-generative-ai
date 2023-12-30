@@ -1,6 +1,8 @@
 # Python Docstrings
 
- **[Python Docstrings](https://www.programiz.com/python-programming/docstrings)** are a special kind of comment used to document Python modules, functions, classes, and methods. They provide a concise and informative way to explain the purpose, usage, and behavior of your code.
+[Python Docstrings Details](https://www.programiz.com/python-programming/docstrings)
+
+ **Python Docstrings** are a special kind of comment used to document Python modules, functions, classes, and methods. They provide a concise and informative way to explain the purpose, usage, and behavior of your code.
 
 **Here's how to write Docstrings:**
 
@@ -12,7 +14,7 @@
 **Example:**
 
 ```python
-def greet(name):
+def greet(name:str)->str:
     """Greets the user by name.
 
     Args:
