@@ -4,7 +4,7 @@
 
 **Types of LLM apps:**
 
-[The 5 Types of LLM Apps](https://www.youtube.com/watch?v=18_j23ckUFw)
+[Must Watch: The 5 Types of LLM Apps](https://www.youtube.com/watch?v=18_j23ckUFw)
 
 * **Creative:** Generate stories, poems, scripts, musical pieces, etc.
 * **Productivity:** Summarize documents, write emails, translate languages, code generation.
