@@ -42,6 +42,27 @@ You can find more information and examples on how to integrate APIs into OpenAI'
 (2) Actions - OpenAI API. https://platform.openai.com/docs/actions/what-is-a-gpt.
 (3) Enhance GPTs with Custom Actions and APIs: Full Tutorial. https://eightify.app/summary/artificial-intelligence-and-technology/enhance-gpts-with-custom-actions-and-apis-full-tutorial.
 
+**Who call my APIs**
+
+OpenAI calls your APIs in GPT Actions by using the OpenAPI specification that you provide when you create or edit a GPT. The OpenAPI specification defines the endpoints, parameters, and responses of your API, as well as whether they are consequential or not. Consequential endpoints require user confirmation before running, while non-consequential endpoints can be called without user intervention.
+
+When you interact with a GPT that has Actions, the model can choose to call one or more of your endpoints based on the user query and the description of each function. The model will generate a JSON object that adheres to your custom schema and pass it to your API. Your API should return a response that matches the expected format of your schema. The model will then use the response to generate a reply to the user.
+
+You can test your GPT Actions by using the playground in the ChatGPT UI. You can also use the API Alchemist GPT¹ to test if your API is correct and compatible with GPT Actions.
+
+You can find more information and examples on how to use GPT Actions on these websites:
+
+- [Actions - OpenAI API](^2^)
+- [Integrating APIs into OpenAI's Custom GPTs: A Step-by-Step Guide](^3^)
+- [Enhance GPTs with Custom Actions and APIs: Full Tutorial](^4^)
+
+I hope this helps you understand how OpenAI calls your APIs in GPT Actions. 
+
+(1) Actions - OpenAI API. https://platform.openai.com/docs/actions.
+(2) Issue with GPT Actions not triggering external API calls. https://community.openai.com/t/issue-with-gpt-actions-not-triggering-external-api-calls/495495.
+(3) Function calling - OpenAI API - platform.openai.com. https://platform.openai.com/docs/guides/function-calling.
+(4) Function calling - OpenAI API - platform.openai.com. https://platform.openai.com/docs/guides/function-calling?lang=node.js.
+
 **OpenAI GPTs vs Assistants**
 
 OpenAI GPTs and Assistants are two different ways of creating custom chatbots that can leverage the power of ChatGPT and other tools. Here are some of the main differences between them:
