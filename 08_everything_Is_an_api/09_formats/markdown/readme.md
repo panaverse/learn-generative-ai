@@ -1,6 +1,9 @@
 # Using Markdown in LLM Apps
 
-Markdown is become the **dominant** format in LLM apps recently, for example when you use the copy button in Bard or ChatGPT it gives you text in markdown due to its advantages:
+Markdown is become the **dominant** format in LLM apps recently, it is also the only tool for custom HTML within a streamlit app, also note that when you use the copy button in Bard or ChatGPT it gives you text in markdown due to its many advantages.
+
+**[Textbook: Markdown Guide](https://dl.icdst.org/pdfs/files3/c79990b0b853932d36ddc117ce2503e3.pdf)**
+
 
 **Advantages of Markdown for LLM Apps:**
 
@@ -25,8 +28,6 @@ Here are some examples of LLM apps where Markdown is commonly used:
 * **Educational and research applications:** LLM apps used for summarizing text or generating reports might leverage Markdown for structuring the output and highlighting important information.
 
 Ultimately, the choice of format for LLM apps depends on various factors, and Markdown remains a valuable option where simplicity, accessibility, and clear information presentation are key priorities.
-
-**[Textbook: Markdown Guide](https://dl.icdst.org/pdfs/files3/c79990b0b853932d36ddc117ce2503e3.pdf)**
 
 **[Show Markdown in Streamlit](https://docs.streamlit.io/library/api-reference/text/st.markdown)**
 
