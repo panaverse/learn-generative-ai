@@ -1,6 +1,6 @@
 # Using Markdown in LLM Apps
 
-Markdown is become the **dominant** format in LLM apps recently, for example when you use the copy button in Bard or ChatGPT it gives you text is markdown due to its advantages:
+Markdown is become the **dominant** format in LLM apps recently, for example when you use the copy button in Bard or ChatGPT it gives you text in markdown due to its advantages:
 
 **Advantages of Markdown for LLM Apps:**
 
@@ -26,4 +26,103 @@ Here are some examples of LLM apps where Markdown is commonly used:
 
 Ultimately, the choice of format for LLM apps depends on various factors, and Markdown remains a valuable option where simplicity, accessibility, and clear information presentation are key priorities.
 
-[Textbook: Markdown Guide](https://dl.icdst.org/pdfs/files3/c79990b0b853932d36ddc117ce2503e3.pdf)
+**[Textbook: Markdown Guide](https://dl.icdst.org/pdfs/files3/c79990b0b853932d36ddc117ce2503e3.pdf)**
+
+**[Show Markdown in Streamlit](https://docs.streamlit.io/library/api-reference/text/st.markdown)**
+
+Markdown has several uses within a streamlit application. As the only tool for custom HTML within a streamlit app, you can use it to flexibly insert rich content into your application.
+
+[Detailed Discussion on Using Markdown in Streamlit](https://pmbaumgartner.github.io/streamlitopedia/markdown.html)
+
+Here are some of the most popular markdown editors you can embed in your website, categorized by their strengths:
+
+**WYSIWYG editors:**
+
+* **Froala:** Offers a real-time preview and a clean interface. It's lightweight, cross-browser compatible, and supports collaborative editing.
+* **SimpleMDE:** Provides a familiar WYSIWYG experience with basic formatting options. It's lightweight, simple to integrate, and offers autosaving and spell checking.
+* **StackEdit:** A popular online editor with live preview, version history, and export options. It's easy to embed and offers Markdown learning resources.
+
+**Distraction-free editors:**
+
+* **Typora:** Focuses on a clean writing environment with live preview and automatic Markdown hiding. It's versatile, supports advanced Markdown features, and offers various themes.
+* **MarkText:** A distraction-free editor with split-pane preview and real-time Markdown rendering. It's open-source, customizable, and integrates with various plugins.
+* **GhostWriter:** Similar to Typora, it hides Markdown for distraction-free writing and offers live preview. It's lightweight, portable, and has several theme options.
+
+**Other noteworthy options:**
+
+* **CodeMirror:** A JavaScript library that allows you to build your own custom Markdown editor with various features. It's highly customizable and powerful but requires more development effort.
+* **dillinger.io:** An online WYSIWYG editor with Markdown and HTML export options. It's cloud-based and offers advanced formatting capabilities.
+* **turndown:** A JavaScript library that converts HTML to Markdown, allowing you to integrate any existing HTML editor with Markdown support.
+
+**Choosing the right editor depends on your website's needs and preferences:**
+
+* Consider the level of WYSIWYG editing needed.
+* Do you prioritize focus and distraction-free writing?
+* What level of customization is required?
+* What features like collaborative editing or export options are important?
+
+**For further comparisons and reviews, check out these resources:**
+
+* A collection of awesome markdown editors: [https://github.com/mundimark/awesome-markdown-editors](https://github.com/mundimark/awesome-markdown-editors)
+* Comparison of WYSIWYG markdown editors: [https://www.bestjquery.com/demo/jquery-wysiwyg-editor/](https://www.bestjquery.com/demo/jquery-wysiwyg-editor/)
+* The 10 Best Markdown Editors of 2023: [https://www.shopify.com/partners/blog/10-of-the-best-markdown-editors](https://www.shopify.com/partners/blog/10-of-the-best-markdown-editors)
+
+
+ **Here are some of the most popular React-based Markdown editors that integrate well with Next.js:**
+
+**1. Slate.js:**
+
+- **Highly customizable:** Build versatile editors with fine-grained control over features and UI.
+- **Framework-agnostic:** Works with React, Vue, and other frameworks.
+- **Steeper learning curve:** Requires more effort for configuration and setup.
+
+**2. react-markdown:**
+
+- **Simple and lightweight:** Straightforward to use and efficient for basic Markdown rendering.
+- **Server-side rendering (SSR) support:** Works seamlessly with Next.js for SEO and performance.
+- **Limited editing capabilities:** Focuses on rendering rather than editing features.
+
+**3. react-mde:**
+
+- **Feature-rich WYSIWYG:** Offers a familiar editing experience with toolbars and buttons.
+- **Customizable:** Customize toolbar options and styling.
+- **Actively maintained:** Regularly updated with new features and bug fixes.
+
+**4. react-draft-wysiwyg:**
+
+- **Powerful WYSIWYG:** Based on Facebook's Draft.js, supports rich text editing and custom styling.
+- **Customizable:** Tailor the editing experience with plugins and extensions.
+- **Potential performance overhead:** Can be resource-intensive for large content blocks.
+
+**5. Tiptap:**
+
+- **Modern and extensible:** Proactive community and a wide range of extensions.
+- **Focus on content blocks:** Ideal for structured content creation.
+- **Active development:** New features and improvements frequently added.
+
+**Additional Options:**
+
+- **react-quill:** Integrates Quill.js, a popular WYSIWYG editor, into React.
+- **MDX:** Allows embedding JSX components within Markdown, unlocking interactive content creation.
+
+**Choosing the Right Editor:**
+
+- **Customization needs:** Consider the level of control required over features and look and feel.
+- **WYSIWYG vs. distraction-free:** Decide based on user preferences and editing style.
+- **Performance:** Evaluate potential performance impact for large content blocks.
+- **Maintainability:** Choose a well-maintained editor with active development.
+
+**Recommendations:**
+
+- **For extensive customization and control:** Slate.js
+- **For simplicity and SSR compatibility:** react-markdown
+- **For a feature-rich WYSIWYG experience:** react-mde or react-draft-wysiwyg
+- **For block-based editing and flexibility:** Tiptap
+
+**Best Practices:**
+
+- **Experiment with different editors:** Test several options to find the best fit for your project.
+- **Consider server-side rendering (SSR):** Ensure compatibility with Next.js for SEO and performance.
+- **Prioritize user experience:** Choose an editor that aligns with your users' editing preferences.
+
+
