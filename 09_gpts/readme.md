@@ -1,5 +1,8 @@
 # OpenAI GPTs
 
+GPTs are a new feature from OpenAI that allows subscription users to create their own ChatGPT versions. GPTs can use custom data to offer capabilities like image generation, web browsing, and data analysis. 
+
+
 [Introducing GPTs](https://openai.com/blog/introducing-gpts)
 
 [Watch Video](https://www.youtube.com/watch?v=pq34V_V5j18&t=9s)
@@ -11,6 +14,8 @@
 [GPTs vs Assistants](https://help.openai.com/en/articles/8673914-gpts-vs-assistants)
 
 [GPTs FAQ](https://help.openai.com/en/articles/8554407-gpts-faq)
+
+[How to Make GPTs WITHOUT ChatGPT Plus in Minutes (OpenAI GPTs)](https://www.youtube.com/watch?v=F31fe68q_4Q)
 
 **Note that APIs and OpenAPI Specifications are extremely important in this new era of Generative AI**
 
