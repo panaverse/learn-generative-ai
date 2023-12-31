@@ -127,3 +127,207 @@ Here are some of the most popular markdown editors you can embed in your website
 - **Prioritize user experience:** Choose an editor that aligns with your users' editing preferences.
 
 
+## Example Prompts which require response in JSON and Markdown 
+
+**Here are prompts demonstrating how to specify JSON format with Markdown fields using examples and JSON Schema:**
+
+**Prompt 1: Generating Product Descriptions**
+
+**Prompt:**
+
+> Please generate a product description in JSON format, following this schema:
+>
+> ```json
+> {
+>   "$schema": "http://json-schema.org/draft-07/schema#",
+>   "type": "object",
+>   "properties": {
+>     "name": { "type": "string" },
+>     "description": { "type": "string" },  // Markdown field
+>     "features": { "type": "array", "items": { "type": "string" } }
+>   },
+>   "required": ["name", "description"]
+> }
+>
+> Here are examples of valid responses:
+>
+> ```json
+> { "name": "Ergonomic Chair", "description": "# Super comfortable for long work hours\n* Lumbar support\n* Adjustable height", "features": ["Mesh back", "Adjustable armrests"] }
+> ```
+>
+> **Key Point:** Indicate Markdown fields with comments or descriptive property names.
+
+**Prompt 2: Summarizing a News Article**
+
+**Prompt:**
+
+> Summarize this news article in JSON format, including these fields:
+>
+> - title (string)
+> - summary (Markdown string)
+> - key_points (array of strings)
+>
+> Here's an example of a valid response:
+>
+> ```json
+> { "title": "NASA's New Space Telescope Reveals Stunning Images", "summary": "## Breathtaking Views of Distant Galaxies\n* Webb telescope captures unprecedented images\n* Provides new insights into early universe", "key_points": ["Galaxies shown in unprecedented detail", "Insights into star formation"] }
+> 
+
+**Prompt 3: Generating a Creative Story**
+
+**Prompt:**
+
+> Write a short story about a robot who falls in love with a human. Format your response as JSON with these fields:
+>
+> - title (string)
+> - content (Markdown string)
+> - author (string)
+> - genre (string)
+>
+> Here's an example of a valid response:
+>
+> json
+> { "title": "The Robot's Heart", "content": "## A Tale of Unexpected Love\n*Once upon a time, in a world of gleaming chrome and buzzing circuits, there lived a robot named...*", "author": "Bard", "genre": "Science Fiction" }
+> 
+
+**Specifying Markdown Fields:**
+
+- **JSON Schema:** Markdown fields can be designated using a custom format property (e.g., "format": "markdown") or descriptive property names.
+- **Examples:** Explicitly show Markdown formatting in example responses.
+- **Comments:** Add comments within prompts to clarify Markdown expectations.
+
+**Additional Tips:**
+
+- Use clear and concise language in prompts.
+- Provide multiple examples to illustrate formatting variations.
+- Test responses to ensure they meet formatting requirements.
+- Consider using a Markdown validation library to enforce consistency.
+
+
+ **Python Markdown validation libraries:**
+
+**Popular Libraries:**
+
+- **Markdown** ([https://python-markdown.github.io/](https://python-markdown.github.io/)):
+    - Parses Markdown to HTML, allowing validation during parsing.
+    - Not specifically designed for validation, but can be used for basic checks.
+- **markdown-it-py** ([https://github.com/executablebooks/markdown-it-py](https://github.com/executablebooks/markdown-it-py)):
+    - Python port of the popular JavaScript library markdown-it.
+    - Offers a plugin system for custom validation rules.
+- **mistletoe** ([https://github.com/miyuchina/mistletoe](https://github.com/miyuchina/mistletoe)):
+    - Python-native library with a focus on CommonMark compliance.
+    - Provides strict validation and supports custom extensions.
+- **markdown-link-check** ([https://github.com/tcort/markdown-link-check](https://github.com/tcort/markdown-link-check)):
+    - Specializes in checking for broken links in Markdown documents.
+
+**Most Used Libraries:**
+
+- **Markdown:** Most popular for general Markdown parsing and basic validation.
+- **markdown-it-py:** Gaining popularity for its flexibility and plugin system.
+
+**Tutorial Using Markdown:**
+
+**Installation:**
+
+```bash
+pip install markdown
+```
+
+**Basic Validation:**
+
+```python
+import markdown
+
+markdown_text = "# This is a heading\n\nThis is some text with [a link](https://www.example.com)."
+
+html = markdown.markdown(markdown_text)
+
+if html:
+    print("Markdown is valid.")
+else:
+    print("Markdown is invalid.")
+```
+
+**Advanced Validation (Custom Extensions):**
+
+```python
+import markdown
+from markdown.extensions import Extension
+
+class MyExtension(Extension):
+    def extendMarkdown(self, md):
+        # Add custom validation rules here
+
+markdown_text = "# This is a heading"
+markdown.markdown(markdown_text, extensions=[MyExtension()])
+```
+
+**Choosing the Right Library:**
+
+- Consider project requirements, desired validation features, and familiarity with libraries.
+- For basic validation and parsing, Markdown often suffices.
+- For more flexibility and custom validation rules, explore markdown-it-py or mistletoe.
+- For specific tasks like link checking, use specialized libraries like markdown-link-check.
+
+**Additional Tips:**
+
+- Combine validation with linting tools for comprehensive Markdown quality checks.
+- Consider using a Markdown editor with built-in validation for real-time feedback.
+
+
+ **Here's a comprehensive response on Markdown linting tools in Python:**
+
+**Markdown Linting Tools**
+
+- **Identify potential errors, inconsistencies, and style issues in Markdown documents.**
+- **Encourage adherence to best practices and maintain readability.**
+
+**Popular Python Tools:**
+
+1. **markdownlint** ([https://github.com/markdownlint/markdownlint](https://github.com/markdownlint/markdownlint)):
+    - Rule-based linter with comprehensive checks for syntax, style, and conventions.
+    - Widely used and customizable with plugins.
+
+2. **mdl** ([https://github.com/mivok/markdownlint](https://github.com/mivok/markdownlint)):
+    - Similar to markdownlint, focused on CommonMark compliance.
+    - Offers a subset of rules and supports configuration files.
+
+3. **vale** ([https://github.com/ValeLint/vale](https://github.com/ValeLint/vale)):
+    - Multi-language linter, including Markdown support.
+    - Emphasizes accessibility and style consistency.
+
+4. **proselint** ([https://github.com/amperser/proselint](https://github.com/amperser/proselint)):
+    - Designed for prose-heavy documents, including Markdown.
+    - Checks for readability, style issues, and common errors.
+
+5. **textlint** ([https://github.com/textlint/textlint](https://github.com/textlint/textlint)):
+    - Highly customizable linter framework for various text formats, including Markdown.
+    - Offers a wide range of plugins for specific checks.
+
+**Using markdownlint:**
+
+1. **Installation:**
+   ```bash
+   pip install markdownlint
+   ```
+
+2. **Basic Linting:**
+   ```bash
+   markdownlint markdown_file.md
+   ```
+
+3. **Configuration (Optional):**
+   - Create a `.markdownlint.json` file to specify rules and options.
+
+**Additional Tips:**
+
+- **Integration:** Integrate linters into editors for real-time feedback.
+- **Customization:** Tailor linting rules to project style guides.
+- **Combination:** Use multiple linters for comprehensive checks.
+- **Continuous Integration:** Incorporate linting into CI/CD pipelines for automated quality control.
+
+
+
+
+
+
