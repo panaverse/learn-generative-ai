@@ -42,11 +42,11 @@ You can find more information and examples on how to integrate APIs into OpenAI'
 (2) Actions - OpenAI API. https://platform.openai.com/docs/actions/what-is-a-gpt.
 (3) Enhance GPTs with Custom Actions and APIs: Full Tutorial. https://eightify.app/summary/artificial-intelligence-and-technology/enhance-gpts-with-custom-actions-and-apis-full-tutorial.
 
-**Who call my APIs**
+**Who calls my APIs**
 
 OpenAI calls your APIs in GPT Actions by using the OpenAPI specification that you provide when you create or edit a GPT. The OpenAPI specification defines the endpoints, parameters, and responses of your API, as well as whether they are consequential or not. Consequential endpoints require user confirmation before running, while non-consequential endpoints can be called without user intervention.
 
-When you interact with a GPT that has Actions, the model can choose to call one or more of your endpoints based on the user query and the description of each function. The model will generate a JSON object that adheres to your custom schema and pass it to your API. Your API should return a response that matches the expected format of your schema. The model will then use the response to generate a reply to the user.
+**When you interact with a GPT that has Actions, the model can choose to call one or more of your endpoints based on the user query and the description of each function. The model will generate a JSON object that adheres to your custom schema and pass it to your API. Your API should return a response that matches the expected format of your schema. The model will then use the response to generate a reply to the user.**
 
 You can test your GPT Actions by using the playground in the ChatGPT UI. You can also use the API Alchemist GPT¹ to test if your API is correct and compatible with GPT Actions.
 
