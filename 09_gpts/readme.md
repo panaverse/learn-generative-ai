@@ -17,7 +17,30 @@ GPTs are a new feature from OpenAI that allows subscription users to create thei
 
 [How to Make GPTs WITHOUT ChatGPT Plus in Minutes (OpenAI GPTs)](https://www.youtube.com/watch?v=F31fe68q_4Q)
 
+[GPT Actions: How to Integrate APIs Into OpenAI's Custom GPTs](https://www.youtube.com/watch?v=-ceIJx7zaBM)
+
+[Latest Status](https://www.youtube.com/watch?v=KlFVj1OYNJ8)
+
 **Note that APIs and OpenAPI Specifications are extremely important in this new era of Generative AI**
+
+GPT Actions are a way to integrate APIs into OpenAI's custom GPTs, which are tailored versions of ChatGPT that can be created for specific purposes. GPT Actions allow you to connect your GPT to external data sources or services, such as databases, emails, or e-commerce platforms. You can define GPT Actions using an OpenAPI specification, which describes the endpoints, parameters, and responses of your API. You can also set some endpoints as consequential, which means they will require user confirmation before running.
+
+To integrate APIs into OpenAI's custom GPTs, you need to:
+
+- Create a GPT in the ChatGPT UI and give it a name and a description.
+- Configure your GPT by adding GPT Actions and filling in your OpenAPI spec or pasting in a URL where it is hosted.
+- Test your GPT by interacting with it in the playground and seeing how it responds to different queries and actions.
+
+You can find more information and examples on how to integrate APIs into OpenAI's custom GPTs on these websites:
+
+- [Integrating APIs into OpenAI's Custom GPTs: A Step-by-Step Guide](^1^)
+- [Actions - OpenAI API](^2^)
+- [Enhance GPTs with Custom Actions and APIs: Full Tutorial](^3^)
+
+
+(1) Integrating APIs into OpenAI's Custom GPTs: A Step-by-Step Guide. https://eightify.app/summary/artificial-intelligence-and-programming/integrating-apis-into-openai-s-custom-gpts-a-step-by-step-guide.
+(2) Actions - OpenAI API. https://platform.openai.com/docs/actions/what-is-a-gpt.
+(3) Enhance GPTs with Custom Actions and APIs: Full Tutorial. https://eightify.app/summary/artificial-intelligence-and-technology/enhance-gpts-with-custom-actions-and-apis-full-tutorial.
 
 **OpenAI GPTs vs Assistants**
 
@@ -41,7 +64,6 @@ You can find more information about GPTs and Assistants on these websites:
 
 I hope this helps you understand the difference between GPTs and Assistants. If you have any other questions, feel free to ask me. 😊
 
-Source: Conversation with Bing, 1/1/2024
 (1) GPTs vs Assistants | OpenAI Help Center. https://help.openai.com/en/articles/8673914-gpts-vs-assistants.
 (2) GPTs vs. Assistants: What's the difference? | Zapier. https://zapier.com/blog/gpts-vs-ai-assistants/.
 (3) API assistant VS GPTs: what's the main difference?. https://community.openai.com/t/api-assistant-vs-gpts-whats-the-main-difference/499523.
