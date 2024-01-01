@@ -9,3 +9,5 @@ Start Uvicorn with the command line
 Test with HTTPie
 
     http -v localhost:8000/agent
+
+    http -v POST localhost:8000/agent
