@@ -11,3 +11,7 @@
 [Official Docs](https://python.langchain.com/docs/get_started/introduction)
 
 [APIs](https://api.python.langchain.com/en/latest/langchain_api_reference.html)
+
+We will use **[OpenAI](https://platform.openai.com/docs/introduction)** for our language model, and **[Tavily](https://app.tavily.com/)** for our search provider. We will also use **[LangSmith]()** for observability.
+
+[Tavily LangChain Announcement](https://blog.langchain.dev/weblangchain/)
