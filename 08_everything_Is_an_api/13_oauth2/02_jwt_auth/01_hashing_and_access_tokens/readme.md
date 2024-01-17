@@ -1,6 +1,6 @@
 # Secure your Login System
 
-Goal: Make the last Created Security Flow Secure using JWT and Password Hashing.
+Goal: Make the last (step 01) Created Security Flow Secure using JWT and Password Hashing.
 
 1. Clone the project
 2. Install requirements `pip install -r requirements.txt`

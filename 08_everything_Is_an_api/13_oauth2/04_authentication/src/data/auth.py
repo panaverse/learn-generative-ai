@@ -1,9 +1,10 @@
 from sqlalchemy.orm import Session
 from typing import Union
-from sqlalchemy_models import USER
-from models import  RegisterUser
-from utils import get_password_hash, InvalidUserException
 from uuid import UUID
+
+from ..models.sqlalchemy_models import USER
+from ..models.auth import  RegisterUser
+from ..utils.helpers import get_password_hash, InvalidUserException
 
 async def db_signup_users(
     user_data: RegisterUser, db: Session
@@ -52,5 +53,16 @@ def get_user_by_id(db, user_id: Union[UUID, None] = None):
     
     if not user:
         raise InvalidUserException(status_code=404, detail="User not found")
+    return user
+
+async def get_user_by_email(db, user_email: Union[str, None] = None):
+
+    if user_email is None:
+        raise InvalidUserException(status_code=404, detail="user_email not provided")
+
+    user = db.query(USER).filter(USER.email == user_email).first()
+    
+    if not user:
+        return None
     return user
 

@@ -6,10 +6,13 @@ from jose import JWTError, jwt
 from datetime import datetime, timedelta, timezone
 from typing import Annotated, Union, Any, Optional
 from uuid import UUID
-from models import  TokenData, User, RegisterUser
-from db_dep import get_db
-from utils import InvalidUserException, verify_password, ALGORITHM, SECRET_KEY, credentials_exception, ACCESS_TOKEN_EXPIRE_MINUTES, REFRESH_TOKEN_EXPIRE_MINUTES
-from data import db_signup_users, get_user, get_user_by_id
+import secrets
+import string
+
+from ..models.auth import  TokenData, User, RegisterUser, UserOutput
+from ..utils.db_dep import get_db
+from ..utils.helpers import InvalidUserException, verify_password, ALGORITHM, SECRET_KEY, ACCESS_TOKEN_EXPIRE_MINUTES, REFRESH_TOKEN_EXPIRE_MINUTES
+from ..data.auth import db_signup_users, get_user, get_user_by_id, get_user_by_email
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
@@ -196,3 +199,50 @@ async def tokens_service(grant_type: str = Form(...), refresh_token: Optional[st
         "expires_in": int(access_token_expires.total_seconds()),
         "refresh_token": rotated_refresh_token
     }
+
+
+# function google_user_service
+
+async def google_user_service(user_email: str, user_name: str ,db: Session):
+    """
+    Service function to sign up/login users.
+
+    Args:
+        user_email: The user_email.
+        db (Session): The database session.
+
+    Returns:
+        The user data.
+    """
+    try:
+        # check if user exists in db
+        user = await get_user_by_email(db, user_email)
+
+        if user is None:
+            # if user does not exist, create a new user
+            # Create a random password
+            password_length = 12  # You can choose the length of the password
+            characters = string.ascii_letters + string.digits + string.punctuation
+            random_password = ''.join(secrets.choice(characters) for i in range(password_length))
+
+
+            user_data = RegisterUser(
+                username=user_name,
+                full_name=user_name,
+                email=user_email,
+                password=random_password,
+            )
+
+            new_user = await db_signup_users(user_data, db)
+            return UserOutput( username=new_user.username, email=new_user.email, full_name= new_user.full_name, id=new_user.id)
+
+
+        return UserOutput( username=user.username, email=user.email, full_name= user.full_name, id=user.id)
+
+        return UserOutput(**user)
+    except InvalidUserException as e:
+        # Re-raise the exception to be handled in the web layer
+        raise e
+    except Exception as e:
+        # Re-raise general exceptions to be handled in the web layer
+        raise e

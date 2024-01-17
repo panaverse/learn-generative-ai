@@ -63,9 +63,8 @@ async def auth(request: Request):
 
         return JSONResponse(content=idinfo)
 
-        # After running nextjs project uncomment the following code and comment out the above return line
+        # After running nextjs project UCOMMENT THE FOLLOWING CODE and COMMENT OUT THE ABOVE RETURN line
 
-        # Set tokens in cookies or send them in a secure manner
         # response = RedirectResponse(url='http://localhost:3000/user')
         # response.set_cookie(key="email", value=idinfo['email'], httponly=True)
         # response.set_cookie(key="name", value=idinfo['name'], httponly=True)

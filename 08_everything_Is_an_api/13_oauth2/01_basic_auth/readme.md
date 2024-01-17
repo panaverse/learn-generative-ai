@@ -1,4 +1,4 @@
-# Build a Simple Login System Using Email & Password
+# Simple Login Using Email & Password
 
 Goal: Learn how to build a secure way for the frontend to authenticate with the backend, using a username and password.
 
@@ -20,7 +20,7 @@ To start off we will be creating the same login system and follow along this tut
 [FastAPI Security](https://fastapi.tiangolo.com/tutorial/security/first-steps/)
 [Simple OAuth2 with Password and Bearer](https://fastapi.tiangolo.com/tutorial/security/simple-oauth2/)
 
-After completing it you will have a simple login system following `OAuth Protocols Definition where you can login and get active Users`
+After completing it you will have a simple login system where you can login and get loggedIn User Data.
 
 ## Security & FastAPI Utils
 FastAPI provides several tools to help you deal with Security easily, rapidly, in a standard way, without having to study and learn all the security specifications.

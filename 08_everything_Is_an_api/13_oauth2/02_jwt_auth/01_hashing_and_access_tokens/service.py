@@ -9,7 +9,6 @@ from models import  TokenData, User, UserInDB
 from data import fake_users_db
 
 from jose import JWTError, jwt
-from jose import JWTError, jwt
 
 from passlib.context import CryptContext
 # to get a string like this run:

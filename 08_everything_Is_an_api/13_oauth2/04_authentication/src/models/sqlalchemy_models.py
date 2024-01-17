@@ -8,10 +8,6 @@ import enum
 class RoleEnum(enum.Enum):
     """
     Enumeration class representing different roles.
-    
-    Attributes:
-        admin (str): The admin role.
-        user (str): The user role.
     """
     admin = 'admin'
     user = 'user'
@@ -24,18 +20,6 @@ class Base(DeclarativeBase):
 class USER(Base):
     """
     Represents a User in the database.
-
-    Attributes:
-        id (UUID): The unique identifier for the user.
-        email (str): The email address of the user.
-        username (str): The username of the user.
-        full_name (str): The full name of the user.
-        hashed_password (str): The hashed password of the user.
-        email_verified (bool): Indicates whether the user's email has been verified.
-        role (RoleEnum): The role of the user.
-        disabled (bool): Indicates whether the user is disabled.
-        created_at (datetime.datetime): The timestamp when the user was created.
-        updated_at (datetime.datetime): The timestamp when the user was last updated.
     """
     __tablename__ = "users_table"
 

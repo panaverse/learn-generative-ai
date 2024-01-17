@@ -23,9 +23,10 @@ website or application to access resources hosted by other web apps on behalf of
 
 ## Learning Pathway
 
-- Step 0 & 02 will cover the foundations. 
-- In 03 you will build complete the authentication system where users can register and login securely using username and password. 
-- In Step 04 we will build complete flow to add Google Authentication.
+- Step 01 will cover the foundations. 
+- On step 02 you will learn about password hashing, & JWT tokens (Bearer access_tokens & refresh grant)
+- In Step 03 we will build complete flow to add Google Authentication.
+- Step 04 combines the concepts of all 3 steps and creates a layered architecture authentication system skeleton with login/signup & google auth flows and database connection.
 
 ## OAuth 2 provides several "grant types" for different use cases. 
 

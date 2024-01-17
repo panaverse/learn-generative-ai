@@ -45,12 +45,13 @@ Next uncomment the RedirectResponse in `main.py` file /api/google endpoint. And 
     return response
 ```
 
-Clone the nextjs project. Keep the fastapi server running!
+Clone the nextjs project and run pnpm install. Keep the fastapi server running! Now run `pnpm dev` and visit `/` route
+
 1. We have a Google Login button on Home. On click we will be redirected to `/api/google/login` that redirects us to Google.
 2. After successful login we will be redirected on /user page. It Shows your user data. 
 3. In middleware we have cookies logs to verify we get the data. 
 
-Preview Live Deployment: https://nextjs-flow.vercel.app/
+Note: I have tested and it works perfectly with NextJS14 project deployed on vercel.
 
 ## Google Auth Implementation Flow
 
@@ -82,9 +83,8 @@ Preview Live Deployment: https://nextjs-flow.vercel.app/
 ## Questions in this flow:
 
 1. Shall we cleanup the request.session or do something or it is okay as it is?
-2. Is there any open socket connection that we have ti close once user disconnect. Like here we will generate our own tokens so is there any clearing required?
 
-3. Shall we do the these steps (4 & 5) in flow withing the "auth" route
+2. Shall we do the these steps (4 & 5) in flow withing the "auth" route
 
 - Check if the user exists in your database.
 - Generate your own JWT access and refresh tokens for the user.
@@ -98,12 +98,6 @@ The request.session is used here to store the state parameter across the OAuth f
 FastAPI, when combined with Starlette's SessionMiddleware, handles session creation and management for you. As long as you set a secure, secret key for the middleware (as you did with "!secret"), it's okay as is.
 
 Ensure that your secret key is strong and secure in a production environment. Avoid using easily guessable or simple strings.
-
-#### Managing Open Connections:
-
-In the provided code snippet, there are no explicit long-lived socket connections that you need to manage or close manually. The OAuth flow here involves sending HTTP requests and receiving responses, which are stateless and closed after the transaction completes.
-
-The important aspect here is token management. Once you generate your own JWT tokens, you should manage their lifecycle (expiry, refresh, revocation) as per your application's security requirements.
 
 #### User Verification and Token Generation:
 
