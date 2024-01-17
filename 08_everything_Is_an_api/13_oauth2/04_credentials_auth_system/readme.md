@@ -43,7 +43,7 @@ import enum
 class RoleEnum(enum.Enum):
     """
     Enumeration class representing different roles.
-    
+
     Attributes:
         admin (str): The admin role.
         user (str): The user role.
@@ -145,7 +145,7 @@ We will also move the `fake_users_db` here as it will be gradually replaced by t
 
 ## 2. Run migrations and update Pydantic Modals with new User Fields.
 
-Now we are ready to use our database. Let's create the User table in database. 
+Now we are ready to use our database. Let's create the User table in database.
 
 Import Base into web.py file and run server. Visit your database to confirm that User table is created successfully.
 
@@ -195,6 +195,7 @@ class UserOutput(User):
 Let's create a new Endpoint to register users. Next we will update our existing codebase to connect with Database rather than fake_db.
 
 - Add an endpoint in web layer.
+
 ```
 #web.py
 
@@ -224,6 +225,7 @@ async def signup_users(
 ```
 
 Add the following exception in utils.py file. We will be using this exception in different layers.
+
 ```
 class InvalidUserException(Exception):
     """
@@ -237,6 +239,7 @@ class InvalidUserException(Exception):
 ```
 
 - Update service layer to include signup logic.
+
 ```
 async def service_signup_users(user_data: RegisterUser, db: Session):
     """
@@ -337,7 +340,7 @@ async def login_for_access_token(
             detail="Incorrect username or password",
             headers={"WWW-Authenticate": "Bearer"},
         )
-    
+
     access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
     access_token = create_access_token(
         data={"sub": user.username}, expires_delta=access_token_expires
@@ -361,9 +364,10 @@ def authenticate_user(db, username: str, password: str):
 
 ```
 
-3. We are string Username in access_token. Once we implement refresh grant we will use user_id there to ensure we have separation of concerns in access & refresh tokens. 
+3. We are string Username in access_token. Once we implement refresh grant we will use user_id there to ensure we have separation of concerns in access & refresh tokens.
 
 In web layer send username in accessToken payload
+
 ```
     access_token = create_access_token(
         data={"sub": user.username}, expires_delta=access_token_expires
@@ -408,7 +412,7 @@ async def get_current_user(token: Annotated[str, Depends(oauth2_scheme)], db: Se
 
         if not isinstance(ALGORITHM, str):
             raise ValueError("ALGORITHM must be a string")
-        
+
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
         username: str | None = payload.get("sub")
         if username is None:
@@ -434,7 +438,7 @@ Let's move our auth system a step ahead and add refresh grant. Here's what will 
 2. After intial login If the token checks out, the user/me API accesses the datastore and returns the user’s details. The client displays this data.
 3. As long as the client has a valid access token, it continues to make requests of the user/me API without communicating with the OAuth server.
 4. Eventually the access token expires. The client doesn’t receive data, but instead an error code.
-At this point, the client can choose to call the /refresh or /token endpoint.
+   At this point, the client can choose to call the /refresh or /token endpoint.
 5. The backend processes the refresh token request. If the refresh token is valid, it responds with a new access token and rotated refresh_token.
 
 In service.py file create the following functions:
@@ -448,7 +452,7 @@ def create_refresh_token(data: dict, expires_delta: Union[timedelta, None] = Non
 
     if not isinstance(ALGORITHM, str):
             raise ValueError("ALGORITHM must be a string")
-    
+
     # Convert UUID to string if it's present in the data
     if 'id' in to_encode and isinstance(to_encode['id'], UUID):
         to_encode['id'] = str(to_encode['id'])
@@ -488,7 +492,7 @@ async def validate_refresh_token(db: Session, refresh_token: str):
         if user_id_str is None:
             raise credentials_exception
         user_id: UUID = UUID(user_id_str)
-                
+
         token_data = TokenData(id=user_id)
         if token_data.id is None:
             raise credentials_exception
@@ -500,6 +504,7 @@ async def validate_refresh_token(db: Session, refresh_token: str):
     except JWTError:
         raise credentials_exception
 ```
+
 In data layer we will create a new function that validate user_id:
 
 ```
@@ -510,18 +515,19 @@ def get_user_by_id(db, user_id: Union[UUID, None] = None):
         raise InvalidUserException(status_code=404, detail="user_id not provided")
 
     user = db.query(USER).filter(USER.id == user_id).first()
-    
+
     if not user:
         raise InvalidUserException(status_code=404, detail="User not found")
     return user
 
 ```
 
-We have clearly defined separate the roles for access tokens and refresh tokens. 
+We have clearly defined separate the roles for access tokens and refresh tokens.
 
-The refresh token should not be usable as an access token and viceverse.
+The refresh token should not be usable as an access token and viceversa.
 
-So in: 
+So in:
+
 - access_token we will encode username.
 - In refresh_token we will only encode user_id as id. On receiving it we will validate the user and create new access_token and refresh_tokens.
 
@@ -547,7 +553,7 @@ async def login_for_access_token(
             detail="Incorrect username or password",
             headers={"WWW-Authenticate": "Bearer"},
         )
-    
+
     access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
     access_token = create_access_token(
         data={"sub": user.username}, expires_delta=access_token_expires
@@ -569,7 +575,7 @@ Finally we will add an endpoint that will accept refresh_token and issue new acc
 async def tokens_manager_oauth_codeflow(
     grant_type: str = Form(...),
     refresh_token: Optional[str] = Form(None),
-    db: Session = Depends(get_db)  
+    db: Session = Depends(get_db)
 ):
     """
     Token URl For OAuth Code Grant Flow
@@ -591,10 +597,11 @@ async def tokens_manager_oauth_codeflow(
 Create a custom credentials_exception in utils
 
 # Create a custom credentials exception
+
 credentials_exception = HTTPException(
-    status_code=status.HTTP_401_UNAUTHORIZED,
-    headers={"WWW-Authenticate": 'Bearer'},
-    detail={"error": "invalid_token", "error_description": "The access token expired"}
+status_code=status.HTTP_401_UNAUTHORIZED,
+headers={"WWW-Authenticate": 'Bearer'},
+detail={"error": "invalid_token", "error_description": "The access token expired"}
 )
 
 And in service.py file add:
@@ -608,17 +615,17 @@ async def tokens_service(grant_type: str = Form(...), refresh_token: Optional[st
     if grant_type == "refresh_token":
         if not refresh_token:
             raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Refresh token is required for grant_type 'refresh_token'")
-        
+
         user = await validate_refresh_token(db, refresh_token)
         if not user:
             raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid refresh token")
-    
+
     elif grant_type == "authorization_code":
         # Handle the authorization code grant type
         # This would involve validating the authorization code and possibly exchanging it for tokens
         # Example: user = await validate_authorization_code(db, authorization_code)
         pass  # Replace with actual logic
-    
+
     else:
         # If an unsupported grant type is provided, raise an error
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Unsupported grant type")
@@ -639,13 +646,13 @@ async def tokens_service(grant_type: str = Form(...), refresh_token: Optional[st
 
 ```
 
-Time to test out these new features. Firstly ensure your access_token expiry time is 1 minute and refresh token is 3 minutes. Now open PostMan. 
+Time to test out these new features. Firstly ensure your access_token expiry time is 1 minute and refresh token is 3 minutes. Now open PostMan.
 
 1. Test 1: Firstly login and get access_token. Then make a request to /users/me/. You will get your user data
-2. Test 2: Repeat above again after 1 minute. The requests fails with 401 status. 
-3. Test 3: Use the refresh token issued on Login and call the 
-`/token` endpoint. Pass `grant_type == refresh_token` & `refresh_token` in formdata. 
-4. Test 4: Make request using the newly issues access_token. 
+2. Test 2: Repeat above again after 1 minute. The requests fails with 401 status.
+3. Test 3: Use the refresh token issued on Login and call the
+   `/token` endpoint. Pass `grant_type == refresh_token` & `refresh_token` in formdata.
+4. Test 4: Make request using the newly issues access_token.
 
 Write all these tests using pytest.
 

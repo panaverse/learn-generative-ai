@@ -15,7 +15,6 @@ Goal: Learn how to build a secure way for the frontend to authenticate with the 
 }
 ```
 
-
 To start off we will be creating the same login system and follow along this tutorial :
 
 [FastAPI Security](https://fastapi.tiangolo.com/tutorial/security/first-steps/)

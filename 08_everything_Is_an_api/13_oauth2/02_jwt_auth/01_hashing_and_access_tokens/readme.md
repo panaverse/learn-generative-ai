@@ -4,7 +4,7 @@ Goal: Make the last Created Security Flow Secure using JWT and Password Hashing.
 
 1. Clone the project
 2. Install requirements `pip install -r requirements.txt`
-3. Run the project `uvicorn main:app --reload` and visit `http://localhost:8000/docs`
+3. Run the project `uvicorn main:app --reload` and visit `http://localhost:8000/docs` or use Postman.
 4. Click on Authenticate to login using username: johndoe & password: secret. Now call the `/users/me` endpoint.
 
 5. Now try out the `/token` endpoint with same credentials.

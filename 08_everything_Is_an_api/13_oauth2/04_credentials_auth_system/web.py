@@ -88,3 +88,4 @@ async def signup_users(
     except Exception as e:
         # Handle other unforeseen exceptions
         raise HTTPException(status_code=500, detail="An error occurred during signup.")
+    
