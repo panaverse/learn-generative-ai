@@ -30,7 +30,7 @@ async def login_for_access_token(
     refresh_token_expires = timedelta(minutes=REFRESH_TOKEN_EXPIRE_MINUTES)
     refresh_token = create_refresh_token( data={"sub": user.email}, expires_delta=refresh_token_expires)
 
-    return Token(access_token=access_token, token_type="bearer", expires_in=ACCESS_TOKEN_EXPIRE_MINUTES, refresh_token=refresh_token)
+    return Token(access_token=access_token, token_type="bearer", expires_in=int(access_token_expires.total_seconds()), refresh_token=refresh_token)
 
 @app.post("/token", response_model=Token)
 async def tokens_manager(
