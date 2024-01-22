@@ -6,7 +6,5 @@
 
 FastAPI 0.95.0+ supports and recommends Annotated. Annotated is a standard Python feature that allows users to create dependencies that can be shared by multiple path operation functions.
 
-https://realpython.com/lessons/annotations/
-
 https://stackoverflow.com/questions/71898644/how-to-use-python-typing-annotated
 
