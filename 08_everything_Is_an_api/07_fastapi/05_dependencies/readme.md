@@ -9,5 +9,8 @@ FastAPI 0.95.0+ supports and recommends Annotated. Annotated is a standard Pytho
 https://stackoverflow.com/questions/71898644/how-to-use-python-typing-annotated
 
 
+[Watch this video before reviewing steps](https://www.youtube.com/watch?v=0c4NFdpu2vY&t=69s)
+
+
 
 
