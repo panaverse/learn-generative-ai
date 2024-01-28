@@ -1,5 +1,7 @@
 # Custom GPTs and Actions
 
+[Watch: Build Your Own Custom GPT With ChatGPT](https://www.youtube.com/watch?v=ljwts47mZSI)
+
 [Introducing Custom GPTs](https://openai.com/blog/introducing-gpts)
 
 [Actions](https://platform.openai.com/docs/actions/introduction)
