@@ -4,8 +4,6 @@
 
 [Watch: Add Actions to your GPT in ChatGPT!](https://www.youtube.com/watch?v=qzeaHm4J3bk)
 
-[Watch: GPT Actions: How to Integrate APIs Into OpenAI's Custom GPTs (Not in Python but helps you get new ideas)](https://www.youtube.com/watch?v=-ceIJx7zaBM)
-
 [Introducing Custom GPTs](https://openai.com/blog/introducing-gpts)
 
 [Actions](https://platform.openai.com/docs/actions/introduction)
@@ -17,3 +15,17 @@
 [Getting Started](https://platform.openai.com/docs/actions/getting-started)
 
 [Action authentication](https://platform.openai.com/docs/actions/authentication)
+
+## Local Development
+
+Install Ngrok
+
+https://www.youtube.com/watch?v=HEGT00StXbw
+
+https://ngrok.com/docs/getting-started/
+
+https://ngrok.com/docs/using-ngrok-with/fastAPI/
+
+Reference:
+
+[Watch: GPT Actions: How to Integrate APIs Into OpenAI's Custom GPTs (Not in Python but helps you get new ideas)](https://www.youtube.com/watch?v=-ceIJx7zaBM)
