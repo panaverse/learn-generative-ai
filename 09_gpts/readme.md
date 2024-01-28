@@ -4,7 +4,7 @@
 
 [Watch: Add Actions to your GPT in ChatGPT!](https://www.youtube.com/watch?v=qzeaHm4J3bk)
 
-
+[Watch: GPT Actions: How to Integrate APIs Into OpenAI's Custom GPTs (Not in Python but helps you get new ideas)](https://www.youtube.com/watch?v=-ceIJx7zaBM)
 
 [Introducing Custom GPTs](https://openai.com/blog/introducing-gpts)
 
