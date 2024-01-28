@@ -2,6 +2,10 @@
 
 [Watch: Build Your Own Custom GPT With ChatGPT](https://www.youtube.com/watch?v=ljwts47mZSI)
 
+[Watch: Add Actions to your GPT in ChatGPT!](https://www.youtube.com/watch?v=qzeaHm4J3bk)
+
+[Watch: How to Build Custom Actions for GPTs Without Coding](https://www.youtube.com/watch?v=_sNGuQz-LyY) 
+
 [Introducing Custom GPTs](https://openai.com/blog/introducing-gpts)
 
 [Actions](https://platform.openai.com/docs/actions/introduction)
