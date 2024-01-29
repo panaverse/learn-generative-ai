@@ -30,6 +30,7 @@ st.error("Error")
  
 # Exception - This has been added later
 exp = ZeroDivisionError("Trying to divide by Zero")
+
 st.exception(exp)
 
 # Write text
@@ -61,7 +62,7 @@ if st.checkbox("Show/Hide"):
 # second argument is the options for the radio button
 status = st.radio("Select Gender: ", ('Male', 'Female'))
  
-
+# st.title(status)
 # conditional statement to print 
 # Male if male is selected else print female
 # show the result using the success function
@@ -92,7 +93,7 @@ hobbies = st.multiselect("Hobbies: ",
                          ['Dancing', 'Reading', 'Sports'])
  
 # write the selected options
-st.write("You selected", len(hobbies), 'hobbies')
+st.write("You selected", len(hobbies), hobbies, 'hobbies')
 
 
 
@@ -128,7 +129,7 @@ if(st.button('Submit')):
 # first argument takes the title of the slider
 # second argument takes the starting of the slider
 # last argument takes the end number
-level = st.slider("Select the level", 1, 5)
+level = st.slider("Select the level", 1, 10)
  
 # print the level
 # format() is used to print value 
