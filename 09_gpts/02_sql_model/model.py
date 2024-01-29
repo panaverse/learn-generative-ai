@@ -15,7 +15,7 @@ hero_2 = Hero(name="Spider-Boy", secret_name="Pedro Parqueador")
 hero_3 = Hero(name="Rusty-Man", secret_name="Tommy Sharp", age=48)
 
 
-engine = create_engine("postgres://[user]:[password]@[neon_hostname]/[dbname]?options=endpoint%3D[endpoint-id]")
+engine = create_engine("postgresql://ziaukhan:Lz9i@ep-little-frog-313391.us-east-2.aws.neon.tech/neondb?sslmode=require")
 
 
 SQLModel.metadata.create_all(engine)
