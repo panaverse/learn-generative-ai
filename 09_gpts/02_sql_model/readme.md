@@ -7,3 +7,7 @@ It minimize code duplication. A single type annotation does a lot of work. **No 
 
 [SQLModel Docs](https://sqlmodel.tiangolo.com/)
 
+References:
+
+https://neon.tech/docs/guides/sqlalchemy
+
