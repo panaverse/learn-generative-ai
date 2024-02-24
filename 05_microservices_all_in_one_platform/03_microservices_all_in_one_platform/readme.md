@@ -54,3 +54,14 @@ By understanding the strengths, limitations, and potential lock-in aspects of ea
 ![Tech Stack](./tech_stack.jpeg)
 
 ![architecture](./arch.jpeg)
+
+While these tools collectively offer a strong foundation for building and running microservices in a way that can minimize vendor lock-in, it's important to recognize that some form of lock-in is often unavoidable. Here's why:
+
+**Managed Services**: While you can run open-source software like Kafka or PostgreSQL yourself to avoid vendor lock-in, you might forgo the convenience and features of a managed service offered by cloud providers.
+
+**Integration Services**: Cloud providers offer integration services like load balancers, identity services, and networking that are not easily portable across clouds.
+Performance and Cost: Some services may perform better or be more cost-effective on one cloud provider compared to another.
+
+**Operational Complexity**: Running services in a cloud-agnostic way can increase operational complexity and overhead.
+
+In summary, these tools can help in building a microservices architecture that is less prone to vendor lock-in, but they do not eliminate it. The design of your system, choice of services, and how you manage your infrastructure and deployments will determine the degree of independence from cloud vendors. Using open standards and open-source tools where possible, along with infrastructure as code, can help maintain flexibility and portability across different environments.
