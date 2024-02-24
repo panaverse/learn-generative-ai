@@ -48,3 +48,7 @@ Therefore, while these tools and platforms can support an architecture that redu
 * Embrace a multi-cloud or hybrid cloud approach to avoid being solely reliant on a single vendor.
 
 By understanding the strengths, limitations, and potential lock-in aspects of each technology, you can make informed decisions to build microservices with the right balance of functionality, flexibility, and vendor independence.
+
+![Tech Stack](./tech_stack.jpeg)
+
+![architecture](./arch.jpeg)
