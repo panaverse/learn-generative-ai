@@ -1,5 +1,7 @@
 # What is a microservices application?
 
+A **microservices application** is a **distributed program** composed of many small services that collaborate to achieve the features and functionality of the overall project.
+
 A **microservices application** is a software application built using the **microservices architecture**. This architecture involves breaking down the application into **small, independent services** that each perform a specific function. These services are:
 
 * **Independently deployable:** Each service can be deployed, updated, and scaled independently without affecting other parts of the application.
@@ -30,3 +32,5 @@ These services would communicate with each other through well-defined protocols,
 * **Need for robust communication and API management:** Efficient communication and API design are crucial for successful implementation.
 
 Overall, microservices applications offer a powerful approach for building modern, scalable, and maintainable software applications. 
+
+![microservices app](./app.png)
