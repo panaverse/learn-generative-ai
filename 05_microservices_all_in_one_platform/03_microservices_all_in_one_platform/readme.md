@@ -2,7 +2,7 @@
 
 Our vision is to build microservices on an all-in-one platform for microservices that is free from cloud-vendor lock-in.
 
-Docker, Kubernetes, Serverless Containers, Terraform, FastAPI, PostgreSQL, and Kafka—are indeed central to building and managing microservices architectures, but they each serve different purposes within the ecosystem. Let's break down their roles and discuss whether they can collectively provide an all-in-one platform that avoids cloud-vendor lock-in:
+Docker, Kubernetes, Serverless Containers, Terraform, FastAPI, PostgreSQL, Github Actions and Kafka—are indeed central to building and managing microservices architectures, but they each serve different purposes within the ecosystem. Let's break down their roles and discuss whether they can collectively provide an all-in-one platform that avoids cloud-vendor lock-in:
 
 1. **Docker**: Docker is a containerization platform that allows you to package your application and its dependencies into a container that can run on any machine that has Docker installed. This helps in ensuring consistency across different development, testing, and production environments. Docker itself doesn't eliminate cloud-vendor lock-in, but it does make it easier to move containers between different cloud environments.
 
@@ -17,6 +17,8 @@ Docker, Kubernetes, Serverless Containers, Terraform, FastAPI, PostgreSQL, and K
 6. **PostgreSQL**: PostgreSQL is an open-source relational database system. As a standalone database, it does not tie you to any cloud vendor and can run in various environments, including cloud platforms, on-premises, and as a service managed by cloud providers.
 
 7. **Kafka**: Apache Kafka is an open-source stream-processing software platform developed by the Apache Software Foundation, written in Scala and Java. It's a distributed event store and stream-processing platform that can run on various infrastructures, which helps in avoiding lock-in.
+
+8. **GitHub Actions**: This CI/CD tool allows automation of workflows and can deploy to any cloud provider. The use of GitHub Actions does not lock you into a specific cloud vendor.
 
 When used together, these technologies can indeed form the backbone of a microservices platform that minimizes the risk of cloud-vendor lock-in. However, it's important to note that avoiding vendor lock-in entirely can be challenging. While the technologies listed are mostly open-source and can be run on various cloud providers or on-premises, the implementation details can vary. For instance:
 
@@ -33,7 +35,7 @@ Therefore, while these tools and platforms can support an architecture that redu
 
 * **Kubernetes:** Managed Kubernetes services offered by cloud providers might have lock-in due to proprietary features or integrations. Using vanilla open-source Kubernetes on your own infrastructure offers more freedom.
 * **Serverless Containers:** By definition, serverless containers are tied to the specific cloud provider offering them.
-* **Other tools:** Docker, Terraform, FastAPI, PostgreSQL, and Kafka are generally less prone to vendor lock-in but might have dependencies on cloud-specific services depending on your deployment choices.
+* **Other tools:** Docker, Terraform, FastAPI, PostgreSQL, Github Actions and Kafka are generally less prone to vendor lock-in but might have dependencies on cloud-specific services depending on your deployment choices.
 
 **Overall:**
 
