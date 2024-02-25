@@ -2,6 +2,10 @@
 
 ## Poetry
 
+[Poetry vs. Pip: Modern Python Dependency Management Unveiled](https://python.plainenglish.io/poetry-vs-pip-modern-python-dependency-management-unveiled-15d39e059d39)
+
+[The Pain and the Poetry of Python](https://www.pinecone.io/blog/pain-poetry-python/)
+
 [Install pipx](https://pipx.pypa.io/stable/installation/)
 
 [Follow Poetry Tutorial](https://realpython.com/dependency-management-python-poetry/)
