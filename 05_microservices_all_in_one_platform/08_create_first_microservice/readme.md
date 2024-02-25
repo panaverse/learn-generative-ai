@@ -2,6 +2,8 @@
 
 ## Poetry
 
+`Poetry` combines dependency management, environment management, and packaging into a single tool. This means you don’t have to juggle between multiple tools like `pip`, `virtualenv`, and `setuptools`.
+
 [Poetry vs. Pip: Modern Python Dependency Management Unveiled](https://python.plainenglish.io/poetry-vs-pip-modern-python-dependency-management-unveiled-15d39e059d39)
 
 [The Pain and the Poetry of Python](https://www.pinecone.io/blog/pain-poetry-python/)
