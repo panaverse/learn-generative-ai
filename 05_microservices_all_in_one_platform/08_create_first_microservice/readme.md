@@ -18,9 +18,13 @@
 
 https://neon.tech/blog/deploy-a-serverless-fastapi-app-with-neon-postgres-and-aws-app-runner-at-any-scale
 
+Code:
+
 https://github.com/neondatabase/fastapi-apprunner-neon
 
-_This repository is a companion to a [FastAPI and AWS App Runner with Neon](https://neon.tech/blog/deploy-a-serverless-fastapi-app-with-neon-postgres-and-aws-app-runner-at-any-scale) post on the Neon blog._
+Note: We can use it as a template also
+
+This repository is a companion to a [FastAPI and AWS App Runner with Neon](https://neon.tech/blog/deploy-a-serverless-fastapi-app-with-neon-postgres-and-aws-app-runner-at-any-scale) post on the Neon blog.
 
 This repository hosts a FastAPI application leveraging Neon Serverless Postgres, deployed via AWS App Runner. This setup offers a solution for developing and deploying Python applications with demands for performance and reliability.
 
