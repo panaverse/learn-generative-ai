@@ -16,6 +16,4 @@ A picture is worth a thousand words:
 
 ![best practices](./best.jpeg)
 
-# Microservices Design Patterns
 
-<iframe width="100%" height="800" src="./design_patterns.pdf">
