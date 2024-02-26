@@ -14,3 +14,7 @@
 
 [What are Packages in Python and What is the Role of __init__.py files?](https://martinxpn.medium.com/what-are-packages-in-python-and-what-is-the-role-of-init-py-files-82-100-days-of-python-325a992b2b13)
 
+[Poetry Commands](https://realpython.com/dependency-management-python-poetry/#command-reference)
+
+    poetry run python --version
+
