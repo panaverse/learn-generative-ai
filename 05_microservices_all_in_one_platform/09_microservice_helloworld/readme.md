@@ -16,6 +16,8 @@ Add dependecies:
 
     poetry add fastapi "uvicorn[standard]"
 
+Add poetry virtualenv interpreter in VSCode
+
 Write fastapi_helloworld/main.py
 
 Run project in Poetry Envirnoment:
