@@ -1,11 +1,9 @@
 # main.py
 from contextlib import asynccontextmanager
-from typing import Union, Optional
+from typing import Union, Optional, Annotated
 from fastapi_neon import settings
 from sqlmodel import Field, Session, SQLModel, create_engine, select
-
-
-from fastapi import FastAPI
+from fastapi import FastAPI, Depends
 
 
 class Todo(SQLModel, table=True):
@@ -50,15 +48,17 @@ app = FastAPI(lifespan=lifespan, title="Hello World API with DB",
         }
         ])
 
+def get_session():
+    with Session(engine) as session:
+        yield session
+
 
 @app.get("/")
 def read_root():
     return {"Hello": "World"}
 
-
 @app.post("/todos/")
-def create_todo(todo: Todo):
-    with Session(engine) as session:
+def create_todo(todo: Todo, session: Annotated[Session, Depends(get_session)]):
         session.add(todo)
         session.commit()
         session.refresh(todo)
@@ -66,7 +66,6 @@ def create_todo(todo: Todo):
 
 
 @app.get("/todos/")
-def read_todos():
-    with Session(engine) as session:
+def read_todos(session: Annotated[Session, Depends(get_session)]):
         todos = session.exec(select(Todo)).all()
         return todos
