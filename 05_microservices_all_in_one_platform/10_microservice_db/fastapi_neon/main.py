@@ -41,7 +41,14 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(lifespan=lifespan)
+app = FastAPI(lifespan=lifespan, title="Hello World API with DB", 
+    version="0.0.1",
+    servers=[
+        {
+            "url": "http://0.0.0.0:8000", # ADD NGROK URL Here Before Creating GPT Action
+            "description": "Development Server"
+        }
+        ])
 
 
 @app.get("/")
