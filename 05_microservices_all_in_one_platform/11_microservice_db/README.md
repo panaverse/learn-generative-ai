@@ -24,6 +24,14 @@ Add poetry virtualenv interpreter in VSCode
 
 Write main.py
 
+Create a Neon Database Project and copy the connection string and paste it to .env file (check .env_back sample):
+
+https://neon.tech/docs/guides/python#create-a-neon-project
+
+Create a Neon Database Project Test Branch and copy the connection string and paste it to .env file (check .env_back sample):
+
+https://neon.tech/docs/manage/branches#create-a-branch
+
 Run test:
 
     poetry run pytest
