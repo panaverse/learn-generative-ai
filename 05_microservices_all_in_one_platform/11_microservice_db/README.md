@@ -1,4 +1,19 @@
-# FastAPI App with Neon Serverless Postgres
+# FastAPI App with PostgresSQL and SQLModel
+
+PostgreSQL has gained significant traction in the recent years in the cloud landscape, we beleave it has almost become the **de facto standard**. Here's a breakdown of the current situation:
+
+**PostgreSQL's Rise in Cloud Popularity:**
+
+* **Open Source and Feature-Rich:** Being open-source and offering a comprehensive feature set with strong community support, PostgreSQL has become a compelling alternative to proprietary cloud database offerings.
+* **Cloud Provider Support:** Major cloud providers like Google Cloud Platform (GCP), Amazon Web Services (AWS), and Microsoft Azure all offer managed PostgreSQL services, indicating recognition of its growing demand.
+* **Strengths:** PostgreSQL boasts strengths in areas like complex queries, data integrity, and extensibility, making it suitable for various data-intensive applications in the cloud.
+
+**However, there are still strong contenders:**
+
+* **MySQL:** Remains a popular choice, especially for smaller projects and those already invested in the MySQL ecosystem. Its ease of use and familiarity for many developers contribute to its continued adoption.
+* **Cloud-Specific Databases:** Cloud providers offer their own proprietary database services, often built on open-source technologies like PostgreSQL or MySQL. These services often integrate tightly with other cloud offerings, providing convenience and potential performance benefits.
+
+## Tutorial
 
 https://neon.tech/blog/deploy-a-serverless-fastapi-app-with-neon-postgres-and-aws-app-runner-at-any-scale
 
