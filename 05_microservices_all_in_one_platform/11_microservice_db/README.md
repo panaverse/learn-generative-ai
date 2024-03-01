@@ -2,7 +2,9 @@
 
 https://neon.tech/blog/deploy-a-serverless-fastapi-app-with-neon-postgres-and-aws-app-runner-at-any-scale
 
-Code:
+Note: We will not cover AWS deployment at this stage, ignore it in this tututorial for now.
+
+Code
 
 https://github.com/neondatabase/fastapi-apprunner-neon
 
