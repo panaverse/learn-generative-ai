@@ -114,6 +114,14 @@ https://www.localstack.cloud/
 
 https://medium.com/agorapulse-stories/how-to-unit-test-aws-services-with-localstack-and-testcontainers-1d39fe5dc6c2 
 
+## Attach VSCode to a Running Container
+
+https://code.visualstudio.com/docs/devcontainers/attach-container
+
+https://www.youtube.com/watch?v=OTrJrDZEFYs
+
+
+
 
 
 
