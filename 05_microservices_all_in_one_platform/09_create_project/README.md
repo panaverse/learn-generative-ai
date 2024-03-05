@@ -10,6 +10,10 @@
 
 [Follow Poetry Tutorial](https://realpython.com/dependency-management-python-poetry/)
 
+Note: If you have a old version of Poetry Install Upgrade it:
+
+    pipx upgrade poetry
+
 [Poetry Docs](https://python-poetry.org/docs/)
 
 [What are Packages in Python and What is the Role of __init__.py files?](https://martinxpn.medium.com/what-are-packages-in-python-and-what-is-the-role-of-init-py-files-82-100-days-of-python-325a992b2b13)

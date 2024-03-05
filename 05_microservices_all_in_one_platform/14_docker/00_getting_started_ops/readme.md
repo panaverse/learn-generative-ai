@@ -1,7 +1,7 @@
 # Hello World Container Operations
 
 1. Overview
-[Read Chapters 1 and 2 of our Text Book: Docker Deep Dive by Nigel Poulton 2023 Edition](https://www.amazon.com/Docker-Deep-Dive-Nigel-Poulton/dp/1916585256)
+[Read Chapters 1 and 7 of our Text Book: Docker Deep Dive by Nigel Poulton 2023 Edition](https://www.amazon.com/Docker-Deep-Dive-Nigel-Poulton/dp/1916585256)
 
 2. Installing Docker Desktop (Chapter 3)
 
