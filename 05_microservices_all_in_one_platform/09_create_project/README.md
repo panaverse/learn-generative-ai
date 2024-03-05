@@ -12,6 +12,8 @@ Poetry in Python: Poetry is Python's answer to npm and Yarn, offering similar fu
 
 [Follow Poetry Tutorial](https://realpython.com/dependency-management-python-poetry/)
 
+    poetry —-version
+
 Note: If you have a old version of Poetry Installed Upgrade it:
 
     pipx upgrade poetry
