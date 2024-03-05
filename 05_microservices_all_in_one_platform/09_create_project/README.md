@@ -2,6 +2,8 @@
 
 `Poetry` combines dependency management, environment management, and packaging into a single tool. This means you don’t have to juggle between multiple tools like `pip`, `virtualenv`, and `setuptools`.
 
+Poetry in Python: Poetry is Python's answer to npm and Yarn, offering similar functionalities like managing dependencies, creating virtual environments, and ensuring reproducibility of projects. It simplifies the Python development workflow, making it easy to create robust applications.
+
 [Poetry vs. Pip: Modern Python Dependency Management Unveiled](https://python.plainenglish.io/poetry-vs-pip-modern-python-dependency-management-unveiled-15d39e059d39)
 
 [The Pain and the Poetry of Python](https://www.pinecone.io/blog/pain-poetry-python/)
@@ -10,7 +12,7 @@
 
 [Follow Poetry Tutorial](https://realpython.com/dependency-management-python-poetry/)
 
-Note: If you have a old version of Poetry Install Upgrade it:
+Note: If you have a old version of Poetry Installed Upgrade it:
 
     pipx upgrade poetry
 
