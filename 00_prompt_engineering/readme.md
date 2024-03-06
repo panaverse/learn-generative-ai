@@ -2,11 +2,11 @@
 
 ## LLM Websites
 
-[Microsoft Copilot](https://copilot.microsoft.com/)
+[Microsoft Copilot](https://copilot.microsoft.com)
 
-[Google Bard](https://bard.google.com/chat)
+[Google Gemini](https://gemini.google.com)
 
-[ChatGPT](https://chat.openai.com/)
+[ChatGPT](https://chat.openai.com)
 
 ## Prompt Engineering Explained: Sculpting AI's Responses
 
