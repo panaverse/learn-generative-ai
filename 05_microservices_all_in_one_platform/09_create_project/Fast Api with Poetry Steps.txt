@@ -1,0 +1,38 @@
+Step 1: Install pipx
+	- Open your terminal.
+	- Install pipx using pip: `python -m pip install --user pipx`
+
+Step 2: Ensure pipx's binary directory is in your PATH: `python -m pipx ensurepath`
+
+Step 3: Restart your terminal to apply the PATH update.
+
+Step 4: run the command `pipx install poetry`
+
+Step 5: To check the version run `poetry --version`
+
+Step 6: Create a new project with `poetry new uit-api-class --name uitclass`
+
+Step 7: open the sub folder inside of the parent folder, in this case `uitclass`
+
+Step 8: Now create a new file named `main.py`
+
+Step 9 (optional): Check the version of python with the command `poetry run python --version`
+
+Step 10: poetry add fastapi "uvicorn[standard]"
+
+Step 10a (optional): Check the packages inside of the pyproject.toml
+
+Step 11: Write the hello world code in the main.py file:
+	- https://github.com/panaverse/learn-generative-ai/blob/main/05_microservices_all_in_one_platform/10_microservice_helloworld/fastapi-helloworld/fastapi_helloworld/main.py
+
+Step 12: run the server: poetry run uvicorn uitclass.main:app --host 0.0.0.0 --port 8000 
+
+Step 13: Open the following urls:
+	- http://0.0.0.0:8000/
+
+	- http://0.0.0.0:8000/docs
+
+	- http://0.0.0.0:8000/openapi.json
+
+	or 
+	- http://localhost:8000
