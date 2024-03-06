@@ -4,6 +4,8 @@
 
 Poetry in Python: Poetry is Python's answer to npm and Yarn, offering similar functionalities like managing dependencies, creating virtual environments, and ensuring reproducibility of projects. It simplifies the Python development workflow, making it easy to create robust applications.
 
+Follow the txt file in this directory.
+
 [Poetry vs. Pip: Modern Python Dependency Management Unveiled](https://python.plainenglish.io/poetry-vs-pip-modern-python-dependency-management-unveiled-15d39e059d39)
 
 [The Pain and the Poetry of Python](https://www.pinecone.io/blog/pain-poetry-python/)
