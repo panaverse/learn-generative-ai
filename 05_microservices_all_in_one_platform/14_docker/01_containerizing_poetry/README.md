@@ -56,8 +56,6 @@ RUN curl -sSL https://install.python-poetry.org | python3 -
 
 WORKDIR /app
 
-RUN pipx install --force-reinstall poetry
-
 # Install dependencies with Poetry
 COPY pyproject.toml ./
 RUN poetry install

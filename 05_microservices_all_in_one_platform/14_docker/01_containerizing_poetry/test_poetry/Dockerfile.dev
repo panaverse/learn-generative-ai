@@ -28,4 +28,4 @@ RUN poetry install
 
 COPY . .
 
-CMD ["poetry", "run", "python", "/test_poetry/main.py"]
+CMD ["poetry", "run", "python", "test_poetry/main.py"]
