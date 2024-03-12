@@ -4,6 +4,10 @@ FastAPI features, combined with its overall developer-friendly nature, make Fast
 
 [Tutorial](https://sqlmodel.tiangolo.com/tutorial/fastapi/)
 
+Code for Tutorial:
+
+https://github.com/tiangolo/sqlmodel/tree/main/docs_src/tutorial/fastapi
+
 ## Topics to Cover
 
 1. https://sqlmodel.tiangolo.com/tutorial/fastapi/simple-hero-api/
