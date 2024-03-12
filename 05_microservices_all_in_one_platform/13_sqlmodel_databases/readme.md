@@ -1,4 +1,4 @@
-# SQLModel for Validation and Object Realational Modeling
+# SQLModel Object Realational Modeling
 
 SQLModel is a library for interacting with SQL databases in Python, designed to be used with FastAPI, and built on top of SQLAlchemy and Pydantic. It brings together the best of these libraries, making it easier to create models that can be used both for defining database tables and for validating and serializing data in FastAPI applications. This synergy makes SQLModel a compelling choice for microservice development using Python and FastAPI, particularly for projects that involve significant database interactions.
 
@@ -47,6 +47,44 @@ https://www.youtube.com/watch?v=LY52NhyJZbY
 https://www.youtube.com/watch?v=RkO-q9asMFM
 
 https://www.youtube.com/watch?v=hhyCLJ6dSCs
+
+## Topics To Cover:
+
+1. https://sqlmodel.tiangolo.com/databases/
+
+2. https://sqlmodel.tiangolo.com/db-to-code/
+
+3. https://sqlmodel.tiangolo.com/tutorial/create-db-and-table-with-db-browser/
+
+4. https://sqlmodel.tiangolo.com/tutorial/create-db-and-table/
+
+5. https://sqlmodel.tiangolo.com/tutorial/insert/
+
+6. https://sqlmodel.tiangolo.com/tutorial/automatic-id-none-refresh/
+
+7. https://sqlmodel.tiangolo.com/tutorial/select/
+
+8. https://sqlmodel.tiangolo.com/tutorial/where/
+
+9. https://sqlmodel.tiangolo.com/tutorial/indexes/
+
+10. https://sqlmodel.tiangolo.com/tutorial/one/
+
+11. https://sqlmodel.tiangolo.com/tutorial/limit-and-offset/
+
+12. https://sqlmodel.tiangolo.com/tutorial/update/
+
+13. https://sqlmodel.tiangolo.com/tutorial/delete/
+
+14. https://sqlmodel.tiangolo.com/tutorial/connect/
+
+15. https://sqlmodel.tiangolo.com/tutorial/relationship-attributes/
+
+16. https://sqlmodel.tiangolo.com/tutorial/many-to-many/
+
+17. https://sqlmodel.tiangolo.com/tutorial/code-structure/
+
+
 
 
 

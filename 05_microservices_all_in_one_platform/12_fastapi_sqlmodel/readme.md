@@ -1,32 +1,34 @@
-# FastAPI for Microservices Development
+# FastAPI and SQLModel for Microservices Development
 
 FastAPI features, combined with its overall developer-friendly nature, make FastAPI a popular choice for building microservices in Python.
 
 [Tutorial](https://sqlmodel.tiangolo.com/tutorial/fastapi/)
 
-https://sqlmodel.tiangolo.com/tutorial/fastapi/simple-hero-api/
+## Topics to Cover
 
-https://sqlmodel.tiangolo.com/tutorial/fastapi/response-model/
+1. https://sqlmodel.tiangolo.com/tutorial/fastapi/simple-hero-api/
 
-https://sqlmodel.tiangolo.com/tutorial/fastapi/multiple-models/
+2. https://sqlmodel.tiangolo.com/tutorial/fastapi/response-model/
 
-https://sqlmodel.tiangolo.com/tutorial/fastapi/read-one/
+3. https://sqlmodel.tiangolo.com/tutorial/fastapi/multiple-models/
 
-https://sqlmodel.tiangolo.com/tutorial/fastapi/limit-and-offset/
+4. https://sqlmodel.tiangolo.com/tutorial/fastapi/read-one/
 
-https://sqlmodel.tiangolo.com/tutorial/fastapi/update/
+5. https://sqlmodel.tiangolo.com/tutorial/fastapi/limit-and-offset/
 
-https://sqlmodel.tiangolo.com/tutorial/fastapi/update-extra-data/
+6. https://sqlmodel.tiangolo.com/tutorial/fastapi/update/
 
-https://sqlmodel.tiangolo.com/tutorial/fastapi/delete/
+7. https://sqlmodel.tiangolo.com/tutorial/fastapi/update-extra-data/
 
-https://sqlmodel.tiangolo.com/tutorial/fastapi/session-with-dependency/
+8. https://sqlmodel.tiangolo.com/tutorial/fastapi/delete/
 
-https://sqlmodel.tiangolo.com/tutorial/fastapi/teams/
+9. https://sqlmodel.tiangolo.com/tutorial/fastapi/session-with-dependency/
 
-https://sqlmodel.tiangolo.com/tutorial/fastapi/relationships/
+10. https://sqlmodel.tiangolo.com/tutorial/fastapi/teams/
 
-https://sqlmodel.tiangolo.com/tutorial/fastapi/tests/
+11. https://sqlmodel.tiangolo.com/tutorial/fastapi/relationships/
+
+12. https://sqlmodel.tiangolo.com/tutorial/fastapi/tests/
 
 
 FastAPI is optimized for microservices development. This optimization is evident in several features and design choices inherent to the framework:
