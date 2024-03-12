@@ -4,6 +4,29 @@ FastAPI features, combined with its overall developer-friendly nature, make Fast
 
 [Tutorial](https://sqlmodel.tiangolo.com/tutorial/fastapi/)
 
+https://sqlmodel.tiangolo.com/tutorial/fastapi/simple-hero-api/
+
+https://sqlmodel.tiangolo.com/tutorial/fastapi/response-model/
+
+https://sqlmodel.tiangolo.com/tutorial/fastapi/multiple-models/
+
+https://sqlmodel.tiangolo.com/tutorial/fastapi/read-one/
+
+https://sqlmodel.tiangolo.com/tutorial/fastapi/limit-and-offset/
+
+https://sqlmodel.tiangolo.com/tutorial/fastapi/update/
+
+https://sqlmodel.tiangolo.com/tutorial/fastapi/update-extra-data/
+
+https://sqlmodel.tiangolo.com/tutorial/fastapi/delete/
+
+https://sqlmodel.tiangolo.com/tutorial/fastapi/session-with-dependency/
+
+https://sqlmodel.tiangolo.com/tutorial/fastapi/teams/
+
+https://sqlmodel.tiangolo.com/tutorial/fastapi/relationships/
+
+https://sqlmodel.tiangolo.com/tutorial/fastapi/tests/
 
 
 FastAPI is optimized for microservices development. This optimization is evident in several features and design choices inherent to the framework:
