@@ -2,17 +2,9 @@
 
 FastAPI features, combined with its overall developer-friendly nature, make FastAPI a popular choice for building microservices in Python.
 
-[Tutorial](https://fastapi.tiangolo.com/tutorial/)
+[Tutorial](https://sqlmodel.tiangolo.com/tutorial/fastapi/)
 
-https://github.com/panaverse/learn-generative-ai/tree/main/04_everything_is_an_api
 
-Watch these tutorial videos:
-
-https://www.youtube.com/watch?v=cPy3FazRlOA
-
-https://www.youtube.com/watch?v=MMajdT5FCQk
-
-https://www.youtube.com/watch?v=oAFwI2GNd8c&t=35s
 
 FastAPI is optimized for microservices development. This optimization is evident in several features and design choices inherent to the framework:
 
