@@ -6,6 +6,8 @@ Poetry in Python: Poetry is Python's answer to npm and Yarn, offering similar fu
 
 Follow the txt file in this directory.
 
+[Python Poetry Cheatsheet](https://gist.github.com/CarlosDomingues/b88df15749af23a463148bd2c2b9b3fb)
+
 [Poetry vs. Pip: Modern Python Dependency Management Unveiled](https://python.plainenglish.io/poetry-vs-pip-modern-python-dependency-management-unveiled-15d39e059d39)
 
 [The Pain and the Poetry of Python](https://www.pinecone.io/blog/pain-poetry-python/)
