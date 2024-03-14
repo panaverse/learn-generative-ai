@@ -1,5 +1,7 @@
 # FastAPI App with PostgresSQL and SQLModel
 
+### Note: Follow our code in fastapi_neon/main.py and tests/test_main.py, not the code in the tutorial link
+
 PostgreSQL has gained significant traction in the recent years in the cloud landscape, we beleave it has almost become the **de facto standard**. Here's a breakdown of the current situation:
 
 **PostgreSQL's Rise in Cloud Popularity:**
