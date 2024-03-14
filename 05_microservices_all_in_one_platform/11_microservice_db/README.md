@@ -17,6 +17,8 @@ PostgreSQL has gained significant traction in the recent years in the cloud land
 
 https://neon.tech/blog/deploy-a-serverless-fastapi-app-with-neon-postgres-and-aws-app-runner-at-any-scale
 
+[Review Annotated Details for Inversion of Control](https://stackoverflow.com/questions/71898644/how-to-use-python-typing-annotated)
+
 Note: We will not cover AWS deployment at this stage, ignore it in this tututorial for now.
 
 Code
