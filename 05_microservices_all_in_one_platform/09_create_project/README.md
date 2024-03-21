@@ -63,3 +63,15 @@ Poetry is a tool for dependency management and packaging in Python. While it is 
 ### Conclusion
 
 While Poetry is not specifically tailored for microservices, its features around dependency management, environment isolation, and ease of packaging align well with the requirements of microservices development in Python. It provides a modern and efficient way to manage Python projects, which can be highly beneficial in a microservices context, especially for complex services or when working in a polyglot environment where consistency in Python-based services is important.
+
+# youtube live session
+1. `poetry --version`
+2. `poetry new project_youtube`
+3. `cd project_youtube`
+4. `poetry run python --version`
+5. `poetry add requests`
+6. `poetry run python ./project_youtube/main.py`
+7. `poetry add pytest`
+8. `poetry run pytest`
+
+# https://realpython.com/dependency-management-python-poetry/
