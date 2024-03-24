@@ -1,5 +1,7 @@
 # Create Project and Manage Dependencies with Poetry
 
+[Watch this Poetry Video](https://www.youtube.com/watch?v=g9u-H628jXg&t=16s)
+
 `Poetry` combines dependency management, environment management, and packaging into a single tool. This means you don’t have to juggle between multiple tools like `pip`, `virtualenv`, and `setuptools`.
 
 Poetry in Python: Poetry is Python's answer to npm and Yarn, offering similar functionalities like managing dependencies, creating virtual environments, and ensuring reproducibility of projects. It simplifies the Python development workflow, making it easy to create robust applications.
