@@ -6,7 +6,7 @@ authors = ["Zia Khan <zia@panacloud.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.11"
 uvicorn = {extras = ["standard"], version = "^0.27.1"}
 sqlmodel = "^0.0.16"
 psycopg = {extras = ["binary"], version = "^3.1.18"}
@@ -44,7 +44,7 @@ include_trailing_comma = true
 force_grid_wrap = 0
 line_length = 88
 [build-system]
-requires = ["poetry>=0.12"]
+requires = ["poetry>=1.8.2"]
 build-backend = "poetry.masonry.api"
 
 [tool.mypy]

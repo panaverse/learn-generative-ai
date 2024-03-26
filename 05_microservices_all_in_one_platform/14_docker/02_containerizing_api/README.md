@@ -44,6 +44,60 @@ Now we will use the following Docker base image:
 
 https://hub.docker.com/r/tiangolo/uvicorn-gunicorn-fastapi
 
+
+**Checking to see if Docker is running:**
+
+```bash
+docker version
+```
+
+**Building the Image:**
+
+```bash
+docker build -f Dockerfile.dev -t my-dev-image .
+```
+
+**Check Images:**
+
+```bash
+docker images
+```
+
+**Verify the config:**
+
+```bash
+docker inspect my-dev-image
+```
+
+**Running the Container:**
+
+https://docs.docker.com/engine/reference/run/
+
+```bash
+docker run --name dev-cont1 -it my-dev-image
+```
+
+**List Running Containers**
+
+```bash
+docker ps
+```
+
+
+**Running the Container and start a Bash shell:**
+
+```bash
+docker run -it my-dev-image /bin/bash
+```
+
+**Opening the command line in the container:**
+
+```bash
+docker exec -it my-dev-image bash
+```
+
+
+
 Additional References:
 
 https://www.jeffastor.com/blog/testing-fastapi-endpoints-with-docker-and-pytest/
