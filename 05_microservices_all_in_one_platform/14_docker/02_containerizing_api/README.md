@@ -2,28 +2,16 @@
 
 We will take the microservice created in step10_microserice_db and containerize it.
 
-Now we will use the following Docker base image:
+## Let's First Run the app without Docker to test if everything is working
 
-https://hub.docker.com/r/tiangolo/uvicorn-gunicorn-fastapi
-
-
-Note: If you are using Kubernetes or similar tools. In that case, you probably don't need this image (or any other similar base image). You are probably better off building a Docker image from scratch as explained in the docs for FastAPI in Containers - [Docker: Build a Docker Image for FastAPI](https://fastapi.tiangolo.com/deployment/docker/#replication-number-of-processes).
-
-I have updated our toml file using this as a base:
+We have updated our toml file using this as a base:
 
 https://github.com/tiangolo/full-stack-fastapi-template/blob/master/backend/pyproject.toml
 
-Note: Review each and every dependency in the toml file.
+Note: Review each and every dependency in the toml file. So that you learn what are the different libraries used in development.
 
 
-
-We are using this Dockerfile template:
-
-https://github.com/tiangolo/full-stack-fastapi-template/blob/master/backend/Dockerfile
-
-Additional References:
-
-https://www.jeffastor.com/blog/testing-fastapi-endpoints-with-docker-and-pytest/
+Note: If you are using Kubernetes or similar tools. In that case, you probably don't need this image (or any other similar base image). You are probably better off building a Docker image from scratch as explained in the docs for FastAPI in Containers - [Docker: Build a Docker Image for FastAPI](https://fastapi.tiangolo.com/deployment/docker/#replication-number-of-processes).
 
 Install dependency:
 
@@ -44,6 +32,24 @@ Open in Browser:
 Run test:
 
     poetry run pytest
+
+
+## Now Let's Containerize the App
+
+We are using this Dockerfile template:
+
+https://github.com/tiangolo/full-stack-fastapi-template/blob/master/backend/Dockerfile
+
+Now we will use the following Docker base image:
+
+https://hub.docker.com/r/tiangolo/uvicorn-gunicorn-fastapi
+
+Additional References:
+
+https://www.jeffastor.com/blog/testing-fastapi-endpoints-with-docker-and-pytest/
+
+
+
 
 
 
