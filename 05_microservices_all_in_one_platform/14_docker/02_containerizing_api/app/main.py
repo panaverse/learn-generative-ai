@@ -1,9 +1,10 @@
 # main.py
 from contextlib import asynccontextmanager
 from typing import Union, Optional, Annotated
-from fastapi_neon import settings
-from sqlmodel import Field, Session, SQLModel, create_engine, select
+from app import settings
+from sqlmodel import Field, Session, SQLModel, create_engine, select, Sequence
 from fastapi import FastAPI, Depends
+from typing import AsyncGenerator
 
 
 class Todo(SQLModel, table=True):
@@ -25,7 +26,7 @@ engine = create_engine(
 )
 
 
-def create_db_and_tables():
+def create_db_and_tables()->None:
     SQLModel.metadata.create_all(engine)
 
 
@@ -33,7 +34,7 @@ def create_db_and_tables():
 # be executed before the application starts.
 # https://fastapi.tiangolo.com/advanced/events/#lifespan-function
 @asynccontextmanager
-async def lifespan(app: FastAPI):
+async def lifespan(app: FastAPI)-> AsyncGenerator[None, None]:
     print("Creating tables..")
     create_db_and_tables()
     yield
@@ -58,7 +59,7 @@ def read_root():
     return {"Hello": "World"}
 
 @app.post("/todos/", response_model=Todo)
-def create_todo(todo: Todo, session: Annotated[Session, Depends(get_session)]):
+def create_todo(todo: Todo, session: Annotated[Session, Depends(get_session)])->Todo:
         session.add(todo)
         session.commit()
         session.refresh(todo)

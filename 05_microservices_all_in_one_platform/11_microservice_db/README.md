@@ -2,6 +2,8 @@
 
 ### Note: Follow our code in fastapi_neon/main.py and tests/test_main.py, not the code in the tutorial link
 
+[Dependency Injection Explained in 7 Minutes](https://www.youtube.com/watch?v=DpMGEhwuuyA)
+
 PostgreSQL has gained significant traction in the recent years in the cloud landscape, we beleave it has almost become the **de facto standard**. Here's a breakdown of the current situation:
 
 **PostgreSQL's Rise in Cloud Popularity:**
