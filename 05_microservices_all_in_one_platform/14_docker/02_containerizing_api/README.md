@@ -74,7 +74,23 @@ docker inspect my-dev-image
 https://docs.docker.com/engine/reference/run/
 
 ```bash
-docker run --name dev-cont1 -it my-dev-image
+docker run --name dev-cont1 -d my-dev-image
+```
+
+**Intract with the Container:**
+
+```bash
+docker exec -it dev-cont1 /bin/bash
+```
+
+**Exit from the container shell**
+```bash
+exit
+```
+
+**container logs**
+```bash
+docker logs dev-cont1
 ```
 
 **List Running Containers**
@@ -83,19 +99,11 @@ docker run --name dev-cont1 -it my-dev-image
 docker ps
 ```
 
-
-**Running the Container and start a Bash shell:**
-
-```bash
-docker run -it my-dev-image /bin/bash
-```
-
-**Opening the command line in the container:**
+**List all Containers**
 
 ```bash
-docker exec -it my-dev-image bash
+docker ps -a
 ```
-
 
 
 Additional References:
