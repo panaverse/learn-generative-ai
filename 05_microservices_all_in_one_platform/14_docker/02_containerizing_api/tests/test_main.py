@@ -2,9 +2,9 @@ from fastapi.testclient import TestClient
 from sqlmodel import Field, Session, SQLModel, create_engine, select
 
 # https://sqlmodel.tiangolo.com/tutorial/fastapi/tests/#override-a-dependency
-from fastapi_neon.main import app, get_session, Todo
+from app.main import app, get_session, Todo
 
-from fastapi_neon import settings
+from app import settings
 
 # https://fastapi.tiangolo.com/tutorial/testing/
 # https://realpython.com/python-assert-statement/
@@ -12,7 +12,7 @@ from fastapi_neon import settings
 
 # postgresql://ziaukhan:oSUqbdELz91i@ep-polished-waterfall-a50jz332.us-east-2.aws.neon.tech/neondb?sslmode=require
 
-def test_read_main():
+def test_read_main()->None:
     client = TestClient(app=app)
     response = client.get("/")
     assert response.status_code == 200

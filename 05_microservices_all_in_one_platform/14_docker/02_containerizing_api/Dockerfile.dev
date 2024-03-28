@@ -1,0 +1,17 @@
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.11
+
+WORKDIR /workspace/
+
+# Install Poetry
+RUN curl -sSL https://install.python-poetry.org | POETRY_HOME=/opt/poetry python && \
+    cd /usr/local/bin && \
+    ln -s /opt/poetry/bin/poetry && \
+    poetry config virtualenvs.create false
+
+# Copy Project
+COPY . /workspace/
+# Allow installing dev dependencies to run tests
+ARG INSTALL_DEV=true
+RUN bash -c "if [ $INSTALL_DEV == 'true' ] ; then poetry install --no-root ; else poetry install --no-root --only main ; fi"
+ENV PYTHONPATH=/workspace
+CMD ["/bin/bash","-c", "poetry run uvicorn app.main:app --host 0.0.0.0 --port 8000"]
