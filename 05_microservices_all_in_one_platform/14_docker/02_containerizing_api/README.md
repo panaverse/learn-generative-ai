@@ -74,8 +74,7 @@ docker inspect my-dev-image
 https://docs.docker.com/engine/reference/run/
 
 ```bash
-docker run -it -p 8000:8000 my-dev-image /bin/bash -c "poe
-try run uvicorn app.main:app --host 0.0.0.0 --port 8000"
+docker run -d -p 8000:8000 my-dev-image
 ```
 
 **Test the Container:**
