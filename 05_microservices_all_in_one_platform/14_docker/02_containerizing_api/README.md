@@ -80,7 +80,7 @@ docker run -d -p 8000:8000 my-dev-image
 **Test the Container:**
 
 ```bash
-docker run -it api-dev-image /bin/bash -c "poetry run pytest"
+docker run -it my-dev-image /bin/bash -c "poetry run pytest"
 ```
 
 **Intract with the Container:**
