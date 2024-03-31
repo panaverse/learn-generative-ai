@@ -8,8 +8,6 @@ RUN curl -sSL https://install.python-poetry.org | POETRY_HOME=/opt/poetry python
     poetry config virtualenvs.create false
 # Copy only the necessary files
 COPY pyproject.toml poetry.lock* /workspace/
-# Tell Poetry not to create a virtual environment
-RUN poetry config virtualenvs.create false
 # Install only production dependencies
 RUN poetry install --no-root --no-dev
 # Copy the rest of application code

@@ -80,7 +80,7 @@ docker run -d -p 8000:8000 my-dev-image
 **Test the Container:**
 
 ```bash
-docker run -it my-dev-image /bin/bash -c "poetry run pytest"
+docker run -it api-dev-image /bin/bash -c "poetry run pytest"
 ```
 
 **Intract with the Container:**
@@ -113,7 +113,6 @@ docker ps -a
 
 ## Production Setup
 
-
 **Building the Image for Production:**
 
 ```bash
@@ -122,11 +121,24 @@ docker build -f Dockerfile.prod -t my-prod-image .
 
 **Running the Container for Production:**
 
-https://docs.docker.com/engine/reference/run/
-
 ```bash
 docker run -d -p 8080:8000 my-prod-image
 ```
+
+**OR**
+
+**Building Fully optimized production Dockerfile:**
+
+```bash
+docker build -t my-prod-image-optimized .
+```
+
+**Running the Container for Production:**
+
+```bash
+docker run -d -p 8085:8000 my-prod-image-optimized
+```
+
 
 Additional References:
 
