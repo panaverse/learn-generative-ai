@@ -51,7 +51,7 @@ https://hub.docker.com/r/tiangolo/uvicorn-gunicorn-fastapi
 docker version
 ```
 
-**Building the Image:**
+**Building the Image for Dev:**
 
 ```bash
 docker build -f Dockerfile.dev -t my-dev-image .
@@ -69,7 +69,7 @@ docker images
 docker inspect my-dev-image
 ```
 
-**Running the Container:**
+**Running the Container for Dev:**
 
 https://docs.docker.com/engine/reference/run/
 
@@ -111,13 +111,23 @@ docker ps
 docker ps -a
 ```
 
+## Production Setup
+
+
+**Building the Image for Production:**
+
+```bash
+docker build -f Dockerfile.prod -t my-prod-image .
+```
+
+**Running the Container for Production:**
+
+https://docs.docker.com/engine/reference/run/
+
+```bash
+docker run -d -p 8080:8000 my-prod-image
+```
 
 Additional References:
 
 https://www.jeffastor.com/blog/testing-fastapi-endpoints-with-docker-and-pytest/
-
-
-
-
-
-
