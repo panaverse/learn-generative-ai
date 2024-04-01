@@ -1,6 +1,7 @@
 # Use a specific tag for a more stable and predictable base image
 FROM tiangolo/uvicorn-gunicorn-fastapi:python3.11-slim
 
+LABEL maintainer="ameen-alam"
 # Set work directory
 WORKDIR /workspace/
 
