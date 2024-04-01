@@ -36,7 +36,7 @@ USER appuser
 
 # Set the work directory and continue with the Dockerfile setup...
 ENV PYTHONPATH=/workspace
-
+EXPOSE 8000
 # Optimize Gunicorn config for production
 # This includes adjustments for worker numbers, timeouts, etc., based on your app's needs and the hardware it runs on
 CMD ["poetry", "run", "gunicorn", "app.main:app", "-k", "uvicorn.workers.UvicornWorker", "--workers", "4", "--worker-tmp-dir", "/dev/shm", "--log-file", "-", "--bind", "0.0.0.0:8000"]

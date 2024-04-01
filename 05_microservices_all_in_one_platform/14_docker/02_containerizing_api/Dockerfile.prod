@@ -1,26 +1,20 @@
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.11
-# Set work directory
-WORKDIR /workspace/
-# Install Poetry
-RUN curl -sSL https://install.python-poetry.org | POETRY_HOME=/opt/poetry python && \
-    cd /usr/local/bin && \
-    ln -s /opt/poetry/bin/poetry && \
-    poetry config virtualenvs.create false
-# Copy only the necessary files
-COPY pyproject.toml poetry.lock* /workspace/
-# Install only production dependencies
-RUN poetry install --no-root --no-dev
-# Copy the rest of application code
-COPY ./app /workspace/app
-COPY .env /workspace/
-# Non-root user for security
-# Set up a non-root user with an explicit home directory
-RUN useradd --create-home --home-dir /home/appuser appuser
-# Change ownership of the application directory
-# This makes sure that the appuser has write permissions
-RUN chown -R appuser:appuser /workspace
-# Use the non-root user to run the application
+# Dependency Resolution Stage:
+FROM python:3.11 as requirements-stage
+WORKDIR /tmp
+RUN pip install poetry
+COPY ./pyproject.toml ./poetry.lock* /tmp/
+RUN poetry export -f requirements.txt --output requirements.txt --without-hashes
+# Application Build Stage:
+FROM python:3.11-slim
+WORKDIR /code
+COPY --from=requirements-stage /tmp/requirements.txt /code/requirements.txt
+RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
+COPY ./app /code/app
+# We will comment COPY .env /code/ later 
+COPY .env /code/
+# Set up a non-root user for better security
+RUN useradd --create-home --home-dir /home/appuser appuser \
+    && chown -R appuser:appuser /code
 USER appuser
-# Set the work directory and continue with the Dockerfile setup...
-ENV PYTHONPATH=/workspace
-CMD ["poetry", "run", "gunicorn", "app.main:app", "-k", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:8000"]
+EXPOSE 8000
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

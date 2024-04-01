@@ -111,32 +111,45 @@ docker ps
 docker ps -a
 ```
 
-## Production Setup
+## Production Setup for On-premises Environment
+
+[For production deployments we recommend using gunicorn with the uvicorn worker class.](https://www.uvicorn.org/#running-with-gunicorn)
+
+For a PyPy compatible configuration use uvicorn.workers.UvicornH11Worker.
+
+For more information, see the [deployment documentation.](https://www.uvicorn.org/deployment/)
+
 
 **Building the Image for Production:**
 
 ```bash
-docker build -f Dockerfile.prod -t my-prod-image .
+docker build -f Dockerfile.onprem_prod -t my-onprem-prod-image .
 ```
 
 **Running the Container for Production:**
 
 ```bash
-docker run -d -p 8080:8000 my-prod-image
+docker run -d -p 8080:8000 my-onprem-prod-image
 ```
 
-**OR**
+## Building fully optimized production images for Kubernetes or serverless cloud environments:**
 
-**Building Fully optimized production Dockerfile:**
+Docker Image with Poetry
+
+If you use Poetry to manage your project's dependencies, you could use Docker multi-stage building:
+
+https://fastapi.tiangolo.com/deployment/docker/
+
+**Building fully optimized Image for Production:**
 
 ```bash
-docker build -t my-prod-image-optimized .
+docker build -f Dockerfile.prod -t my-prod-image-optimized .
 ```
 
 **Running the Container for Production:**
 
 ```bash
-docker run -d -p 8085:8000 my-prod-image-optimized
+docker run -d -p 8000:8000 my-prod-image-optimized
 ```
 
 
