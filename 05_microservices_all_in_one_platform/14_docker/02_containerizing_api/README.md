@@ -10,9 +10,6 @@ https://github.com/tiangolo/full-stack-fastapi-template/blob/master/backend/pypr
 
 Note: Review each and every dependency in the toml file. So that you learn what are the different libraries used in development.
 
-
-Note: If you are using Kubernetes or similar tools. In that case, you probably don't need this image (or any other similar base image). You are probably better off building a Docker image from scratch as explained in the docs for FastAPI in Containers - [Docker: Build a Docker Image for FastAPI](https://fastapi.tiangolo.com/deployment/docker/#replication-number-of-processes).
-
 Install dependency:
 
     poetry install
@@ -36,14 +33,7 @@ Run test:
 
 ## Now Let's Containerize the App
 
-We are using this Dockerfile template:
-
-https://github.com/tiangolo/full-stack-fastapi-template/blob/master/backend/Dockerfile
-
-Now we will use the following Docker base image:
-
-https://hub.docker.com/r/tiangolo/uvicorn-gunicorn-fastapi
-
+https://fastapi.tiangolo.com/deployment/docker/
 
 **Checking to see if Docker is running:**
 
@@ -74,41 +64,30 @@ docker inspect my-dev-image
 https://docs.docker.com/engine/reference/run/
 
 
-**Replace $(pwd) with your codebase's location.**
+<!-- **Replace $(pwd) with your codebase's location.** -->
 
-*i.e. docker run -d --name dev-cont1 -v D:\code\learn-generative-ai\05_microservices_all_in_one_platform\14_docker\02_containerizing_api:/code -p 8000:8000 my-dev-image*
+<!-- *i.e. docker run -d --name dev-cont1 -v D:\code\learn-generative-ai\05_microservices_all_in_one_platform\14_docker\02_containerizing_api:/code -p 8000:8000 my-dev-image*
 
 ```bash
 docker run -d --name dev-cont1 -v $(pwd):/code -p 8000:8000 my-dev-image
-```
+``` -->
 
-**container logs**
+<!-- **container logs**
 ```bash
 docker logs dev-cont1
-```
+``` -->
 
-**container logs: To follow only new log files you can use -f --since 0m  --tail 10**
+<!-- **container logs: To follow only new log files you can use -f --since 0m  --tail 10**
 ```bash
 docker logs dev-cont1 -f
 docker logs dev-cont1 -f --tail 10
 docker logs dev-cont1 -f --since 10m
-```
+``` -->
 
 **Test the Container:**
 
 ```bash
 docker run -it --rm my-dev-image /bin/bash -c "poetry run pytest"
-```
-
-**Intract with the Container:**
-
-```bash
-docker exec -it dev-cont1 /bin/bash
-```
-
-**Exit from the container shell**
-```bash
-exit
 ```
 
 **List Running Containers**
@@ -123,25 +102,15 @@ docker ps
 docker ps -a
 ```
 
-## Production Setup for On-premises Environment
-
-[For production deployments we recommend using gunicorn with the uvicorn worker class.](https://www.uvicorn.org/#running-with-gunicorn)
-
-For a PyPy compatible configuration use uvicorn.workers.UvicornH11Worker.
-
-For more information, see the [deployment documentation.](https://www.uvicorn.org/deployment/)
-
-
-**Building the Image for Production:**
+**Intract with the Container:**
 
 ```bash
-docker build -f Dockerfile.onprem_prod -t my-onprem-prod-image .
+docker exec -it dev-cont1 /bin/bash
 ```
 
-**Running the Container for Production:**
-
+**Exit from the container shell**
 ```bash
-docker run -d -p 8080:8000 my-onprem-prod-image
+exit
 ```
 
 ## Building fully optimized production images for Kubernetes or serverless cloud environments:**
@@ -163,7 +132,6 @@ docker build -f Dockerfile.prod -t my-prod-image-optimized .
 ```bash
 docker run -d -p 8000:8000 my-prod-image-optimized
 ```
-
 
 Additional References:
 
