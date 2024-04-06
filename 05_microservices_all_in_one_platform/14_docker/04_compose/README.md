@@ -36,40 +36,43 @@ A Docker Compose file, written in YAML format, is the heart of defining and mana
 
 A typical Compose file consists of service definitions. Each service represents a single container, and you define its properties like:
 
-* **image:** The Docker image to use for the container (e.g., `python:3.12`).
-* **ports:** Maps ports on the container to ports on the host machine (e.g., `5000:5000`).
+* **image:** The Docker image to use for the container (e.g., `python:3.11`).
+* **ports:** Maps ports on the container to ports on the host machine (e.g., `8000:8000`).
 
 
 **Example: Python**
 
-This example demonstrates a Compose file with a Python service and a PostgreSQL service connected by a custom network named "my-app-net":
+This example demonstrates a Compose file with a single Python FastAPI service:
 
 ```yaml
-version: "3.9"  # Specify the Docker Compose version
+version: "3.9"
+
+name: myapi
 
 services:
-  python-app:
-    build: .  # Build the image from the current directory (Dockerfile needed)
+  api:
+    build:
+      context: ./todo
+      dockerfile: Dockerfile.dev
     ports:
-      - "5000:5000"  # Expose container port 5000 to host port 5000  
+      - "8000:8000"  # Expose container port 8000 to host port 8000  
 
 ```
 
 **Explanation:**
 
 * **version:** This specifies the Docker Compose file version (here, version 3.9).
-* **services:** This section defines two services:
-    * `python-app`: This builds a container image from the current directory (assuming a Dockerfile exists). It exposes port 5000 and sets an environment variable `DATABASE_HOST` to connect to the PostgreSQL service using the service name `postgres`. It also connects to the `my-app-net` network.
+* **services:** This section defines only one service:
+    * `api`: This builds a container image from the todo directory with Dockerfile.dev file). It exposes port 8000.
     
-* **networks:** This section defines a custom network named `my-app-net`. This allows the services to communicate with each other using container names instead of needing to know IP addresses.
 
 **Running the application:**
 
 With this Compose file saved as `compose.yml`, you can use the following commands to manage your application:
 
-* `docker compose up -d`: This builds the images (if needed) and starts both containers in detached mode (background).
-* `docker compose stop`: This stops both containers.
-* `docker compose down`: This stops and removes both containers, as well as volumes associated with them.
+* `docker compose up -d`: This builds the images (if needed) and starts the container in detached mode (background). You can check it by going open: http://0.0.0.0:8000/ in browser.
+* `docker compose stop`: This stops the container.
+* `docker compose down`: This stops and removes the container.
 
 ## YAML Crash Course for Docker Compose
 
