@@ -1,0 +1,9 @@
+version: "3.9"
+
+name: myapi
+
+services:
+  api:
+    build:
+      context: ./todo
+      dockerfile: Dockerfile.dev
