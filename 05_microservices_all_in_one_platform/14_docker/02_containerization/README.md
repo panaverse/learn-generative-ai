@@ -63,19 +63,18 @@ docker inspect my-dev-image
 
 https://docs.docker.com/engine/reference/run/
 
-
-<!-- **Replace $(pwd) with your codebase's location.** -->
-
-<!-- *i.e. docker run -d --name dev-cont1 -v D:\code\learn-generative-ai\05_microservices_all_in_one_platform\14_docker\02_containerizing_api:/code -p 8000:8000 my-dev-image*
-
 ```bash
-docker run -d --name dev-cont1 -v $(pwd):/code -p 8000:8000 my-dev-image
-``` -->
+docker run -d --name dev-cont1 -p 8000:8000 my-dev-image
+```
 
-<!-- **container logs**
+**Check in browser:**
+
+http://localhost:8000
+
+**container logs**
 ```bash
 docker logs dev-cont1
-``` -->
+```
 
 <!-- **container logs: To follow only new log files you can use -f --since 0m  --tail 10**
 ```bash
