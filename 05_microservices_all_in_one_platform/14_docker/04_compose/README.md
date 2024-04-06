@@ -63,7 +63,7 @@ services:
 
 * **version:** This specifies the Docker Compose file version (here, version 3.9).
 * **services:** This section defines only one service:
-    * `api`: This builds a container image from the todo directory with Dockerfile.dev file). It exposes port 8000.
+    * `api`: This builds a container image from the todo directory with Dockerfile.dev file. It exposes port 8000.
     
 
 **Running the application:**
