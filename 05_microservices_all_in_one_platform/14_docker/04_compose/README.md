@@ -74,6 +74,23 @@ With this Compose file saved as `compose.yml`, you can use the following command
 * `docker compose stop`: This stops the container.
 * `docker compose down`: This stops and removes the container.
 
+Note:
+
+The flag `-d` in the command `docker-compose up -d` instructs Docker Compose to run the containers in **detached mode**. Here's what that means:
+
+* **Normal vs. Detached Mode:**
+  * By default, the `docker-compose up` command starts the defined services in the foreground. This means the terminal window you run the command from stays open and displays logs from the running containers.
+  * With the `-d` flag, Docker Compose starts the containers in the background. This allows the terminal window to be closed, and the containers continue to run independently.
+
+* **Benefits of Detached Mode:**
+  * Frees up your terminal window for other tasks.
+  * Useful for long-running services that don't require constant interaction.
+
+* **Viewing Logs for Detached Containers:**
+   * To view logs from detached containers, use `docker-compose logs` followed by the service name(s).
+
+In summary, the `-d` flag allows you to run Docker Compose services in the background, keeping your terminal free and the containers operational even after the window is closed.
+
 ## YAML Crash Course for Docker Compose
 
 Docker Compose uses YAML (YAML Ain't Markup Language) to define your multi-container application. YAML is a human-readable data serialization language, similar to JSON, but with a focus on readability. Here's a breakdown to get you started with YAML in Docker Compose:
