@@ -68,7 +68,10 @@ services:
 
 **Running the application:**
 
+
 With this Compose file saved as `compose.yml`, you can use the following commands to manage your application:
+
+Do not forget to add .env file with database credentials before building and running the api.
 
 * `docker compose up -d`: This builds the images (if needed) and starts the container in detached mode (background). You can check it by going open: http://0.0.0.0:8000/ in browser.
 * `docker compose stop`: This stops the container.
