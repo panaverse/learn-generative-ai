@@ -7,14 +7,16 @@ services:
     build:
       context: ./todo
       dockerfile: Dockerfile.dev
+    depends_on:
+        - postgres_db
     ports:
       - "8000:8000"  # Expose container port 8000 to host port 8000  
-    environment:
-      - DATABASE_HOST=postgres  # Set environment variable for DB connection
     networks:
       - my-api-net
-  postgres:
+  postgres_db:
     image: postgres:latest  # Use the official PostgreSQL image
+    restart: always
+    container_name: PostgresCont
     environment:
         - POSTGRES_USER=ziakhan
         - POSTGRES_PASSWORD=my_password
@@ -22,10 +24,13 @@ services:
     ports:
         - '5433:5432'
     volumes:
-        - ./postgres-data:/var/lib/postgresql/data
-        - ./data:/var/lib/postgresql/data_csv
+        - postgres_db:/var/lib/postgresql/data
     networks:
       - my-api-net
+
+volumes:
+  postgres_db:
+    driver: local
 
 networks:
   my-api-net:  # Define the custom network

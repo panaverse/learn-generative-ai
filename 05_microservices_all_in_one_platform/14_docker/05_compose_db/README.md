@@ -1,6 +1,8 @@
 # Docker Compose with Database Service
 
-To validate your compose.yaml file give the following command (docker compose config renders the actual data model to be applied on the Docker Engine. It resolves variables in the Compose file, and expands short-notation into the canonical format):
+Note: When using code of previous steps we have removed the requirement of sslmode.
+
+In order to validate your compose.yaml file give the following command (docker compose config renders the actual data model to be applied on the Docker Engine. It resolves variables in the Compose file, and expands short-notation into the canonical format):
 
   docker compose config
 
@@ -16,60 +18,116 @@ https://github.com/docker-library/docs/blob/master/postgres/README.md
 
 
 ```yaml
-version: "3.9"  # Specify the Docker Compose version
+version: "3.9"
+
+name: myapi
 
 services:
-  python-app:
-    build: .  # Build the image from the current directory (Dockerfile needed)
+  api:
+    build:
+      context: ./todo
+      dockerfile: Dockerfile.dev
+    depends_on:
+        - postgres_db
     ports:
-      - "5000:5000"  # Expose container port 5000 to host port 5000
-    environment:
-      - DATABASE_HOST: postgres  # Set environment variable for DB connection
+      - "8000:8000"  # Expose container port 8000 to host port 8000  
     networks:
-      - my-app-net
-
-  postgres:
+      - my-api-net
+  postgres_db:
     image: postgres:latest  # Use the official PostgreSQL image
+    restart: always
+    container_name: PostgresCont
     environment:
-      - POSTGRES_PASSWORD: my_password  # Set password for PostgreSQL
+        - POSTGRES_USER=ziakhan
+        - POSTGRES_PASSWORD=my_password
+        - POSTGRES_DB=mydatabase
+    ports:
+        - '5433:5432'
     volumes:
-      - postgres_data:/var/lib/postgresql/data  # Persist data volume
+        - postgres_db:/var/lib/postgresql/data
     networks:
-      - my-app-net
+      - my-api-net
+
+volumes:
+  postgres_db:
+    driver: local
 
 networks:
-  my-app-net:  # Define the custom network
+  my-api-net:  # Define the custom network
+
 ```
 
 **Explanation:**
 
-* **version:** This specifies the Docker Compose file version (here, version 3.9).
-* **services:** This section defines two services:
-    * `python-app`: This builds a container image from the current directory (assuming a Dockerfile exists). It exposes port 5000 and sets an environment variable `DATABASE_HOST` to connect to the PostgreSQL service using the service name `postgres`. It also connects to the `my-app-net` network.
-    * `postgres`: This uses the official `postgres:latest` image and sets an environment variable for the password. It defines a volume named `postgres_data` to persist the database data. This service also connects to the `my-app-net` network.
-* **networks:** This section defines a custom network named `my-app-net`. This allows the services to communicate with each other using container names instead of needing to know IP addresses.
+ **Here's a detailed explanation of the Docker Compose file:**
+
+**File Structure:**
+
+- **Version:** `3.9` specifies the Compose file format for compatibility.
+- **Project Name:** `myapi` labels the project for organization.
+
+**Services:**
+
+- **api:**
+    - **Build:**
+        - `context: ./todo`: Instructs Compose to build the image from the `./todo` directory.
+        - `dockerfile: Dockerfile.dev`: Specifies the Dockerfile named `Dockerfile.dev` for building instructions.
+    - **Depends_on:** `postgres_db`: Ensures the database starts before this service.
+    - **Ports:** `8000:8000`: Maps container port 8000 to host port 8000 for accessibility.
+    - **Networks:** `my-api-net`: Connects the service to the designated network.
+
+- **postgres_db:**
+    - **Image:** `postgres:latest`: Uses the official PostgreSQL image for the database.
+    - **Restart:** `always`: Automatically restarts the container if it crashes.
+    - **Container_name:** `PostgresCont`: Assigns a friendly name to the container for identification.
+    - **Environment:** Sets database credentials and configuration:
+        - `POSTGRES_USER=ziakhan`: Database username.
+        - `POSTGRES_PASSWORD=my_password`: Database password.
+        - `POSTGRES_DB=mydatabase`: Name of the database to create.
+    - **Ports:** `5433:5432`: Exposes container port 5432 (PostgreSQL's default) to host port 5433 for access.
+    - **Volumes:** `postgres_db:/var/lib/postgresql/data`: Persistently stores database data in a volume named `postgres_db`.
+    - **Networks:** `my-api-net`: Connects to the custom network.
+
+**Volumes:**
+
+- **postgres_db:** Creates a named volume with the local driver for database data persistence.
+
+**Networks:**
+
+- **my-api-net:** Defines a custom isolated network for communication between services.
+
+**Summary:**
+
+This Compose file defines a two-service application:
+
+1. An API service, built from a Dockerfile and exposed on port 8000.
+2. A PostgreSQL database service, using a ready-made image with specific configuration and exposed on port 5433.
+
+Both services are connected to a shared network for seamless communication. The database data is preserved using a persistent volume.
+
 
 **Running the application:**
 
 With this Compose file saved as `compose.yml` , you can use the following commands to manage your application:
 
-* `docker-compose up -d`: This builds the images (if needed) and starts both containers in detached mode (background).
-* `docker-compose stop`: This stops both containers.
-* `docker-compose down`: This stops and removes both containers, as well as volumes associated with them.
+* `docker compose up -d`: This builds the images (if needed) and starts both containers in detached mode (background).
+* `docker compose stop`: This stops both containers.
+* `docker compose down`: This stops and removes both containers, as well as volumes associated with them.
 
 ## Connection String
 
 Here's the connection string you can use to connect to the Postgres database from another container running in the same Docker network:
 
+
 ```
-postgresql://postgres:password@postgres:5432/mydatabase
+postgresql://ziakhan:my_password@PostgresCont:5432/mydatabase
 ```
 
 Let's break down the connection string components:
 
 * `postgresql://`: This specifies the database driver to be used (in this case, PostgreSQL).
-* `postgres:password`: This defines the username and password for connecting to the database. Replace `password` with your actual Postgres user's password.
-* `@postgres`: This indicates the hostname or IP address of the Postgres container. By default, Docker links container names to hostnames within the Docker network. If your Postgres container is named differently (e.g., `my-postgres`), replace `postgres` with the actual name.
+* `ziakhan:my_password`: This defines the username and password for connecting to the database. Replace `my_password` with your actual Postgres user's password.
+* `@PostgresCont`: This indicates the hostname or IP address of the Postgres container. By default, Docker links container names to hostnames within the Docker network. If your Postgres container is named differently (e.g., `my-postgres`), replace `PostgresCont` with the actual name.
 * `:5432`: This specifies the port on which the Postgres server is listening. The default port for Postgres is 5432, but you can change it if your container configuration uses a non-standard port.
 * `/mydatabase`: This defines the name of the specific database you want to connect to within the Postgres instance.
 
@@ -84,3 +142,21 @@ Let's break down the connection string components:
 * **Custom Ports:** If you've mapped the Postgres container's port to a different host port during container creation using `-p`, update the connection string's port number accordingly (e.g., `:5433` if mapped to host port 5433).
 
 By following these guidelines and using the provided connection string format, you should be able to connect to your Postgres database from another container within your Docker environment.
+
+## pgAdmin
+
+pgAdmin is the most popular and feature rich Open Source administration and development platform for PostgreSQL, the most advanced Open Source database in the world.
+
+Download and Install pgAdmin 4:
+
+https://www.pgadmin.org/download/
+
+Connect to our PostgresSQL Container:
+
+Host name/address: localhost
+Post: 5433 (note it is not the default 5432)
+Maintaince database: mydatabase
+Username: ziakhan
+Password: my_password
+
+
