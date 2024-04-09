@@ -1,6 +1,30 @@
 ## Dive into Power BI: Unveiling Data Insights
 
-Microsoft Power BI is a game-changer in the world of business intelligence (BI). It empowers you to transform data into visually compelling insights, ultimately driving impactful decisions. Here's a breakdown of what Power BI offers:
+Microsoft Power BI is a game-changer in the world of business intelligence (BI). It empowers you to transform data into visually compelling insights, ultimately driving impactful decisions. 
+
+## Download Power BI for Windows
+
+The safest way to download Power BI Desktop is directly from the official Microsoft website: [https://www.microsoft.com/en-us/download/details.aspx?id=58494](https://www.microsoft.com/en-us/download/details.aspx?id=58494)
+
+This ensures you get the latest version and avoid any potential risks associated with third-party download sites. 
+
+## Download Power BI for Apple Silicon Macs
+
+https://powerbimac.com/using-power-bi-on-mac/utm/
+
+Download and Install UMT:
+
+https://mac.getutm.app/
+
+Use CrystalFetch to download the latest Windows 11 installer ISO.
+
+https://docs.getutm.app/guides/windows/
+
+## Crash Course
+
+[Power BI Full Course (8+ Hours) Tutorial](https://www.youtube.com/watch?v=e6QD8lP-m6E)
+
+Here's a breakdown of what Power BI offers:
 
 **Connecting to Your Data Universe:**
 
@@ -28,16 +52,6 @@ Microsoft Power BI is a game-changer in the world of business intelligence (BI).
 - **Explore Resources:** Microsoft offers a plethora of resources to help you get the most out of Power BI. Dive into their documentation, tutorials, and sample datasets to become a Power BI pro.
 
 By harnessing the power of Power BI, you can unlock the secrets hidden within your data, leading to better-informed decisions and driving success for your business.
-
-## Download Power BI for Windows
-
-The safest way to download Power BI Desktop is directly from the official Microsoft website: [https://www.microsoft.com/en-us/download/details.aspx?id=58494](https://www.microsoft.com/en-us/download/details.aspx?id=58494)
-
-This ensures you get the latest version and avoid any potential risks associated with third-party download sites. 
-
-## Download Power BI for Apple Silicon Macs
-
-https://powerbimac.com/using-power-bi-on-mac/utm/
 
 ## Learning Power BI
 
