@@ -55,6 +55,10 @@ For those who currently do not have the required financial means, some of the ex
 
 [Certified Kubernetes Application Developer (CKAD)](https://www.cncf.io/training/certification/ckad/)
 
+## Terraform
+
+[HashiCorp Certified: Terraform Associate](https://www.hashicorp.com/certification/terraform-associate)
+
 ## Power BI
 
 [Microsoft Certified: Power BI Data Analyst Associate](https://learn.microsoft.com/en-us/credentials/certifications/power-bi-data-analyst-associate/?practice-assessment-type=certification)
