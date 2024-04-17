@@ -45,9 +45,11 @@ For those who currently do not have the required financial means, some of the ex
 
 [Develop generative AI solutions with Azure OpenAI Service](https://learn.microsoft.com/en-us/credentials/applied-skills/develop-generative-ai-solutions-with-azure-openai-service/)
 
-We are closely watching OpenAI, Microsoft and Google for launch of new Generative AI Certifications. In the mean while review these learning material:
+Current GenAI is a very dynamic field, we are closely watching OpenAI, Microsoft and Google for launch of new Generative AI Certifications. In the mean while review these learning material:
 
 ### OpenAI
+
+[OpenAI Docs](https://platform.openai.com/docs/introduction)
 
 [OpenAI Certification Courses: A Path to AI Developer](https://community.openai.com/t/openai-certification-courses-a-path-to-ai-developer/193649)
 
