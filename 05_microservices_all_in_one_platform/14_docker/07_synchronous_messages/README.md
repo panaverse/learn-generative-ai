@@ -16,6 +16,8 @@ The best choice for your microservices communication will depend on the specific
 
 ## Synchronous Communication with FastAPI, SQLModel, Docker, and Poetry
 
+https://g.co/gemini/share/3a129f9e5743 
+
 This example demonstrates synchronous communication between two Python microservices built with FastAPI, using SQLModel for database access. Both services will be containerized using Docker and orchestrated with Docker Compose. Poetry will manage dependencies.
 
 **Microservice 1: user-service**

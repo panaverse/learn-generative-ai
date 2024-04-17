@@ -175,4 +175,8 @@ Username: ziakhan
 
 Password: my_password
 
+## Assignment
+
+Create a seprate database container for testing in compose file. You dont need to even use a volume for test database since we don't care to persist test data between runs. Once you have created the test database and updated the .env file, run the tests.  
+
 
