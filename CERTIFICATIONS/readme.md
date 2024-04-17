@@ -1,4 +1,4 @@
-# International Certifications in Cloud Native Aritificial Intelegence (CNAI)
+# International Certifications in Cloud Native Aritificial Intelegence (CNAI) for You
 
 The Cloud Native Applied Generative AI Certification program trains you to be able to develop world-class and modern [Cloud Native AI](https://www.cncf.io/wp-content/uploads/2024/03/cloud_native_ai24_031424a-2.pdf) solutions using the all-in-one [cloud-native](https://aws.amazon.com/what-is/cloud-native/) and AI platform.
 
