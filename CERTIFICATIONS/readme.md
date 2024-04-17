@@ -1,6 +1,6 @@
-# International Certifications in Cloud Native Aritificial Intelegence (CNAI) for You
+# International Certifications in [Cloud Native Aritificial Intelegence (CNAI)](https://www.cncf.io/wp-content/uploads/2024/03/cloud_native_ai24_031424a-2.pdf) for You
 
-[Cloud Native (CN)](https://www.cncf.io/wp-content/uploads/2024/03/cloud_native_ai24_031424a-2.pdf) and [Generative Artificial Intelligence (AI)](https://www.techtarget.com/searchenterpriseai/definition/generative-AI) are the most critical technology trends today. Cloud Native technology provides a scalable and reliable platform for running applications and AI makes these applications smart. Our mission is to train you to become the world's best Cloud Native AI developers in the world. 
+[Cloud Native (CN)](https://www.cncf.io/wp-content/uploads/2024/03/cloud_native_ai24_031424a-2.pdf) and [Generative Artificial Intelligence (AI)](https://www.techtarget.com/searchenterpriseai/definition/generative-AI) are the most critical technology trends today. Cloud Native technology provides a scalable and reliable platform for running applications and AI makes these applications smart. Our mission is to train you to become the world's best Cloud Native AI developers. 
 
 The Cloud Native Applied Generative AI Certification program trains you to be able to develop world-class and modern Cloud Native AI solutions using the all-in-one cloud-native and AI platform.
 
