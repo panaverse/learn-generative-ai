@@ -1,6 +1,6 @@
 # Containerizing the API
 
-We will take the microservice created in step10_microserice_db and containerize it.
+We will take the microservice created in step10_microservice_db and containerize it.
 
 ## Let's First Run the app without Docker to test if everything is working
 
