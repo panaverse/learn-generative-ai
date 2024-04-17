@@ -1,8 +1,22 @@
-# International Certifications 
+# International Certifications in Cloud Native Aritificial Intelegence (CNAI)
 
-The Cloud Applied Generative AI Certification program not only trains you to be able to develop GenAI cloud solutions but also gets you ready to be able to pass international certifications to showcase and validate your skills. 
+The Cloud Native Applied Generative AI Certification program trains you to be able to develop world-class and modern [Cloud Native Artificial Intelegence](https://www.cncf.io/wp-content/uploads/2024/03/cloud_native_ai24_031424a-2.pdf) solutions using the all-in-one cloud-native [cloud native](https://aws.amazon.com/what-is/cloud-native/) and AI platform.
+
+Cloud native is a software approach that allows for the development, deployment, and management of applications in cloud computing environments. 
+
+Cloud-native applications are software programs that consist of multiple small, interdependent services called microservices. Traditionally, developers built monolithic applications with a single block structure containing all the required functionalities. By using the cloud-native approach, software developers break the functionalities into smaller microservices. This makes cloud-native applications more agile as these microservices work independently and take minimal computing resources to run. 
+
+Cloud native services use technologies like Kubernetes, Docker, serverless containers and functions, APIs, SQL Databases, and Kafka to help developers build applications faster. These services provide a standards-based platform for building, deploying, and managing cloud native applications.
+
+Cloud-native applications are designed to work across the cloud including Azure, Google Cloud, and AWS, both embedded in its architecture and facilitating cloud access. 
+
+Spotify is an example of a cloud-native application that uses cloud services and container orchestration to handle the vast music catalog, deliver personalized recommendations, and support millions of concurrent users across various devices.
+
+Our program will also gets you ready to be able to pass international certifications to showcase and validate your skills globally. 
 
 We encourage you to pass the following international certifications.
+
+Note:
 
 For those who currently do not have the required financial means, some of the exams might seem expensive, therefore it is recommended that you appear in these exams after you have started working professionally. **But it is critical that you should complete your studies right now.**
 
