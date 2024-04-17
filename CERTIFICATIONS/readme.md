@@ -6,7 +6,7 @@ We encourage you to pass the following international certifications.
 
 For those who currently do not have the required financial means, some of the exams might seem expensive, therefore it is recommended that you appear in these exams after you have started working professionally. **But it is critical that you should complete your studies right now.**
 
-# TypeScript
+## TypeScript
 
 [W3Schools TypeScript Certificate](https://www.w3schools.com/typescript/typescript_exam.php)
 
