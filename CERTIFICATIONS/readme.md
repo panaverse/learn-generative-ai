@@ -1,6 +1,6 @@
 # International Certifications 
 
-The Certified Cloud Applied Generative AI Certification program not only trains you to be able to develop GenAI cloud solutions but also gets you ready to be able to pass international certifications to showcase and validate your skills. 
+The Cloud Applied Generative AI Certification program not only trains you to be able to develop GenAI cloud solutions but also gets you ready to be able to pass international certifications to showcase and validate your skills. 
 
 We encourage you to pass the following international certifications.
 
