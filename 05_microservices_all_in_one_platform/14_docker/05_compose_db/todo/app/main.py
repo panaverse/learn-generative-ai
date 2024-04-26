@@ -1,9 +1,10 @@
 # main.py
 from contextlib import asynccontextmanager
 from typing import Union, Optional, Annotated
-from fastapi_neon import settings
-from sqlmodel import Field, Session, SQLModel, create_engine, select
+from app import settings
+from sqlmodel import Field, Session, SQLModel, create_engine, select, Sequence
 from fastapi import FastAPI, Depends
+from typing import AsyncGenerator
 
 
 class Todo(SQLModel, table=True):
@@ -21,11 +22,15 @@ connection_string = str(settings.DATABASE_URL).replace(
 # recycle connections after 5 minutes
 # to correspond with the compute scale down
 engine = create_engine(
-    connection_string, connect_args={"sslmode": "require"}, pool_recycle=300
+    connection_string, connect_args={}, pool_recycle=300
 )
 
+#engine = create_engine(
+#    connection_string, connect_args={"sslmode": "require"}, pool_recycle=300
+#)
 
-def create_db_and_tables():
+
+def create_db_and_tables()->None:
     SQLModel.metadata.create_all(engine)
 
 
@@ -33,7 +38,7 @@ def create_db_and_tables():
 # be executed before the application starts.
 # https://fastapi.tiangolo.com/advanced/events/#lifespan-function
 @asynccontextmanager
-async def lifespan(app: FastAPI):
+async def lifespan(app: FastAPI)-> AsyncGenerator[None, None]:
     print("Creating tables..")
     create_db_and_tables()
     yield
@@ -43,7 +48,7 @@ app = FastAPI(lifespan=lifespan, title="Hello World API with DB",
     version="0.0.1",
     servers=[
         {
-            "url": "http://127.0.0.1:8000", # ADD NGROK URL Here Before Creating GPT Action
+            "url": "http://0.0.0.0:8000", # ADD NGROK URL Here Before Creating GPT Action
             "description": "Development Server"
         }
         ])
@@ -58,7 +63,7 @@ def read_root():
     return {"Hello": "World"}
 
 @app.post("/todos/", response_model=Todo)
-def create_todo(todo: Todo, session: Annotated[Session, Depends(get_session)]):
+def create_todo(todo: Todo, session: Annotated[Session, Depends(get_session)])->Todo:
         session.add(todo)
         session.commit()
         session.refresh(todo)
