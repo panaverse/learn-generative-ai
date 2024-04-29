@@ -55,6 +55,8 @@ For those who currently do not have the required financial means, some of the ex
 
 [Certified Kubernetes Application Developer (CKAD)](https://www.cncf.io/training/certification/ckad/)
 
+
+
 ## Terraform
 
 [HashiCorp Certified: Terraform Associate](https://www.hashicorp.com/certification/terraform-associate)
