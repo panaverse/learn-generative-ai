@@ -1,5 +1,7 @@
 # Synchronous Inter Services Messages between Microservices
 
+[Building Microservices: Inter-Process Communication in a Microservices Architecture](https://www.nginx.com/blog/building-microservices-inter-process-communication/)
+
 There are two main approaches to inter-service communication in a microservices architecture:
 
 1. **Synchronous Communication:** This method involves a direct call between services, typically using an API exposed by one service that another service can interact with. Protocols like HTTP are commonly used for this purpose. The calling service waits for a response from the other service before proceeding.
@@ -14,7 +16,7 @@ Both synchronous and asynchronous communication have their advantages and disadv
 
 The best choice for your microservices communication will depend on the specific needs of your application. Consider factors like latency requirements, message volume, and desired level of coupling between services when making your decision.
 
-## Synchronous Communication with FastAPI, SQLModel, Docker, and Poetry
+## Synchronous Communication with FastAPI, Docker, and Poetry
 
 https://g.co/gemini/share/3a129f9e5743 
 

@@ -1,10 +1,14 @@
-# Prompt Engineering
+# AI Essentials
 
-## LLM Websites
+[Google Gemini](https://gemini.google.com/app)
+
+[Gemini for Google Workspace](https://inthecloud.withgoogle.com/gemini-for-google-workspace-prompt-guide/dl-cd.html)
+
+[Google AI Essentials](https://grow.google/ai-essentials/)
+
+## Other LLM Websites
 
 [Microsoft Copilot](https://copilot.microsoft.com/)
-
-[Google Bard](https://bard.google.com/chat)
 
 [ChatGPT](https://chat.openai.com/)
 
