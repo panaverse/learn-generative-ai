@@ -28,16 +28,37 @@ https://g.co/gemini/share/fca64d9f215c
 
 https://g.co/gemini/share/e386f9de6d20
 
+## Kafka 3.7 Docker Image
 
-# FastAPI and Apache Kafka
+https://hub.docker.com/layers/apache/kafka/3.7.0/images/sha256-3e324d2bd331570676436b24f625e5dcf1facdfbd62efcffabc6b69b1abc13cc
 
-https://docs.google.com/document/d/15usu1hkrrRLRjcq_3nCTT-0ljEcgiC44iSdvdqrCprk/edit?usp=sharing
+https://kafka.apache.org/blog#apache_kafka_370_release_announcement 
+
+[Apache Kafka 3.7: Official Docker Image and Improved Client Monitoring](https://www.youtube.com/watch?v=7wGqCAXZflc)
+
+
+## Kafka with KRaft setup using Docker Compose | Kafka tutorial for beginners
+
+https://www.youtube.com/watch?v=aTl2iSCynVc
+
+https://medium.com/@tetianaokhotnik/setting-up-a-local-kafka-environment-in-kraft-mode-with-docker-compose-and-bitnami-image-enhanced-29a2dcabf2a9
+
+
+## The Evolution of Kafka Architecture: From ZooKeeper to KRaft
+
+https://romanglushach.medium.com/the-evolution-of-kafka-architecture-from-zookeeper-to-kraft-f42d511ba242
+
+As of Kafka 3.5, the ZooKeeper mode is being deprecated, and it will be completely removed from Kafka with the release of Kafka 4.0.
 
 # Kafdrop – Kafka Web UI 
 
 This is a popular open-source web UI specifically designed for viewing Kafka topics, messages, brokers, consumer groups, and even lets you create new topics. It's known for being lightweight, easy to set up, and supports secure connections. You can find the project on Github here:
 
 https://github.com/obsidiandynamics/kafdrop
+
+## FastAPI and Apache Kafka
+
+https://docs.google.com/document/d/15usu1hkrrRLRjcq_3nCTT-0ljEcgiC44iSdvdqrCprk/edit?usp=sharing
 
 
 ## Tutorial Part 1:
