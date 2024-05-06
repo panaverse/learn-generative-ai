@@ -1,4 +1,4 @@
-# A Challenge: FastAPI Event Driven Development With Kafka, Zookeeper, Docker Compose, and Poetry 
+# A Challenge: FastAPI Event Driven Microservices Development With Kafka, Zookeeper, Docker Compose, and Poetry 
 
 Event-driven architecture (EDA) is a popular design pattern for building applications that react to events.  Here's a breakdown of why it's used and its pros and cons:
 
