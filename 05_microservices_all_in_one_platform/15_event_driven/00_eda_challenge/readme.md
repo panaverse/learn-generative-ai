@@ -28,6 +28,12 @@ https://g.co/gemini/share/fca64d9f215c
 
 https://g.co/gemini/share/e386f9de6d20
 
+
+## How To Learn Apache Kafka By Doing in 2024
+
+https://www.projectpro.io/article/learn-kafka/970
+
+
 ## Kafka 3.7 Docker Image
 
 https://hub.docker.com/r/bitnami/kafka
