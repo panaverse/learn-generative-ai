@@ -29,11 +29,9 @@ https://g.co/gemini/share/fca64d9f215c
 https://g.co/gemini/share/e386f9de6d20
 
 
-## How To Learn Apache Kafka By Doing in 2024
+## How To Learn Apache Kafka By Watching and Doing in 2024
 
-Kafka 101:
-
-https://developer.confluent.io/courses/apache-kafka/events/
+[Kafka 101 Video Tutorial](https://developer.confluent.io/courses/apache-kafka/events/)
 
 https://www.projectpro.io/article/learn-kafka/970
 
