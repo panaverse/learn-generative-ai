@@ -50,17 +50,20 @@ https://www.confluent.io/resources/online-talk/microservices-and-apache-kafka/
 
 ## Kafka 3.7 Docker Image
 
-https://hub.docker.com/r/bitnami/kafka
+Get the docker image
 
-Tutorial:
+$ docker pull apache/kafka:3.7.0
 
-https://medium.com/@tetianaokhotnik/docker-compose-for-kafka-single-broker-in-kraft-mode-kafka-ui-and-confluent-rest-proxy-7334da721d4c
+Start the kafka docker container
 
-https://hub.docker.com/layers/apache/kafka/3.7.0/images/sha256-3e324d2bd331570676436b24f625e5dcf1facdfbd62efcffabc6b69b1abc13cc
+$ docker run -p 9092:9092 apache/kafka:3.7.0
 
 https://kafka.apache.org/blog#apache_kafka_370_release_announcement 
 
 [Apache Kafka 3.7: Official Docker Image and Improved Client Monitoring](https://www.youtube.com/watch?v=7wGqCAXZflc)
+
+
+https://hub.docker.com/layers/apache/kafka/3.7.0/images/sha256-3e324d2bd331570676436b24f625e5dcf1facdfbd62efcffabc6b69b1abc13cc
 
 
 ## Kafka with KRaft setup using Docker Compose | Kafka tutorial for beginners
