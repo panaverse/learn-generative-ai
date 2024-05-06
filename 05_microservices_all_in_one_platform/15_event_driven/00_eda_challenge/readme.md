@@ -29,6 +29,11 @@ https://g.co/gemini/share/fca64d9f215c
 https://g.co/gemini/share/e386f9de6d20
 
 
+# FastAPI and Apache Kafka
+
+https://docs.google.com/document/d/15usu1hkrrRLRjcq_3nCTT-0ljEcgiC44iSdvdqrCprk/edit?usp=sharing
+
+
 ## Tutorial Part 1:
 
 https://ahmed-nafies.medium.com/fastapi-event-driven-development-with-kafka-zookeeper-and-docker-compose-a-step-by-step-guide-3e07151c3e4d
