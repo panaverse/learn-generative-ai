@@ -4,6 +4,10 @@ Event-driven architecture (EDA) is a popular design pattern for building applica
 
 [Kafka Visualization](https://softwaremill.com/kafka-visualisation/)
 
+[official Documentation](https://kafka.apache.org/documentation/)
+
+[Textbook: Kafka: The Definitive Guide: Real-Time Data and Stream Processing at Scale 2nd Edition](https://www.amazon.com/Kafka-Definitive-Real-Time-Stream-Processing/dp/1492043087/ref=sr_1_2)
+
 Here's a breakdown of why it's used and its pros and cons:
 
 **Why use EDA?**
