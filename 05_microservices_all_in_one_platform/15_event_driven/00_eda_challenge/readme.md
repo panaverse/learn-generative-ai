@@ -32,6 +32,10 @@ https://g.co/gemini/share/e386f9de6d20
 
 https://hub.docker.com/r/bitnami/kafka
 
+Tutorial:
+
+https://medium.com/@tetianaokhotnik/docker-compose-for-kafka-single-broker-in-kraft-mode-kafka-ui-and-confluent-rest-proxy-7334da721d4c
+
 https://hub.docker.com/layers/apache/kafka/3.7.0/images/sha256-3e324d2bd331570676436b24f625e5dcf1facdfbd62efcffabc6b69b1abc13cc
 
 https://kafka.apache.org/blog#apache_kafka_370_release_announcement 
