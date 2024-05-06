@@ -35,6 +35,10 @@ https://g.co/gemini/share/e386f9de6d20
 
 https://www.projectpro.io/article/learn-kafka/970
 
+Upcoming Online Talks: Building Event-Driven Microservices with Apache Kafka
+
+https://www.confluent.io/resources/online-talk/microservices-and-apache-kafka/
+
 
 ## Kafka 3.7 Docker Image
 
