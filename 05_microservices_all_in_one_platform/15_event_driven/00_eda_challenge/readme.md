@@ -30,6 +30,8 @@ https://g.co/gemini/share/e386f9de6d20
 
 ## Kafka 3.7 Docker Image
 
+https://hub.docker.com/r/bitnami/kafka
+
 https://hub.docker.com/layers/apache/kafka/3.7.0/images/sha256-3e324d2bd331570676436b24f625e5dcf1facdfbd62efcffabc6b69b1abc13cc
 
 https://kafka.apache.org/blog#apache_kafka_370_release_announcement 
