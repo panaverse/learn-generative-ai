@@ -33,6 +33,12 @@ https://g.co/gemini/share/e386f9de6d20
 
 https://docs.google.com/document/d/15usu1hkrrRLRjcq_3nCTT-0ljEcgiC44iSdvdqrCprk/edit?usp=sharing
 
+# Kafdrop – Kafka Web UI 
+
+This is a popular open-source web UI specifically designed for viewing Kafka topics, messages, brokers, consumer groups, and even lets you create new topics. It's known for being lightweight, easy to set up, and supports secure connections. You can find the project on Github here:
+
+https://github.com/obsidiandynamics/kafdrop
+
 
 ## Tutorial Part 1:
 
