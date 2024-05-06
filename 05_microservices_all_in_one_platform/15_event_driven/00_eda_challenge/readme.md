@@ -1,4 +1,4 @@
-# A Challenge: FastAPI Event Driven Microservices Development With Kafka, Zookeeper, Docker Compose, and Poetry 
+# A Challenge: FastAPI Event Driven Microservices Development With Kafka, KRaft, Docker Compose, and Poetry 
 
 Event-driven architecture (EDA) is a popular design pattern for building applications that react to events.  
 
