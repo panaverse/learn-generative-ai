@@ -52,15 +52,13 @@ https://www.confluent.io/resources/online-talk/microservices-and-apache-kafka/
 
 Get the docker image
 
-$ docker pull apache/kafka:3.7.0
+    docker pull apache/kafka:3.7.0
 
 Start the kafka docker container
 
-$ docker run -p 9092:9092 apache/kafka:3.7.0
+    docker run -p 9092:9092 apache/kafka:3.7.0
 
-https://kafka.apache.org/blog#apache_kafka_370_release_announcement 
-
-[Apache Kafka 3.7: Official Docker Image and Improved Client Monitoring](https://www.youtube.com/watch?v=7wGqCAXZflc)
+https://kafka.apache.org/quickstart
 
 
 https://hub.docker.com/layers/apache/kafka/3.7.0/images/sha256-3e324d2bd331570676436b24f625e5dcf1facdfbd62efcffabc6b69b1abc13cc
