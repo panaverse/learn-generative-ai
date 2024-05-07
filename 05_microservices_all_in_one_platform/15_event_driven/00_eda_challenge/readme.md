@@ -130,7 +130,7 @@ Feel free to experiment: for example, switch back to your producer terminal (pre
 
 Because events are durably stored in Kafka, they can be read as many times and by as many consumers as you want. You can easily verify this by opening yet another terminal session and re-running the previous command again.
 
-# Kafka Web UI 
+# Kafka UI 
 
 This is a popular open-source web UI specifically designed for viewing Kafka topics, messages, brokers, consumer groups, and even lets you create new topics. It's known for being lightweight, easy to set up, and supports secure connections. You can find the project on Github here:
 
