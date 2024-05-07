@@ -65,6 +65,20 @@ Start the kafka docker container
 
     docker run -p 9092:9092 apache/kafka:3.7.0
 
+docker run -it -p 8080:8080 -e DYNAMIC_CONFIG_ENABLED=true provectuslabs/kafka-ui
+
+Open another console and check to see if container running:
+
+    docker ps
+
+Copy the container name, and give the following command to attach:
+
+    docker exec -it <container-name> /bin/bash
+
+Note: Kafka commands are in this directory in the container 
+
+    /opt/kafka/bin
+
 CREATE A TOPIC TO STORE YOUR EVENTS
 
 Kafka is a distributed event streaming platform that lets you read, write, store, and process events (also called records or messages in the documentation) across many machines.
@@ -73,13 +87,13 @@ Example events are payment transactions, geolocation updates from mobile phones,
 
 So before you can write your first events, you must create a topic. Open another terminal session and run:
 
-    bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092
+    /opt/kafka/bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092
 
 All of Kafka's command line tools have additional options: 
 
 Note: run the kafka-topics.sh command without any arguments to display usage information. For example, it can also show you details such as the partition count of the new topic:
 
-    bin/kafka-topics.sh --describe --topic quickstart-events --bootstrap-server localhost:9092
+    /opt/kafka/bin/kafka-topics.sh --describe --topic quickstart-events --bootstrap-server localhost:9092
 
 Topic: quickstart-events        TopicId: NPmZHyhbR9y00wMglMH2sg PartitionCount: 1       ReplicationFactor: 1	Configs:
     Topic: quickstart-events Partition: 0    Leader: 0   Replicas: 0 Isr: 0
@@ -91,7 +105,7 @@ A Kafka client communicates with the Kafka brokers via the network for writing (
 
 Run the console producer client to write a few events into your topic. By default, each line you enter will result in a separate event being written to the topic.
 
-    bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092
+    /opt/kafka/bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092
 
 This is my first event
 
@@ -103,7 +117,7 @@ READ THE EVENTS
 
 Open another terminal session and run the console consumer client to read the events you just created:
 
-    bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
+    /opt/kafka/bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
 
 This is my first event
 
