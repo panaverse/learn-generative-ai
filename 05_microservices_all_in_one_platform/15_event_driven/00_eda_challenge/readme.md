@@ -89,6 +89,7 @@ So before you can write your first events, you must create a topic. Open another
 
     /opt/kafka/bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092
 
+
 All of Kafka's command line tools have additional options: 
 
 Note: run the kafka-topics.sh command without any arguments to display usage information. For example, it can also show you details such as the partition count of the new topic:
@@ -129,6 +130,18 @@ Feel free to experiment: for example, switch back to your producer terminal (pre
 
 Because events are durably stored in Kafka, they can be read as many times and by as many consumers as you want. You can easily verify this by opening yet another terminal session and re-running the previous command again.
 
+# Kafka Web UI 
+
+This is a popular open-source web UI specifically designed for viewing Kafka topics, messages, brokers, consumer groups, and even lets you create new topics. It's known for being lightweight, easy to set up, and supports secure connections. You can find the project on Github here:
+
+https://github.com/provectus/kafka-ui
+
+https://github.com/provectus/kafka-ui?tab=readme-ov-file#getting-started
+
+    docker run -it -p 8080:8080 -e DYNAMIC_CONFIG_ENABLED=true provectuslabs/kafka-ui
+
+Then access the web UI at http://localhost:8080
+
 ## Kafka with KRaft setup using Docker Compose | Kafka tutorial for beginners
 
 https://www.youtube.com/watch?v=aTl2iSCynVc
@@ -142,11 +155,7 @@ https://romanglushach.medium.com/the-evolution-of-kafka-architecture-from-zookee
 
 As of Kafka 3.5, the ZooKeeper mode is being deprecated, and it will be completely removed from Kafka with the release of Kafka 4.0.
 
-# Kafdrop – Kafka Web UI 
 
-This is a popular open-source web UI specifically designed for viewing Kafka topics, messages, brokers, consumer groups, and even lets you create new topics. It's known for being lightweight, easy to set up, and supports secure connections. You can find the project on Github here:
-
-https://github.com/obsidiandynamics/kafdrop
 
 ## FastAPI and Apache Kafka
 
