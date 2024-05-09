@@ -65,8 +65,6 @@ Start the kafka docker container
 
     docker run -p 9092:9092 apache/kafka:3.7.0
 
-docker run -it -p 8080:8080 -e DYNAMIC_CONFIG_ENABLED=true provectuslabs/kafka-ui
-
 Open another console and check to see if container running:
 
     docker ps
@@ -138,7 +136,17 @@ https://github.com/provectus/kafka-ui
 
 https://github.com/provectus/kafka-ui?tab=readme-ov-file#getting-started
 
+    docker network create -d bridge kafka-net
+
+    docker network ls
+
+    docker run -p 9092:9092 --network kafka-net --name mykafka apache/kafka:3.7.0
+
+    docker run -it -p 8080:8080 --network kafka-net -e DYNAMIC_CONFIG_ENABLED=true provectuslabs/kafka-ui
+
     docker run -it -p 8080:8080 -e DYNAMIC_CONFIG_ENABLED=true provectuslabs/kafka-ui
+
+*Note: We will learn docker compose later, how to use docker compose to configure kafka, right now after a minutes it will go offline.
 
 Then access the web UI at http://localhost:8080
 
