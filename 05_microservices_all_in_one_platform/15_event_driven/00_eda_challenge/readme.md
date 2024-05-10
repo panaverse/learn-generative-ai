@@ -144,11 +144,11 @@ https://github.com/provectus/kafka-ui?tab=readme-ov-file#getting-started
 
     docker run -it -p 8080:8080 --network kafka-net -e DYNAMIC_CONFIG_ENABLED=true provectuslabs/kafka-ui
 
-    docker run -it -p 8080:8080 -e DYNAMIC_CONFIG_ENABLED=true provectuslabs/kafka-ui
-
 *Note: We will learn docker compose later, how to use docker compose to configure kafka, right now after a minutes it will go offline.
 
 Then access the web UI at http://localhost:8080
+
+In order to integrate kafka broker with kafkaUI use container name in the host
 
 ## Kafka with KRaft setup using Docker Compose | Kafka tutorial for beginners
 
