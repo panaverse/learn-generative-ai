@@ -1,0 +1,64 @@
+services:
+  kafka:
+    image: "bitnami/kafka:3.6.2-debian-12-r3"
+    container_name: kafka
+    command:
+      - "sh"
+      - "-c"
+      - '/opt/bitnami/scripts/kafka/setup.sh && kafka-storage.sh format --config "$${KAFKA_CONF_FILE}" --cluster-id "lkorDA4qT6W1K_dk0LHvtg" --ignore-formatted  && /opt/bitnami/scripts/kafka/run.sh' # Kraft specific initialise
+    environment:
+      - ALLOW_PLAINTEXT_LISTENER=yes
+      # Start Kraft Setup (Kafka as Controller - no Zookeeper)
+      - KAFKA_ENABLE_KRAFT=yes
+      - KAFKA_CFG_NODE_ID=1
+      - KAFKA_CFG_BROKER_ID=1
+      - KAFKA_CFG_CONTROLLER_QUORUM_VOTERS=1@127.0.0.1:9093
+      - KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP=CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT,INTERNAL:PLAINTEXT
+      - KAFKA_CFG_CONTROLLER_LISTENER_NAMES=CONTROLLER
+      - KAFKA_CFG_LOG_DIRS=/tmp/logs
+      - KAFKA_CFG_PROCESS_ROLES=broker,controller
+      - KAFKA_CFG_LISTENERS=PLAINTEXT://:9092,CONTROLLER://:9093,INTERNAL://:9094
+      # End Kraft Specific Setup
+      - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://127.0.0.1:9092,INTERNAL://kafka:9094
+    ports:
+      - "9092:9092"
+      - "9094:9094"
+    volumes:
+      - "kafka_data:/bitnami/kafka"
+    networks:
+      - kafka-net
+
+  kafka-ui:
+    image: provectuslabs/kafka-ui
+    container_name: kafka-ui
+    ports:
+      - "8080:8080"
+    restart: "always"
+    environment:
+      KAFKA_CLUSTERS_0_NAME: "lkorDA4qT6W1K_dk0LHvtg"
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:9094
+      DYNAMIC_CONFIG_ENABLED: "true"
+    depends_on:
+      - kafka
+    networks:
+      - kafka-net
+
+  fastapi-hello-api:
+    image: "fastapi-hello-img"
+    build:
+      context: ./fastapi-hello
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./fastapi-hello:/code
+    networks:
+      - kafka-net
+
+volumes:
+  kafka_data:
+    driver: local
+
+networks:
+  kafka-net:
+    driver: bridge
