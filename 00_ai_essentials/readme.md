@@ -62,3 +62,5 @@ As AI technology evolves, prompt engineering will become even more crucial. We c
 [ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
 
 [Must-Read Best Of Practical Prompt Engineering Strategies To Become A Skillful Prompting Wizard In Generative AI](https://www.forbes.com/sites/lanceeliot/2023/12/28/must-read-best-of-practical-prompt-engineering-strategies-to-become-a-skillful-prompting-wizard-in-generative-ai/?sh=4d05d27f19cd)
+
+[Prompting Guide for Schools - Using Gemini for Google Workspace](https://docs.google.com/presentation/d/1os-52PymXoxEUYESTkUB_gatlsjAl8jPuAsIE11tEno/edit?usp=sharing)
