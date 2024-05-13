@@ -1,12 +1,12 @@
 # Kafka UI and Kafka Hello World
 
-Here we will run Kafka UI with Kafka using Docker Compose.
+Here we will run Kafka with Kafka UI using Docker Compose.
 
-- Step 1: In your laptop create new folder and add compose.yaml file
+- Step 1: Create new folder and copy compose.yml file from this step.
 
-- Step 2: In Terminal at same path as compose.yml file run
-    - Validate Compose Is Correct: `docker compose config`
-    - Run Multi Containers: `docker compose up --build`
+- Step 2: In Terminal at same path where compose.yml file is present run these commands:
+    - `docker compose config` - to Validate our Compose file
+    - `docker compose up --build` - this will run Kafka Container and Kafka UI Container.
 
 - Step 3: Open http://localhost:8080 in browser
 
@@ -29,7 +29,9 @@ Here we will run Kafka UI with Kafka using Docker Compose.
         - `docker ps`
         - `docker exec -it -u root kafka /bin/bash`
         - `cd /opt/bitnami/kafka/bin` and view all scripts `ls`
-        - Create A New Consumer `/opt/bitnami/kafka/bin/kafka-console-consumer.sh --topic topic1 --from-beginning --bootstrap-server localhost:9092`
+        - Create A New Consumer 
+        ```/opt/bitnami/kafka/bin/kafka-console-consumer.sh --topic topic1 --from-beginning --bootstrap-server localhost:9092```
+        
         After running Above My Terminal Shows:
         ```
         root@5d0319939280:/opt/bitnami/kafka/bin# /opt/bitnami/kafka/bin/kafka-console-consumer.sh --topic topic1 --from-beginning --bootstrap-server localhost:9092

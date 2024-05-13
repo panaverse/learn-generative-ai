@@ -1,14 +1,49 @@
 ## Getting Started with Kafka in Python
 
-In this helloworld we will create a single FastAPI microservice that can produce messages/events to a topic and then consume them using another API endpoint.
+In this helloworld we will learn how to get started with Kafka in Python.
 
-The compose file is extended from step01 to add microservice(fastapi-hello) details.
+We will create a single FastAPI microservice that can produce messages/events to a Kafka topic and then consume them using another API endpoint.
 
 Note: For Kafka in Python we are using confluent-kafka package. 
 
+https://stackoverflow.com/questions/73049329/python-kafka-consumer-library-that-supports-scalability-and-recoverability
+
+## Compose.yml File What's Updated?:
+
+The compose file is extended from step01 to add microservice(fastapi-hello) details.
+
+1. fastapi-helloworld microservice config:
+
+```
+  fastapi-hello-api:
+    image: "fastapi-hello-img"
+    build:
+      context: ./fastapi-hello
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./fastapi-hello:/code
+    networks:
+      - kafka-net
+```
+
+2. Added volume to Kafka
+```
+  kafka:
+  .....
+    volumes:
+      - "kafka_data:/bitnami/kafka"
+volumes:
+  kafka_data:
+    driver: local
+```
+
+## Kafka with FastAPI Steps (Hello World)
+
 Follow these steps:
 
-1. Clone repo and open this step in VS Code 
+1. Create a new Folder with same structure and microservice as this step or Clone repo and open this step in VS Code 
 
 2. Run `docker compose up --build`
 
@@ -36,7 +71,5 @@ https://developer.confluent.io/get-started/python/#create-project
 https://towardsdatascience.com/3-libraries-you-should-know-to-master-apache-kafka-in-python-c95fdf8700f2
 
 https://docs.confluent.io/platform/current/clients/confluent-kafka-python/html/index.html
-
-https://stackoverflow.com/questions/73049329/python-kafka-consumer-library-that-supports-scalability-and-recoverability
 
 https://www.confluent.io/en-gb/blog/event-driven-microservices-with-python-and-kafka/
