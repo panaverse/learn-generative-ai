@@ -4,6 +4,8 @@ In the context of recent advancements in generative AI, AI agents are evolving r
 
 ## Letters from Andrew Ng: Design Patterns for AI agentic workflows
 
+[AI Pioneer Shows The Power of AI AGENTS - "The Future Is Agentic"](https://www.youtube.com/watch?v=ZYf9V2fSFwU)
+
 [Agentic Design Patterns Part 1](https://www.deeplearning.ai/the-batch/how-agents-can-improve-llm-performance/)
 
 [Agentic Design Patterns Part 2, Reflection](https://www.deeplearning.ai/the-batch/agentic-design-patterns-part-2-reflection/?ref=dl-staging-website.ghost.io)
