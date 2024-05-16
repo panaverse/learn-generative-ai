@@ -4,6 +4,8 @@
 
 [Introduction to LangGraph](https://langchain-ai.github.io/langgraph/tutorials/introduction/#part-1-build-a-basic-chatbot)
 
+[Deep Dive into LangGraph: Building Stateful and Multi-Agent Language Models](https://blog.gopenai.com/deep-dive-into-langgraph-building-stateful-and-multi-agent-language-models-b92d75ebe6ba)
+
 [Conceptual Guides](https://langchain-ai.github.io/langgraph/concepts/)
 
 [How-To Guides](https://langchain-ai.github.io/langgraph/how-tos/)

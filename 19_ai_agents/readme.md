@@ -1,6 +1,28 @@
 # AI Agents
 
-In the context of recent advancements in generative AI, AI agents are evolving rapidly, taking on new roles and capabilities. Here's a breakdown of what they are and how they're changing:
+In the context of recent advancements in generative AI, AI agents are evolving rapidly, taking on new roles and capabilities. 
+
+## Letters from Andrew Ng: Design Patterns for AI agentic workflows
+
+[Agentic Design Patterns Part 1](https://www.deeplearning.ai/the-batch/how-agents-can-improve-llm-performance/)
+
+[Agentic Design Patterns Part 2, Reflection](https://www.deeplearning.ai/the-batch/agentic-design-patterns-part-2-reflection/?ref=dl-staging-website.ghost.io)
+
+[Agentic Design Patterns Part 3, Tool Use](https://www.deeplearning.ai/the-batch/agentic-design-patterns-part-3-tool-use/)
+
+[Agentic Design Patterns Part 4, Planning](https://www.deeplearning.ai/the-batch/agentic-design-patterns-part-4-planning/)
+
+[Agentic Design Patterns Part 5, Multi-Agent Collaboration](https://www.deeplearning.ai/the-batch/agentic-design-patterns-part-5-multi-agent-collaboration/)
+
+## Review of Frameworks
+
+[AI Agents EXPLAINED: Unbiased Review of Langraph, AutoGen, and Crew AI Frameworks](https://www.youtube.com/watch?v=NjOj5mkytvw)
+
+[LangGraph: Multi-Agent Workflows](https://blog.langchain.dev/langgraph-multi-agent-workflows/)
+
+
+
+Here's a breakdown of what they are and how they're changing:
 
 **Traditional AI Agents:**
 
