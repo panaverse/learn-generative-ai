@@ -1,5 +1,9 @@
 # Crew AI
 
+[New short course: Multi AI Agent Systems with crewAI](https://www.youtube.com/watch?v=QtEUU9ppVLU)
+
+[Multi AI Agent Systems with crewAI Short Course](https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/)
+
 [Getting Started](https://docs.crewai.com/how-to/Creating-a-Crew-and-kick-it-off/)
 
 [The RIGHT WAY To Build AI Agents with CrewAI](https://www.youtube.com/watch?v=iJjSjmZnNlI)
