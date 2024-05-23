@@ -1,24 +1,26 @@
 # 03 Protobuf Kafka Messaging
 
-0. Review Protobuf and how it works in python
+### 1. Review Protobuf and how it works in python
 
 https://github.com/panaverse/learn-generative-ai/tree/main/05_microservices_all_in_one_platform/14_docker/08_kafka/protobuf
 
-1. Build and Start Docker Containers
+### 2. Build and Start Docker Containers
 
 `docker compose up --build`
 
-2. Installing Protobuf Compiler
+### 3. Installing Protobuf Compiler in Container
 
-- In `todo` Dockerfile.dev we have added installation command for `protobuf-compiler` package.
+- In `todo` Dockerfile.dev we have added installation command at line-11 for `protobuf-compiler` package. 
+- We will use the protoc compiler to generate the Python code from the .proto files.  i.e: protoc --python_out=. todo.proto
 
-3. Install Protobuf Python Package in `todo` microservice
 
-We need a python protobuf package to use protobuf in python. We have already installed it here. See the todo pyproject.toml.
+### 4. Install Protobuf Python Package in `todo` microservice
 
-For new projects we will install it in our microservice using Poetry: `poetry add protobuf`.
+- We need a protobuf package in Python.
+- We have already installed it here. See the todo pyproject.toml.
+- For new projects we will install it in our microservice using Poetry: `poetry add protobuf`.
 
-5. Generate python code for ProtoSchema in `todo.proto` (todo/app/todo.proto).
+### 5. Generate python code for ProtoSchema in `todo.proto` (todo/app/todo.proto).
 
 ```
 docker exec -it <cont-name> /bin/bash
@@ -30,7 +32,7 @@ protoc --python_out=. todo.proto
 
 It will generate `todo_pb2.py` file.
 
-6. Now review how the generated python code is used in `main.py` with producers and consumers.
+### 6. Now review how the generated python code is used in `main.py` with producers and consumers.
 
 - Before Producing Serialize using Generated Class
 ```
@@ -73,3 +75,5 @@ async def consume_messages(topic, bootstrap_servers):
         # Ensure to close the consumer when done.
         await consumer.stop()
 ```
+
+Now we are producing and consuming messages that are serialized using Protobuf. Next, we will learn about Schema Registry.
