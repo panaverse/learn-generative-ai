@@ -4,11 +4,17 @@
 
 [Multi AI Agent Systems with crewAI Short Course](https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/)
 
+[CrewAI: The Future of Autonomous AI Agent Management](https://www.youtube.com/playlist?list=PLXinUFzI1D8pQbSam4qXZaW_LW81rBkNP)
+
 [Getting Started](https://docs.crewai.com/how-to/Creating-a-Crew-and-kick-it-off/)
 
 [The RIGHT WAY To Build AI Agents with CrewAI](https://www.youtube.com/watch?v=iJjSjmZnNlI)
 
 [Trip Planing Agents](https://www.youtube.com/playlist?list=PLYQsp-tXX9w7O_Dwt712-h5ou1a4FAq9-)
+
+## AI Agents Pricing
+
+[Free AI Agents for the CrewAI Framework](https://medium.com/timurai/free-ai-agents-for-the-crewai-framework-1712b7d2f1dc)
 
 ## Integration
 
