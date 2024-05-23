@@ -12,7 +12,9 @@ import json
 
 # Step 1: Import the generated protobuf code - Review todo post api route next.
 from app import todo_pb2
+import logging
 
+logging.basicConfig(level=logging.DEBUG)
 
 class Todo(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
