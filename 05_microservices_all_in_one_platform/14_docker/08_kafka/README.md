@@ -11,3 +11,4 @@ https://www.datacamp.com/tutorial/apache-kafka-for-beginners-a-comprehensive-gui
 
 https://github.com/pmoskovi/kafka-learning-resources
 
+Now Move to Step 15 Event Driven to learn `FastAPI Event Driven Microservices Development With Kafka, KRaft, Docker Compose, and Poetry `

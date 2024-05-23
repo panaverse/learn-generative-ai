@@ -1,4 +1,4 @@
-# Protobuf
+# 03 Protobuf Kafka Messaging
 
 Google Protocol Buffers, commonly known as Protobuf, is a language- and platform-neutral way of serializing structured data. It is useful for developing programs to communicate with each other over a network or for storing data. Protobuf is similar to XML or JSON but is smaller, faster, and simpler.
 
@@ -6,127 +6,81 @@ Reference:
 
 [Cloudflare’s Trillion-Message Kafka Infrastructure: A Deep Dive](https://blog.bytebytego.com/p/cloudflares-trillion-message-kafka)
 
-## Documentation:
 
-[Official Documentation](https://protobuf.dev/)
+### 1. Review Protobuf Tutorial and how it works in python
 
-[Language Guide (proto 3)](https://protobuf.dev/programming-guides/proto3/)
+[Protobuf Overview and Tutorial](./protobuf-guide.md)
 
-[Protocol Buffer Basics: Python](https://protobuf.dev/getting-started/pythontutorial/)
+### 2. Build and Start Docker Containers
 
-## Key Concepts
+`docker compose up --build`
 
-### 1. **Schema Definition**
+### 3. Installing Protobuf Compiler in Container
 
-Protobuf uses a `.proto` file to define the structure of your data. This file specifies the data types and structure of the data to be serialized.
+- In `todo` Dockerfile.dev we have added installation command at line-11 for `protobuf-compiler` package. 
+- We will use the protoc compiler to generate the Python code from the .proto files.  i.e: protoc --python_out=. todo.proto
 
-### 2. **Serialization and Deserialization**
 
-Serialization is the process of converting an object into a byte stream, while deserialization is the process of converting a byte stream back into an object.
+### 4. Install Protobuf Python Package in `todo` microservice
 
-### 3. **Generated Code**
+- We need a protobuf package in Python.
+- We have already installed it here. See the todo pyproject.toml.
+- For new projects we will install it in our microservice using Poetry: `poetry add protobuf`.
 
-Protobuf generates source code from the `.proto` files for various programming languages, including Python, Java, and C++.
+### 5. Generate python code for ProtoSchema in `todo.proto` (todo/app/todo.proto).
 
-### Example
+```
+docker exec -it <cont-name> /bin/bash
 
-Let's go through a detailed example using Python.
+cd app
 
-### Step 1: Define the Schema
-
-Create a file named `person.proto` with the following content:
-
-```proto
-syntax = "proto3";
-
-message Person {
-  string name = 1;
-  int32 id = 2;
-  string email = 3;
-}
+protoc --python_out=. todo.proto
 ```
 
-This defines a `Person` message with three fields: `name`, `id`, and `email`.
+It will generate `todo_pb2.py` file.
 
-### Step 2: Generate Python Code
+### 6. Now review how the generated python code is used in `main.py` with producers and consumers.
 
-Use the `protoc` compiler to generate Python code from the `.proto` file.
+- Before Producing Serialize using Generated Class
+```
+    todo_protbuf = todo_pb2.Todo(id=todo.id, content=todo.content)
+    print(f"Todo Protobuf: {todo_protbuf}")
 
-```sh
-protoc --python_out=. person.proto
+    # Serialize the message to a byte string
+    serialized_todo = todo_protbuf.SerializeToString()
+    print(f"Serialized data: {serialized_todo}")
+    
+    # Produce message
+    await producer.send_and_wait("todos2", serialized_todo)
 ```
 
-This command generates a `person_pb2.py` file in the current directory.
+- Deserialize In Consumer
 
-### Step 3: Use the Generated Code in Python
+```
+async def consume_messages(topic, bootstrap_servers):
+    # Create a consumer instance.
+    consumer = AIOKafkaConsumer(
+        topic,
+        bootstrap_servers=bootstrap_servers,
+        group_id="my-group",
+        auto_offset_reset='earliest'
+    )
 
-```python
-import person_pb2
+    # Start the consumer.
+    await consumer.start()
+    try:
+        # Continuously listen for messages.
+        async for message in consumer:
+            print(f"\n\n Consumer Raw message Vaue: {message.value}")
 
-# Create a new Person message
-person = person_pb2.Person()
-person.name = "John Doe"
-person.id = 1234
-person.email = "johndoe@example.com"
-
-# Serialize the message to a byte string
-serialized_person = person.SerializeToString()
-print(f"Serialized data: {serialized_person}")
-
-# Deserialize the byte string back into a Person message
-new_person = person_pb2.Person()
-new_person.ParseFromString(serialized_person)
-print(f"Deserialized data: {new_person}")
-print(f"Name: {new_person.name}, ID: {new_person.id}, Email: {new_person.email}")
+            new_todo = todo_pb2.Todo()
+            new_todo.ParseFromString(message.value)
+            print(f"\n\n Consumer Deserialized data: {new_todo}")
+        # Here you can add code to process each message.
+        # Example: parse the message, store it in a database, etc.
+    finally:
+        # Ensure to close the consumer when done.
+        await consumer.stop()
 ```
 
-### Explanation
-
-1. **Import the Generated Code**
-
-   ```python
-   import person_pb2
-   ```
-
-   This imports the generated Python code for the `Person` message.
-
-2. **Create a New Person Message**
-
-   ```python
-   person = person_pb2.Person()
-   person.name = "John Doe"
-   person.id = 1234
-   person.email = "johndoe@example.com"
-   ```
-
-   This creates a new `Person` message and sets its fields.
-
-3. **Serialize the Message**
-
-   ```python
-   serialized_person = person.SerializeToString()
-   print(f"Serialized data: {serialized_person}")
-   ```
-
-   This serializes the `Person` message to a byte string.
-
-4. **Deserialize the Byte String**
-
-   ```python
-   new_person = person_pb2.Person()
-   new_person.ParseFromString(serialized_person)
-   print(f"Deserialized data: {new_person}")
-   print(f"Name: {new_person.name}, ID: {new_person.id}, Email: {new_person.email}")
-   ```
-
-   This deserializes the byte string back into a `Person` message and prints the field values.
-
-### Advantages of Protobuf
-
-1. **Compact and Efficient**: Protobuf is more efficient than XML and JSON in terms of both size and speed.
-2. **Strongly Typed**: The generated code is strongly typed, which helps catch errors at compile-time rather than runtime.
-3. **Backward and Forward Compatibility**: Protobuf supports adding new fields and deprecating old fields without breaking existing code.
-
-### Conclusion
-
-Google Protocol Buffers provide a powerful way to serialize structured data with high efficiency and ease of use. By defining your data schema in a `.proto` file and generating code for your desired language, you can easily serialize and deserialize data in a type-safe and efficient manner.
+Now we are producing and consuming messages that are serialized using Protobuf. Next, we will learn about Schema Registry.
