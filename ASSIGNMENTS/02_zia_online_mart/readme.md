@@ -1,0 +1,195 @@
+# Project Assignment: Online Zia Mart API Using Event-Driven Microservices Architecture
+
+## Project Overview
+
+This project aims to develop an online mart API using an event-driven microservices architecture. The API will leverage various technologies such as FastAPI, Docker, DevContainers, Docker Compose, PostgreSQL, Kafka, Protocol Buffers (Protobuf), and Kong for API gateway management. The goal is to create a scalable, maintainable, and efficient system that handles high volumes of transactions and data in a distributed manner.
+
+## Objectives
+
+- **Develop a scalable and efficient API** for an online mart using microservices.
+- **Implement an event-driven architecture** to handle asynchronous communication between services.
+- **Utilize modern technologies** such as FastAPI for API development, Docker for containerization, and Kafka for event streaming.
+- **Ensure smooth development and deployment** using DevContainers and Docker Compose.
+- **Manage and route API requests** through Kong API Gateway.
+- **Use Protocol Buffers (Protobuf)** for efficient data serialization.
+- **Persist data** using PostgreSQL.
+
+## Technologies
+
+- **FastAPI**: A modern, fast (high-performance) web framework for building APIs with Python.
+- **Docker**: For containerizing the microservices, ensuring consistency across different environments.
+- **DevContainers**: To provide a consistent development environment.
+- **Docker Compose**: For orchestrating multi-container Docker applications.
+- **PostgreSQL**: A powerful, open-source relational database system.
+- **SQLModel**: For interacting with the PostgreSQL database using Python.
+- **Kafka**: A distributed event streaming platform for building real-time data pipelines and streaming applications.
+- **Protocol Buffers (Protobuf)**: A method developed by Google for serializing structured data, similar to XML or JSON but smaller, faster, and simpler.
+- **Kong**: An open-source API Gateway and Microservices Management Layer.
+
+## Architecture
+
+### Microservices
+
+1. **User Service**: Manages user authentication, registration, and profiles.
+2. **Product Service**: Manages product catalog, including CRUD operations for products.
+3. **Order Service**: Handles order creation, updating, and tracking.
+4. **Inventory Service**: Manages stock levels and inventory updates.
+5. **Notification Service**: Sends notifications (email, SMS) to users about order statuses and other updates.
+6. **Payment Service**: Processes payments and manages transaction records.
+
+### Event-Driven Communication
+
+- **Kafka**: Acts as the event bus, facilitating communication between microservices. Each service can produce and consume messages (events) such as user registration, order placement, and inventory updates.
+- **Protobuf**: Used for defining the structure of messages exchanged between services, ensuring efficient and compact serialization.
+
+### Data Storage
+
+- **PostgreSQL**: Each microservice with data persistence needs will have its own PostgreSQL database instance, following the database-per-service pattern.
+
+### API Gateway
+
+- **Kong**: Manages API request routing, authentication, rate limiting, and other cross-cutting concerns.
+
+## Development Environment
+
+- **DevContainers**: Provide consistent development environments using VSCode DevContainers, ensuring that all team members work in identical environments.
+- **Docker Compose**: Orchestrates the various microservices and dependencies (PostgreSQL, Kafka, etc.) during development and testing.
+
+## Implementation Plan
+
+### Phase 1: Setup and Initial Development
+
+1. **Setup Development Environment**
+   - Configure DevContainers with necessary dependencies and tools.
+   - Create Docker Compose file for orchestrating services and dependencies.
+
+2. **Develop Core Microservices**
+   - User Service: Implement authentication, registration, and user profile management.
+   - Product Service: Implement product catalog management.
+   - Order Service: Implement order processing and tracking.
+
+3. **Setup Kafka and Protobuf**
+   - Configure Kafka for event streaming.
+   - Define Protobuf schemas for messages exchanged between services.
+
+### Phase 2: Expand Functionality
+
+1. **Develop Additional Microservices**
+   - Inventory Service: Manage stock levels and inventory updates.
+   - Notification Service: Send notifications about order statuses and other events.
+   - Payment Service: Process payments and manage transactions.
+
+2. **Integrate Event-Driven Communication**
+   - Ensure all services can produce and consume relevant Kafka messages.
+   - Use Protobuf for message serialization.
+
+### Phase 3: Implement API Gateway and Finalize
+
+1. **Setup Kong API Gateway**
+   - Configure Kong for routing, authentication, and rate limiting.
+   - Create routes for each microservice.
+
+2. **Testing and Quality Assurance**
+   - Write unit, integration, and end-to-end tests for all services.
+   - Perform load testing to ensure scalability and performance.
+
+3. **Deployment (Optional)**
+   - Deploy services to a cloud platform (e.g., AWS, GCP, Azure) using Kubernetes for orchestration locally or the following Cloud Services:
+
+   Deploying containers in the cloud is a popular approach for managing and scaling applications. Various cloud providers offer a range of services to facilitate container deployment, management, and orchestration. Here are some of the prominent services available for deploying containers in the cloud:
+
+### Amazon Web Services (AWS)
+
+1. **Amazon Elastic Kubernetes Service (EKS)**
+   - Managed Kubernetes service that simplifies running Kubernetes on AWS without needing to install and operate your own Kubernetes control plane or nodes.
+
+2. **Amazon Elastic Container Service (ECS)**
+   - Fully managed container orchestration service that supports Docker containers. ECS can run applications on a managed cluster of Amazon EC2 instances or using AWS Fargate.
+
+3. **AWS Fargate**
+   - Serverless compute engine for containers that works with ECS and EKS. It allows you to run containers without having to manage servers or clusters.
+
+4. **Amazon Lightsail**
+   - Simplified service for small-scale applications that need easy deployment and management of containers, virtual servers, and more.
+
+### Microsoft Azure
+
+1. **Azure Kubernetes Service (AKS)**
+   - Managed Kubernetes service that simplifies Kubernetes cluster management, scaling, and upgrades.
+
+2. **Azure Container Instances (ACI)**
+   - Offers a quick and easy way to run containers without managing servers, using a pay-per-second billing model.
+
+3. **Azure App Service**
+   - Platform as a Service (PaaS) offering that enables easy deployment and scaling of web apps, APIs, and mobile backends, including support for Docker containers.
+
+4. **Azure Red Hat OpenShift**
+   - Managed OpenShift service for running containerized applications using Kubernetes with integrated DevOps tools.
+
+### Google Cloud Platform (GCP)
+
+1. **Google Kubernetes Engine (GKE)**
+   - Managed Kubernetes service that offers easy, reliable, and scalable Kubernetes cluster management on GCP.
+
+2. **Google Cloud Run**
+   - Fully managed compute platform that automatically scales your stateless containers, billed only for the resources you use.
+
+3. **Google Cloud Functions**
+   - Serverless execution environment for building and connecting cloud services. You can deploy containerized functions as well.
+
+4. **Google App Engine**
+   - PaaS offering that allows you to build and deploy applications using containers, without managing the underlying infrastructure.
+
+### IBM Cloud
+
+1. **IBM Cloud Kubernetes Service**
+   - Managed Kubernetes service that provides advanced tools and security to deploy, manage, and scale containerized applications.
+
+2. **IBM Cloud Code Engine**
+   - Serverless platform for running containerized workloads, including web apps, microservices, and batch jobs.
+
+### Oracle Cloud Infrastructure (OCI)
+
+1. **Oracle Container Engine for Kubernetes (OKE)**
+   - Managed Kubernetes service that allows you to deploy and manage containerized applications with ease on Oracle Cloud.
+
+2. **Oracle Cloud Infrastructure Container Instances**
+   - Service for running containers directly on OCI without managing underlying infrastructure.
+
+### Other Cloud Providers and Services
+
+1. **DigitalOcean Kubernetes**
+   - Managed Kubernetes service that simplifies container orchestration on DigitalOcean's cloud.
+
+2. **Linode Kubernetes Engine (LKE)**
+   - Managed Kubernetes service that provides high-performance Kubernetes clusters on Linode's infrastructure.
+
+3. **Red Hat OpenShift on IBM Cloud**
+   - Managed OpenShift service that provides enterprise Kubernetes orchestration and DevOps capabilities.
+
+4. **VMware Tanzu**
+   - Suite of products for building, running, and managing containerized applications on Kubernetes across multi-cloud environments.
+
+### Container Management Platforms
+
+1. **Rancher**
+   - Open-source container management platform that simplifies deploying and managing Kubernetes clusters across various cloud providers and on-premises.
+
+2. **Portainer**
+   - Lightweight management UI that helps manage Docker and Kubernetes environments.
+
+
+### Phase 4: Monitoring and Maintenance (Optional)
+
+1. **Implement Monitoring and Logging**
+   - Set up monitoring tools (e.g., Prometheus, Grafana) to track service health and performance.
+   - Implement centralized logging for troubleshooting and analysis.
+
+2. **Continuous Improvement**
+   - Regularly update services based on feedback and new requirements.
+   - Ensure security best practices are followed and vulnerabilities are addressed promptly.
+
+## Conclusion
+
+This project aims to create a robust, scalable, and efficient online mart API using an event-driven microservices architecture. By leveraging modern technologies such as FastAPI, Docker, Kafka, Protobuf, and Kong, we ensure a high-performance and maintainable system capable of handling large-scale operations. The development will follow a phased approach, ensuring thorough testing, quality assurance, and continuous improvement.
+
