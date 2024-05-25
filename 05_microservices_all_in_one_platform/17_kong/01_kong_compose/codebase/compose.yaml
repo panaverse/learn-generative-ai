@@ -10,17 +10,7 @@ services:
     depends_on:
         - postgres_db
     ports:
-      - "8000:8000"  # Expose container port 8000 to host port 8000  
-  api2:
-    build:
-      context: ./microservice_02
-      dockerfile: Dockerfile.dev
-    volumes:
-      - ./microservice_02:/code  # Sync local development directory with the container
-    depends_on:
-        - postgres_db
-    ports:
-      - "8002:8000"  # Expose container port 8000 to host port 8000  
+      - "8085:8085"  # Expose container port 8000 to host port 8000  
   postgres_db:
     image: postgres:latest  # Use the official PostgreSQL image
     restart: always

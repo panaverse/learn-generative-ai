@@ -74,10 +74,13 @@ app = FastAPI(lifespan=lifespan, title="Hello World API with DB",
     version="0.0.1",
     servers=[
         {
-            "url": "http://127.0.0.1:8000", # ADD NGROK URL Here Before Creating GPT Action
+            "url": "http://host.docker.internal:8085", # ADD NGROK URL Here Before Creating GPT Action
             "description": "Development Server"
-        }
-        ])
+        },{
+            "url": "http://127.0.0.1:8085",
+            "description": "Development Server"
+        }]
+    )
 
 def get_session():
     with Session(engine) as session:
@@ -104,9 +107,9 @@ async def create_todo(todo: Todo, session: Annotated[Session, Depends(get_sessio
         print("todoJSON:", todo_json)
         # Produce message
         await producer.send_and_wait("todos", todo_json)
-        # session.add(todo)
-        # session.commit()
-        # session.refresh(todo)
+        session.add(todo)
+        session.commit()
+        session.refresh(todo)
         return todo
 
 

@@ -66,6 +66,27 @@ services:
       DYNAMIC_CONFIG_ENABLED: "true"
     depends_on:
       - broker
+  # Schema Registry Service
+  schema-registry:
+    image: confluentinc/cp-schema-registry:6.1.1
+    depends_on:
+      - broker
+    ports:
+      - "8081:8081"
+    environment:
+      SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: broker:19092
+      SCHEMA_REGISTRY_HOST_NAME: schema-registry
+      SCHEMA_REGISTRY_LISTENERS: http://0.0.0.0:8081
+  # Init Kafka Service
+  # init-kafka:
+  #   build:
+  #     context: ./init/kafka/
+  #   depends_on:
+  #     - broker
+  #   environment:
+  #     KAFKA_HOST: broker
+  #     KAFKA_PORT: 9092
+  #     KAFKA_CREATE_TOPICS: "table-update:1:1,error:1:1,ms-order-inbox-topic:1:1,ms-order-inbox-error-topic:1:1,ms-order-outbox-topic:1:1"
 volumes:
   postgres_db:
     driver: local
