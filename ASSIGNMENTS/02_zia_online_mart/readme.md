@@ -72,6 +72,16 @@ TDD involves writing tests before writing the actual code. This ensures that the
 
 BDD extends TDD by writing test cases in a natural language that non-programmers can read. This ensures that the software development process aligns closely with business requirements. In this project, Behave will be used for BDD.
 
+As mentioned above, Behavior-driven development is an extension of Test-driven development (TDD) that emphasizes collaboration among project stakeholders. Behave operates on the principle of scenarios, which are written in a natural language that non-programmers can understand. These scenarios describe how a feature should work from the end user’s perspective.
+
+**Behave** is a BDD framework for Python that follows the principles of writing tests in a human-readable format. It uses Gherkin language to describe software behaviors without detailing how that functionality is implemented.
+
+**Key Features of Behave**
+
+- **Gherkin Language**: Enables the definition of application behavior in natural language, which stakeholders can easily understand.
+- **Scenario Outline**: Facilitates data-driven tests, allowing the same scenario to be run multiple times with different data sets.
+- **Hooks**: Offers setup and teardown operations for scenarios or features, improving test management.
+
 ## Implementation Plan
 
 ### Phase 1: Setup and Initial Development
