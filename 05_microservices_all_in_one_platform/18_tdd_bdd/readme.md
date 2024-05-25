@@ -384,6 +384,68 @@ Feature: Handling Flight Booking Queries
 - **Natural Language Processing (NLP)**: CUIs rely heavily on NLP, which can be unpredictable. BDD scenarios need to account for variations in user input and potential misunderstandings.
 - **Continuous Updating**: As user expectations and behaviors evolve, BDD scenarios need to be continuously updated to reflect these changes.
 
+## Example:
+
+1. **Create a Directory Structure**: Ensure that you have the correct directory structure for your Behave project. The typical structure is:
+
+   ```
+   your_project/
+   ├── features/
+   │   ├── steps/
+   │   │   └── step_definitions.py
+   │   └── your_feature_file.feature
+   └── behave.ini (optional)
+   ```
+
+2. **Create the `steps` Directory**: Inside the `features` directory, create a subdirectory named `steps`. This is where your step definition files should reside.
+
+   ```bash
+   mkdir -p features/steps
+   ```
+
+3. **Add Step Definitions**: Inside the `steps` directory, add a Python file (e.g., `step_definitions.py`) and define your step functions there.
+
+   ```python
+   # features/steps/step_definitions.py
+
+   from behave import given, when, then
+
+   @given('I have a configured Behave environment')
+   def step_impl(context):
+       pass
+
+   @when('I run Behave')
+   def step_impl(context):
+       pass
+
+   @then('I should see the test results')
+   def step_impl(context):
+       pass
+   ```
+
+4. **Check `features` Directory**: Ensure that your `.feature` files are correctly placed in the `features` directory and are properly formatted.
+
+   ```gherkin
+   # features/example.feature
+
+   Feature: Example feature
+
+     Scenario: Example scenario
+       Given I have a configured Behave environment
+       When I run Behave
+       Then I should see the test results
+   ```
+
+5. **Run Behave**: Navigate to the root of your project directory and run Behave again.
+
+   ```bash
+   behave
+   ```
+
+![Alt text](image.png)
+
+By ensuring that your project has the correct directory structure and that your `steps` directory contains the necessary step definition files, you should be able to resolve the "ConfigError: No steps directory" issue.
+
 ### Conclusion
 
 BDD is effective for developing applications with conversational user interfaces because it aligns the development process with user and business expectations, promotes collaboration, and ensures thorough testing of conversational flows. By using BDD, teams can create more intuitive and reliable CUIs that meet the needs of their users.
