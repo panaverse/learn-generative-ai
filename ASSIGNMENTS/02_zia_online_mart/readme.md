@@ -25,6 +25,7 @@ This project aims to develop an online mart API using an event-driven microservi
 - **Kafka**: A distributed event streaming platform for building real-time data pipelines and streaming applications.
 - **Protocol Buffers (Protobuf)**: A method developed by Google for serializing structured data, similar to XML or JSON but smaller, faster, and simpler.
 - **Kong**: An open-source API Gateway and Microservices Management Layer.
+- **Github Actions**: For CI/CD pipeline.
 
 ## Architecture
 
@@ -179,15 +180,33 @@ This project aims to develop an online mart API using an event-driven microservi
    - Lightweight management UI that helps manage Docker and Kubernetes environments.
 
 
-### Phase 4: Monitoring and Maintenance (Optional)
+### Phase 4: Monitoring and Continues Delivery (Optional)
 
 1. **Implement Monitoring and Logging**
    - Set up monitoring tools (e.g., Prometheus, Grafana) to track service health and performance.
    - Implement centralized logging for troubleshooting and analysis.
 
-2. **Continuous Improvement**
-   - Regularly update services based on feedback and new requirements.
-   - Ensure security best practices are followed and vulnerabilities are addressed promptly.
+2. **Continuous Delivery with GitHub Actions (Options)**
+   - Use Github Actions to continuesly deliver code for deployment to the the cloud. 
+   Using GitHub Actions in your Online Mart API project can greatly enhance your development workflow by automating building, testing, and deployment processes. This not only saves time but also ensures consistency and reliability in your deployment pipeline. Below is a comprehensive conclusion to the setup:
+
+- **Consistency and Reliability**
+   - Automated workflows ensure that every code change is consistently built, tested, and deployed, reducing the risk of human error.
+
+- **Early Error Detection**
+   - Running tests on every push helps detect issues early in the development process, making it easier to fix bugs before they reach production.
+
+- **Scalability**
+   - Automated workflows can handle multiple microservices and scale with your project. As your application grows, you can easily add more workflows for additional services.
+
+- **Efficiency**
+   - Automating the build and deployment process reduces the time developers spend on manual tasks, allowing them to focus on writing code and developing features.
+
+- **Integration with Other Tools**
+   - GitHub Actions integrates well with other tools and services, such as container registries.
+   
+
+
 
 ## Conclusion
 
