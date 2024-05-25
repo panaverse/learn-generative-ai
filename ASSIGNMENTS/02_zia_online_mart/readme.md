@@ -98,7 +98,7 @@ This project aims to develop an online mart API using an event-driven microservi
 
    Deploying containers in the cloud is a popular approach for managing and scaling applications. Various cloud providers offer a range of services to facilitate container deployment, management, and orchestration. Here are some of the prominent services available for deploying containers in the cloud:
 
-**Amazon Web Services (AWS)**
+- **Amazon Web Services (AWS)**
 
 1. **Amazon Elastic Kubernetes Service (EKS)**
    - Managed Kubernetes service that simplifies running Kubernetes on AWS without needing to install and operate your own Kubernetes control plane or nodes.
@@ -112,7 +112,7 @@ This project aims to develop an online mart API using an event-driven microservi
 4. **Amazon Lightsail**
    - Simplified service for small-scale applications that need easy deployment and management of containers, virtual servers, and more.
 
-**Microsoft Azure**
+- **Microsoft Azure**
 
 1. **Azure Kubernetes Service (AKS)**
    - Managed Kubernetes service that simplifies Kubernetes cluster management, scaling, and upgrades.
@@ -126,7 +126,7 @@ This project aims to develop an online mart API using an event-driven microservi
 4. **Azure Red Hat OpenShift**
    - Managed OpenShift service for running containerized applications using Kubernetes with integrated DevOps tools.
 
-**Google Cloud Platform (GCP)**
+- **Google Cloud Platform (GCP)**
 
 1. **Google Kubernetes Engine (GKE)**
    - Managed Kubernetes service that offers easy, reliable, and scalable Kubernetes cluster management on GCP.
@@ -140,7 +140,7 @@ This project aims to develop an online mart API using an event-driven microservi
 4. **Google App Engine**
    - PaaS offering that allows you to build and deploy applications using containers, without managing the underlying infrastructure.
 
-**IBM Cloud**
+- **IBM Cloud**
 
 1. **IBM Cloud Kubernetes Service**
    - Managed Kubernetes service that provides advanced tools and security to deploy, manage, and scale containerized applications.
@@ -148,7 +148,7 @@ This project aims to develop an online mart API using an event-driven microservi
 2. **IBM Cloud Code Engine**
    - Serverless platform for running containerized workloads, including web apps, microservices, and batch jobs.
 
-**Oracle Cloud Infrastructure (OCI)**
+- **Oracle Cloud Infrastructure (OCI)**
 
 1. **Oracle Container Engine for Kubernetes (OKE)**
    - Managed Kubernetes service that allows you to deploy and manage containerized applications with ease on Oracle Cloud.
@@ -156,7 +156,7 @@ This project aims to develop an online mart API using an event-driven microservi
 2. **Oracle Cloud Infrastructure Container Instances**
    - Service for running containers directly on OCI without managing underlying infrastructure.
 
-**Other Cloud Providers and Services**
+- **Other Cloud Providers and Services**
 
 1. **DigitalOcean Kubernetes**
    - Managed Kubernetes service that simplifies container orchestration on DigitalOcean's cloud.
@@ -170,7 +170,7 @@ This project aims to develop an online mart API using an event-driven microservi
 4. **VMware Tanzu**
    - Suite of products for building, running, and managing containerized applications on Kubernetes across multi-cloud environments.
 
-**Container Management Platforms**
+- **Container Management Platforms**
 
 1. **Rancher**
    - Open-source container management platform that simplifies deploying and managing Kubernetes clusters across various cloud providers and on-premises.
