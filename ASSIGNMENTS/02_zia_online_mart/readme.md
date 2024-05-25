@@ -4,6 +4,9 @@
 
 This project aims to develop an online mart API using an event-driven microservices architecture. The API will leverage various technologies such as FastAPI, Docker, DevContainers, Docker Compose, PostgreSQL, Kafka, Protocol Buffers (Protobuf), and Kong for API gateway management. The goal is to create a scalable, maintainable, and efficient system that handles high volumes of transactions and data in a distributed manner.
 
+Additionally, Test-Driven Development (TDD) and Behavior-Driven Development (BDD) practices will be incorporated to ensure high code quality and alignment with business requirements.
+
+
 ## Objectives
 
 - **Develop a scalable and efficient API** for an online mart using microservices.
@@ -13,6 +16,7 @@ This project aims to develop an online mart API using an event-driven microservi
 - **Manage and route API requests** through Kong API Gateway.
 - **Use Protocol Buffers (Protobuf)** for efficient data serialization.
 - **Persist data** using PostgreSQL.
+- **Incorporate TDD and BDD** to enhance code quality and ensure the application meets business requirements.
 
 ## Technologies
 
@@ -26,6 +30,8 @@ This project aims to develop an online mart API using an event-driven microservi
 - **Protocol Buffers (Protobuf)**: A method developed by Google for serializing structured data, similar to XML or JSON but smaller, faster, and simpler.
 - **Kong**: An open-source API Gateway and Microservices Management Layer.
 - **Github Actions**: For CI/CD pipeline.
+- **Pytest**: For unit testing and TDD.
+- **Behave**: For BDD.
 
 ## Architecture
 
@@ -56,6 +62,16 @@ This project aims to develop an online mart API using an event-driven microservi
 - **DevContainers**: Provide consistent development environments using VSCode DevContainers, ensuring that all team members work in identical environments.
 - **Docker Compose**: Orchestrates the various microservices and dependencies (PostgreSQL, Kafka, etc.) during development and testing.
 
+## Development Methodologies
+
+**Test-Driven Development (TDD)**:
+
+TDD involves writing tests before writing the actual code. This ensures that the code meets the required functionality and helps prevent bugs. In this project, Pytest will be used for unit testing.
+
+**Behavior-Driven Development (BDD)**:
+
+BDD extends TDD by writing test cases in a natural language that non-programmers can read. This ensures that the software development process aligns closely with business requirements. In this project, Behave will be used for BDD.
+
 ## Implementation Plan
 
 ### Phase 1: Setup and Initial Development
@@ -64,14 +80,26 @@ This project aims to develop an online mart API using an event-driven microservi
    - Configure DevContainers with necessary dependencies and tools.
    - Create Docker Compose file for orchestrating services and dependencies.
 
-2. **Develop Core Microservices**
-   - User Service: Implement authentication, registration, and user profile management.
-   - Product Service: Implement product catalog management.
-   - Order Service: Implement order processing and tracking.
+2.  **Develop Microservices with TDD**
+
+	- Implement the User Service, Product Service, Order Service, Payment Service, and Notification Service using FastAPI and SQLModel.
+	- Write unit tests using Pytest before writing the actual code.
+	- Containerize each microservice using Docker.
 
 3. **Setup Kafka and Protobuf**
    - Configure Kafka for event streaming.
    - Define Protobuf schemas for messages exchanged between services.
+
+4. **Write BDD Scenarios**
+    - Define user stories and acceptance criteria.
+	- Write BDD scenarios in Gherkin language using Behave.
+	- Implement step definitions to automate the BDD scenarios.
+
+5. **Testing**
+    - Ensure all unit tests and BDD scenarios pass.
+	- Use Docker Compose to run the entire application locally for integration testing.
+
+
 
 ### Phase 2: Expand Functionality
 
