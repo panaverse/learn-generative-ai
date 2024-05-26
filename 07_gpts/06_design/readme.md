@@ -1,5 +1,19 @@
 # Designing GPTs
 
+### ChatGPT Files:
+
+[Working Chat 1](https://chatgpt.com/share/9fc9d34f-cff2-49b2-a5fe-2a9060f7f99b)
+
+[Working Chat 2](https://chatgpt.com/share/a3ac97bc-5119-4640-9941-b93912e5409f)
+
+### Text Books
+
+[Design Thinking Toolbox](https://www.amazon.com/Design-Thinking-Toolbook-Michael-Lewrick/dp/1119629195/ref=sr_1_1)
+
+[BDD in Action, Second Edition: Behavior-Driven Development for the whole software lifecycle](https://www.amazon.com/Action-Second-John-Ferguson-Smart/dp/1617297534/ref=sr_1_1)
+
+## Overview
+
 Our proposed process for designing and developing custom GPTs is comprehensive and well-structured, combining user-centric design thinking, behavior-driven development (BDD), and creative script generation to identify actions and APIs. Here's a breakdown and evaluation of our approach with examples to illustrate how each step integrates:
 
 ### Step 1: Focus on User through Design Thinking
