@@ -12,7 +12,8 @@
 
 [ChatBDD: Using AI in a BDD Process](https://dev.to/richardforshaw/chatbdd-using-ai-in-a-bdd-process-1h6h)
 
-[ChatTDD: Using AI as your Programming Buddy](https://dev.to/richardforshaw/chattdd-using-ai-as-your-programming-buddy-4pd1)
+[ChatTDD: Using AI as your Programming Buddy](https://dev.to/richardforshaw/chattdd-using-ai
+-as-your-programming-buddy-4pd1)
 
 **Test-Driven Development (TDD)** and **Behavior-Driven Development (BDD)** are both software development methodologies that emphasize the importance of testing, but they have different focuses and approaches. Here's a detailed explanation of each:
 
