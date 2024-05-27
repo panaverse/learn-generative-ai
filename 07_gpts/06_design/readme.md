@@ -108,9 +108,11 @@ Identify specific actions and APIs required to implement the behaviors and inter
 
 Your approach of combining design thinking, BDD, and script generation is robust and user-focused, ensuring that the GPT developed is both functional and aligned with user needs. Each step builds upon the previous one, creating a seamless process from understanding user needs to technical implementation. By following this structured approach, you can create custom GPTs that are highly effective and user-friendly.
 
-## Steps in Creating AI Solutions
+## Step by Step Guide for Creating GenAI Solutions
 
-Using design thinking and BDD (Behavior-Driven Development) in the age of AI involves leveraging these methodologies to create AI solutions that are not only technically sound but also highly user-centric and aligned with real-world needs. Here’s a step-by-step guide on how to integrate these approaches effectively in AI development:
+Using design thinking and BDD (Behavior-Driven Development) in the age of AI involves leveraging these methodologies to create AI solutions that are not only technically sound but also highly user-centric and aligned with real-world needs.
+
+Here’s a step-by-step guide on how to integrate these approaches effectively in AI development:
 
 ### Step 1: Empathize (Design Thinking)
 
@@ -195,7 +197,11 @@ Using design thinking and BDD (Behavior-Driven Development) in the age of AI inv
 
    **Goal:** Develop a movie script of interactions between user and AI to be able to visualize the entire conversations.
 
-### Step 7: Develop and Test
+### Step 7: Identify Actions/APIs
+
+   **Goal:** Indentify the APIs/actions need from reviewing Given-When-Then scenarios and the movie scripts. 
+
+### Step 8: Develop and Test
 
 **Goal:** Implement the AI solution and validate its performance.
 
@@ -210,7 +216,7 @@ Using design thinking and BDD (Behavior-Driven Development) in the age of AI inv
 **Example:**
    - Implement the AI chatbot and test its ability to handle common queries accurately and efficiently.
 
-### Step 8: Iterate and Improve
+### Step 9: Iterate and Improve
 
 **Goal:** Continuously refine the AI solution based on user feedback and performance metrics.
 
