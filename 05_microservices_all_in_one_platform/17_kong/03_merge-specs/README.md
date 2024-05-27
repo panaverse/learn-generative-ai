@@ -1,4 +1,4 @@
-# We build a custom kong image that builds this plugin and enables it
+# Combine Microservices OpenAPI Specification
 
 - Goal: Get a merged OpenAPI Specification for all microservices. And it's updated live as any microservice codebase changes.
 
@@ -13,8 +13,9 @@ Right now we have achieved our Goal to get Consolidated Spec through another mic
 ## Get Hands on Code
 
 1. Get everything working
-
+```
 docker compose --profile database up -d
+```
 
 2. Visit Each Microservice Separately
 
