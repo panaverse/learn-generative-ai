@@ -9,6 +9,7 @@ services:
       - ./todo:/code  # Sync local development directory with the container
     depends_on:
         - postgres_db
+        - broker
     ports:
       - "8000:8000"  # Expose container port 8000 to host port 8000  
   api2:
@@ -19,6 +20,7 @@ services:
       - ./microservice_02:/code  # Sync local development directory with the container
     depends_on:
         - postgres_db
+        - broker
     ports:
       - "8002:8000"  # Expose container port 8000 to host port 8000  
   postgres_db:
