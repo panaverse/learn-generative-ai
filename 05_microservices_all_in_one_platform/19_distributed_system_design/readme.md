@@ -119,6 +119,10 @@ Open-source tools play a crucial role in designing scalable, resilient, and effi
 
 [Design Principles for Generative AI Applications](https://arxiv.org/html/2401.14484v1)
 
+[Generative AI Design Patterns: A Comprehensive Guide](https://towardsdatascience.com/generative-ai-design-patterns-a-comprehensive-guide-41425a40d7d0)
+
+[Mastering GenAI ML System Design Interview: Principles & Solution Outline](https://towardsdatascience.com/mastering-genai-ml-system-design-interview-principles-solution-outline-71a4664511a7)
+
 [Generative AI Interview Questions](https://www.youtube.com/watch?v=F1lsFTpsQLI)
 
 ## Resources

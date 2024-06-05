@@ -1,5 +1,7 @@
 # LangGraph
 
+[AI Agents in LangGraph](https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/)
+
 [LangGraph 101: it's better than LangChain](https://www.youtube.com/watch?v=qaWOwbFw3cs)
 
 [Introduction to LangGraph](https://langchain-ai.github.io/langgraph/tutorials/introduction/#part-1-build-a-basic-chatbot)
