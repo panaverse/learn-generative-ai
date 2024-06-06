@@ -1,0 +1,13 @@
+version: "3.9"
+
+name: streaming_fastapi_openapi
+
+services:
+  streming_fastapi:
+    build:
+      context: ./streaming_fastapi_openai
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000" 
+    volumes:
+      - ./streaming_fastapi_openai:/code/
