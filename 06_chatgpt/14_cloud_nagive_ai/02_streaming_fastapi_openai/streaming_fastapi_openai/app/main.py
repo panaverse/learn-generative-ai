@@ -12,7 +12,7 @@ _: bool = load_dotenv(find_dotenv())  # read local .env file
 app = FastAPI()
 
 # Initialize OpenAI client
-client = OpenAI(api_key=settings.OPENAI_API_KEY)
+client = OpenAI(api_key=str(settings.OPENAI_API_KEY))
 
 
 @app.get("/")
