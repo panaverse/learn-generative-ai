@@ -10,3 +10,21 @@ services:
       - "8888:8888"
     volumes:
       - ./code:/code/
+    networks:
+      - my-api-net
+
+  backends:
+    container_name : "backend"
+    hostname: 'backend'
+    build: 
+      context: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/code/
+    networks:
+      - my-api-net
+
+networks:
+  my-api-net:  # Define the custom network
+    driver: bridge
