@@ -1,17 +1,18 @@
 from fastapi import FastAPI, Query
 from fastapi.responses import StreamingResponse
 import time
+from app import settings
 
 # Initializes the OpenAI client, allowing interaction with OpenAI's API.
 from openai import OpenAI
-from dotenv import load_dotenv, find_dotenv
 
+from dotenv import load_dotenv, find_dotenv
 _: bool = load_dotenv(find_dotenv())  # read local .env file
 
 app = FastAPI()
 
 # Initialize OpenAI client
-client = OpenAI()
+client = OpenAI(api_key=settings.OPENAI_API_KEY)
 
 
 @app.get("/")
