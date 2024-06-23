@@ -44,6 +44,8 @@ Additionally, Test-Driven Development (TDD) and Behavior-Driven Development (BDD
 5. **Notification Service**: Sends notifications (email, SMS) to users about order statuses and other updates.
 6. **Payment Service**: Processes payments and manages transaction records.
 
+Note: We will use Pay Fast for Local Payment System. https://gopayfast.com/ And Stripe for international payments.
+
 ### Event-Driven Communication
 
 - **Kafka**: Acts as the event bus, facilitating communication between microservices. Each service can produce and consume messages (events) such as user registration, order placement, and inventory updates.
@@ -177,9 +179,6 @@ https://learn.microsoft.com/en-us/azure/container-apps/github-actions
 
 - **Integration with Other Tools**
    - GitHub Actions integrates well with other tools and services, such as container registries.
-   
-
-
 
 ## Conclusion
 
