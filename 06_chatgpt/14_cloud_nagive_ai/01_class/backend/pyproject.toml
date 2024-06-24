@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "weather api"
+version = "0.1.0"
+description = ""
+authors = ["Sir Qasim <m.qasim077@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.110.0"
+uvicorn = {extras = ["standard"], version = "^0.28.1"}
+sqlmodel = "^0.0.19"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

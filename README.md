@@ -1,6 +1,6 @@
 # Learn Cloud Applied Generative AI Engineering (GenEng)
 
-This course is part of the [Certified Cloud Applied Generative AI Engineer (GenEng)](https://docs.google.com/document/d/e/2PACX-1vTDW9opirT7t6oqL2NdKO7mBpQf6MWOT_z78HM1VzXstw8wxva8yFnpc-qwar0rXhl7BddQ3nhOa1yx/pub)
+This course is part of the [Certified Cloud Applied Generative AI Engineer (GenEng)](https://docs.google.com/document/d/15usu1hkrrRLRjcq_3nCTT-0ljEcgiC44iSdvdqrCprk/edit?usp=sharing)
 
 
 ## All Faculty and Students please Register for Microsoft Azure and Google Cloud Accounts:

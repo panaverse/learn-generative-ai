@@ -16,6 +16,11 @@ Install Ngrok:
 
 https://ngrok.com/docs/getting-started/
 
+Note:
+We have started using this service instead of Ngrok:
+
+https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/do-more-with-tunnels/trycloudflare/
+
 Run the following command to add your authtoken to the default ngrok.yml:
 
     ngrok config add-authtoken 2bZGNZ3Mj3HdRxPt19defrHVOl_7oFHsvr5AmM9A9UZUyhFn
