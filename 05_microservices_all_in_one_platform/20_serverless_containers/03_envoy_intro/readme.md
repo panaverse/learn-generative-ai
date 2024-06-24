@@ -294,3 +294,101 @@ However, it's also important to evaluate specific requirements, existing infrast
 ### Conclusion
 
 While there is a valid discussion around the potential shift in market preferences towards Envoy-based API gateways, Kong still holds a significant position due to its feature set and ease of use. Organizations should carefully evaluate their specific needs and the evolving landscape when choosing an API gateway.
+
+### Using Kong with Various Platforms
+
+**Kong API Gateway** is a flexible and powerful tool that can be integrated with the cloud-native environments and services we have been discussing. Below is a detailed overview of how Kong can be used with Azure Container Apps, GKE Autopilot, AWS Karpenter, and native Kubernetes.
+
+### 1. Azure Container Apps
+
+**Setup**:
+- **Deployment**: Deploy Kong as a container within Azure Container Apps.
+- **Configuration**: Use Azure Blob Storage or Azure Database for PostgreSQL to store Kong configuration data.
+- **Integration**: Leverage Azure's networking capabilities for secure and scalable API management.
+
+**Example**:
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kong
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: kong
+  template:
+    metadata:
+      labels:
+        app: kong
+    spec:
+      containers:
+      - name: kong
+        image: kong:2.4
+        env:
+        - name: KONG_DATABASE
+          value: "postgres"
+        - name: KONG_PG_HOST
+          value: "your-postgres-host"
+        - name: KONG_PG_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: postgres-secret
+              key: password
+        ports:
+        - containerPort: 8000
+        - containerPort: 8443
+        - containerPort: 8001
+```
+
+### 2. GKE Autopilot
+
+**Setup**:
+- **Deployment**: Deploy Kong using Helm charts in a GKE Autopilot cluster.
+- **Configuration**: Use Google Cloud SQL or Google Cloud Storage for backend storage.
+- **Integration**: Utilize GKE's built-in load balancing and scaling features to manage API traffic.
+
+**Example**:
+```bash
+# Add the Kong Helm repository
+helm repo add kong https://charts.konghq.com
+
+# Deploy Kong
+helm install kong/kong --generate-name --set ingressController.installCRDs=false
+```
+
+### 3. AWS Karpenter
+
+**Setup**:
+- **Deployment**: Deploy Kong on an EKS cluster managed by Karpenter.
+- **Configuration**: Use Amazon RDS or DynamoDB for storing configuration data.
+- **Integration**: Leverage AWS networking and scaling features for API management.
+
+**Example**:
+```bash
+# Add the Kong Helm repository
+helm repo add kong https://charts.konghq.com
+
+# Deploy Kong
+helm install kong/kong --generate-name --set ingressController.installCRDs=false
+```
+
+### 4. Native Kubernetes
+
+**Setup**:
+- **Deployment**: Deploy Kong using Kubernetes manifests or Helm charts on any Kubernetes cluster.
+- **Configuration**: Use any compatible database (PostgreSQL, Cassandra) for backend storage.
+- **Integration**: Utilize Kubernetes-native networking, security, and scaling features for managing APIs.
+
+**Example**:
+```bash
+# Add the Kong Helm repository
+helm repo add kong https://charts.konghq.com
+
+# Deploy Kong
+helm install kong/kong --generate-name --set ingressController.installCRDs=false
+```
+
+### Conclusion
+
+Kong API Gateway can be effectively used with all the services we have been discussing, including Azure Container Apps, GKE Autopilot, AWS Karpenter, and native Kubernetes. Its flexibility, ease of integration, and robust feature set make it a viable choice for managing and securing APIs across different cloud-native environments.
