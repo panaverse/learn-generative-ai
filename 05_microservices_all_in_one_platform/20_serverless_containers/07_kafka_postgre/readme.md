@@ -269,9 +269,9 @@ docker-compose up
 
 This guide provides a comprehensive setup for developing a microservice using Poetry, Python 3.12, FastAPI, Dapr, VS Code, Devcontainer, Kafka (without Zookeeper), and PostgreSQL, and running it locally using Docker Compose. By following these steps, you can build, run, and debug a FastAPI application that leverages Dapr for pub/sub messaging and state management, with Kafka and PostgreSQL as backend services.
 
-## Deploying a Azure Contrainer Apps
+## Deploying a Azure Container Apps
 
-No, you don't need the Docker Compose file if you are directly deploying to Azure Container Apps. Here is a revised guide without Docker Compose.
+[Important: Latest Update on Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/services)
 
 ### Prerequisites
 1. Azure CLI installed.
