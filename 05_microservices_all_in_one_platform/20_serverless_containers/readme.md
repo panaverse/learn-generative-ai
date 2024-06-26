@@ -102,6 +102,7 @@ Adopting a serverless container platform that is Kubernetes-powered offers the s
 - Additional costs may apply for storage, networking, and other services not included in the examples.
 - Always check the latest pricing on the respective cloud provider's pricing page for the most accurate and up-to-date information.
 
+![](./spectrum-cloud-service.png)
 
 ## Classification on the Spectrum of Managed Services
 
