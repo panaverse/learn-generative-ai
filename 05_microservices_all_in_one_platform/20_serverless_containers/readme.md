@@ -88,6 +88,22 @@ Adopting a serverless container platform that is Kubernetes-powered offers the s
   - Customizable to specific needs
   - Requires manual scaling, updates, and maintenance
 
+## Pricing Table
+
+|      Service         |            Example Cost Breakdown              |  Total (Approx.) |
+|----------------------|:----------------------------------------------:|-----------------:|
+| Google Cloud Run     | CPU: $2.4, Memory: $0.25, Requests: $0.40	    | ~$3.05           |
+| Azure Container Apps | CPU: $1.4, Memory: $0.35, Requests: $0.20	    | ~$1.95           |
+| GKE Autopilot	       | Cluster Fee: $72, CPU: $35.04, Memory: $29.20  | ~$136.24         |
+| AWS Karpenter		     | EKS Cluster Fee: $72, EC2 Instance: $30.37	    | ~$136.24         |
+
+**Notes:**
+- Pricing is subject to change and may vary based on the region and specific usage patterns.
+- Additional costs may apply for storage, networking, and other services not included in the examples.
+- Always check the latest pricing on the respective cloud provider's pricing page for the most accurate and up-to-date information.
+
+![](./spectrum-cloud-service.png)
+
 ## Classification on the Spectrum of Managed Services
 
 1. **Fully Managed Services**:
