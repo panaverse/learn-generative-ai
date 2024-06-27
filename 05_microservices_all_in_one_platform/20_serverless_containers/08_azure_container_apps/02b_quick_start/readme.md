@@ -4,4 +4,4 @@ Quickstart: Deploy an Azure Developer CLI template
 
 [Quickstart: Deploy an Azure Developer CLI template](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/get-started?tabs=localinstall&pivots=programming-language-python)
 
-![](./image.png)
+<img width="400" src="./image.png" />
