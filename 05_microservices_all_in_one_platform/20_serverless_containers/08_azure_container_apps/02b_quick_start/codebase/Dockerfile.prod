@@ -13,7 +13,7 @@ COPY --from=requirements-stage /tmp/requirements.txt /code/requirements.txt
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 COPY ./app /code/app
 # We will comment COPY .env /code/ later 
-COPY .env /code/
+# COPY .env /code/
 # Set up a non-root user for better security
 RUN useradd --create-home --home-dir /home/appuser appuser \
     && chown -R appuser:appuser /code
