@@ -22,6 +22,7 @@ Additionally, Test-Driven Development (TDD) and Behavior-Driven Development (BDD
 
 - **FastAPI**: A modern, fast (high-performance) web framework for building APIs with Python.
 - **Docker**: For containerizing the microservices, ensuring consistency across different environments.
+- **Dapr**: Dapr stands for distributed application runtime. It is a self-hosted, open-source project that offers extra functionality to cloud-native applications through APIs, called building blocks, that simplify microservice connectivity. 
 - **DevContainers**: To provide a consistent development environment.
 - **Docker Compose**: For orchestrating multi-container Docker applications.
 - **PostgreSQL**: A powerful, open-source relational database system.
@@ -32,6 +33,8 @@ Additionally, Test-Driven Development (TDD) and Behavior-Driven Development (BDD
 - **Github Actions**: For CI/CD pipeline.
 - **Pytest**: For unit testing and TDD.
 - **Behave**: For BDD.
+- **Azure Container Apps**: For Cloud Deployment
+- **Github Actions**: For CI/CD
 
 ## Architecture
 
