@@ -178,7 +178,16 @@ https://learn.microsoft.com/en-us/azure/container-apps/github-actions
    - Automating the build and deployment process reduces the time developers spend on manual tasks, allowing them to focus on writing code and developing features.
 
 - **Integration with Other Tools**
-   - GitHub Actions integrates well with other tools and services, such as container registries.
+   - GitHub Actions integrates well with other tools and services, such as container registries.Do
+
+
+## Points to Note
+
+1. Use Dapr for interservices and Kafka messaging.
+2. Use SQLModel to communicate with Postgres Database.
+3. Docker Compose up should also create Dapr sidecar for each microservice.
+4. Use Azure Container Apps (ACA) to deploy on each git commit using Github Actions.
+5. When deploying to ACA we should run all tests and only deploy if all the tests have passed.
 
 ## Conclusion
 
