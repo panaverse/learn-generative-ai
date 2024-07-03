@@ -365,8 +365,161 @@ paths:
 
 By structuring your API responses to include clear state information and available actions, you can effectively communicate the state of the system to a client, including an LLM.
 
+## Representing Sub States to a LLM
 
-Reading Material:
+Representing substates (or nested states) to an LLM requires a clear and structured format to ensure the hierarchy and relationships between states and substates are well-understood. Here's a step-by-step approach to achieve this:
+
+### 1. **Define Main States and Substates**
+
+Clearly distinguish between main states and substates. Use indentation or hierarchical notation to represent the relationship between them.
+
+### 2. **Include Entry and Exit Actions**
+
+Specify any actions that should be taken when entering or exiting a state or substate.
+
+### 3. **Use a Structured Format**
+
+Ensure that the format is clear and consistent. Use lists, indentation, and labeling to differentiate between different levels of states.
+
+### Example: Structured Prompt with Substates
+
+#### Textual Representation
+
+```plaintext
+State Diagram: Order Processing
+
+Initial State:
+  - OrderPlaced
+
+States:
+  1. OrderPlaced
+     - Entry Action: Call API to confirm order placement
+       Endpoint: POST /api/order/confirm
+       Parameters: { "orderId": 123 }
+
+  2. OrderProcessing
+     - Substates:
+       a. PaymentProcessing
+          - Entry Action: Call API to process payment
+            Endpoint: POST /api/payment/process
+            Parameters: { "orderId": 123 }
+       b. Packaging
+          - Entry Action: Call API to package order
+            Endpoint: POST /api/order/package
+            Parameters: { "orderId": 123 }
+       c. Shipping
+          - Entry Action: Call API to ship order
+            Endpoint: POST /api/order/ship
+            Parameters: { "orderId": 123 }
+
+  3. OrderCompleted
+     - Entry Action: Call API to complete order
+       Endpoint: POST /api/order/complete
+       Parameters: { "orderId": 123 }
+
+Transitions:
+  - OrderPlaced -> OrderProcessing [Event: Order Confirmed]
+  - OrderProcessing.PaymentProcessing -> OrderProcessing.Packaging [Event: Payment Success]
+  - OrderProcessing.Packaging -> OrderProcessing.Shipping [Event: Package Ready]
+  - OrderProcessing.Shipping -> OrderCompleted [Event: Order Shipped]
+```
+
+#### SCXML Format with Substates
+
+```xml
+<scxml initial="OrderPlaced" version="1.0"
+       xmlns="http://www.w3.org/2005/07/scxml">
+
+  <state id="OrderPlaced">
+    <onentry>
+      <send event="confirmOrder" target="http://api.example.com/order/confirm" type="http"/>
+    </onentry>
+    <transition event="orderConfirmed" target="OrderProcessing"/>
+  </state>
+
+  <state id="OrderProcessing">
+    <state id="PaymentProcessing">
+      <onentry>
+        <send event="processPayment" target="http://api.example.com/payment/process" type="http"/>
+      </onentry>
+      <transition event="paymentSuccess" target="Packaging"/>
+    </state>
+
+    <state id="Packaging">
+      <onentry>
+        <send event="packageOrder" target="http://api.example.com/order/package" type="http"/>
+      </onentry>
+      <transition event="packageReady" target="Shipping"/>
+    </state>
+
+    <state id="Shipping">
+      <onentry>
+        <send event="shipOrder" target="http://api.example.com/order/ship" type="http"/>
+      </onentry>
+      <transition event="orderShipped" target="OrderCompleted"/>
+    </state>
+  </state>
+
+  <state id="OrderCompleted">
+    <onentry>
+      <send event="completeOrder" target="http://api.example.com/order/complete" type="http"/>
+    </onentry>
+  </state>
+
+</scxml>
+```
+
+#### Pseudo-Code with Substates
+
+```plaintext
+State Machine: Order Processing
+
+Initial State: OrderPlaced
+
+States:
+  - OrderPlaced
+    - Entry Action: Call API to confirm order placement
+      Endpoint: POST /api/order/confirm
+      Parameters: { "orderId": 123 }
+
+  - OrderProcessing
+    - Substates:
+      - PaymentProcessing
+        - Entry Action: Call API to process payment
+          Endpoint: POST /api/payment/process
+          Parameters: { "orderId": 123 }
+      - Packaging
+        - Entry Action: Call API to package order
+          Endpoint: POST /api/order/package
+          Parameters: { "orderId": 123 }
+      - Shipping
+        - Entry Action: Call API to ship order
+          Endpoint: POST /api/order/ship
+          Parameters: { "orderId": 123 }
+
+  - OrderCompleted
+    - Entry Action: Call API to complete order
+      Endpoint: POST /api/order/complete
+      Parameters: { "orderId": 123 }
+
+Transitions:
+  - OrderPlaced -> OrderProcessing [Event: Order Confirmed]
+  - OrderProcessing.PaymentProcessing -> OrderProcessing.Packaging [Event: Payment Success]
+  - OrderProcessing.Packaging -> OrderProcessing.Shipping [Event: Package Ready]
+  - OrderProcessing.Shipping -> OrderCompleted [Event: Order Shipped]
+```
+
+### General Tips
+
+- **Use Clear Labels**: Clearly label each state and substate.
+- **Consistent Formatting**: Use indentation or other formatting tools to clearly differentiate between states and substates.
+- **Explicit Actions**: Specify any entry or exit actions for each state and substate.
+- **Detailed Transitions**: Clearly define the transitions between states, including events that trigger them.
+
+By following these guidelines, you can effectively represent substates to an LLM, ensuring that the hierarchy and relationships between states are clear and understandable.
+
+
+## Reading Material:
 
 https://apisyouwonthate.com/blog/representing-state-in-rest-and-graphql/
 
