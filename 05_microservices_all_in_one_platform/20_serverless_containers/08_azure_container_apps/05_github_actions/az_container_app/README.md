@@ -102,41 +102,42 @@ az ad sp create-for-rbac --name "myServicePrincipal" --role contributor --scopes
       push:
         branches:
           - main
-
+    
     jobs:
       build-and-deploy:
         runs-on: ubuntu-latest
-
+    
         steps:
           - name: Checkout code
             uses: actions/checkout@v2
-
+    
           - name: Set up Docker Buildx
             uses: docker/setup-buildx-action@v1
-
-          - name: Log in to Azure Container Registry
-            uses: azure/docker-login@v1
-            with:
-              login-server: myacrregistry.azurecr.io
-              username: ${{ secrets.REGISTRY_USERNAME }}
-              password: ${{ secrets.REGISTRY_PASSWORD }}
-
+    
+          - name: Log in to Docker Hub
+            run: |
+              echo ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }} | docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
+    
           - name: Build and push Docker image
             run: |
-              docker build -t myacrregistry.azurecr.io/myapp:latest .
-              docker push myacrregistry.azurecr.io/myapp:latest
-
+              docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/myapp:latest .
+              
+              docker push ${{ secrets.DOCKER_HUB_USERNAME }}/myapp:latest
+    
           - name: Azure Login
             uses: azure/login@v1
             with:
               creds: ${{ secrets.AZURE_CREDENTIALS }}
-
+    
           - name: Deploy to Azure Container Apps
             run: |
-              az containerapp update \
+              az containerapp create \
                 --name mycontainerapp \
                 --resource-group myresourcegroup \
-                --image myacrregistry.azurecr.io/myapp:latest \
+                --environment mycontainerappenv \
+                --image ${{ secrets.DOCKER_HUB_USERNAME }}/myapp:latest \
+                --target-port 8000 \
+                --ingress 'external' \
                 --env-vars 'APP_SETTING=my-setting'
     ```
 
