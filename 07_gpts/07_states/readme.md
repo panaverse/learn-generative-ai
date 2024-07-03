@@ -530,3 +530,7 @@ https://en.wikipedia.org/wiki/State_diagram
 https://www.geeksforgeeks.org/unified-modeling-language-uml-state-diagrams/
 
 https://www.visual-paradigm.com/guide/uml-unified-modeling-language/about-state-diagrams/
+
+Sub-States
+
+https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-state-machine-diagram/#:~:text=Substates%20may%20be%20nested%20to,context%20(the%20enclosing%20state).
