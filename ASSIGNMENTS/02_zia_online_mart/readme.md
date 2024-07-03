@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project aims to develop an online mart API using an event-driven microservices architecture. The API will leverage various technologies such as FastAPI, Docker, DevContainers, Docker Compose, PostgreSQL, Kafka, Protocol Buffers (Protobuf), and Kong for API gateway management. The goal is to create a scalable, maintainable, and efficient system that handles high volumes of transactions and data in a distributed manner.
+This project aims to develop an online mart API using an event-driven microservices architecture. The API will leverage various technologies such as FastAPI, Docker, Dapr, DevContainers, Docker Compose, PostgreSQL, Kafka, Protocol Buffers (Protobuf), and Kong for API gateway management. It will use Azure Container Apps (ACA) for deployment, and GitHub Actions for CI/CD. The goal is to create a scalable, maintainable, and efficient system that handles high volumes of transactions and data in a distributed manner.
 
 Additionally, Test-Driven Development (TDD) and Behavior-Driven Development (BDD) practices will be incorporated to ensure high code quality and alignment with business requirements.
 
@@ -22,6 +22,7 @@ Additionally, Test-Driven Development (TDD) and Behavior-Driven Development (BDD
 
 - **FastAPI**: A modern, fast (high-performance) web framework for building APIs with Python.
 - **Docker**: For containerizing the microservices, ensuring consistency across different environments.
+- **Dapr**: Dapr stands for distributed application runtime. It is a self-hosted, open-source project that offers extra functionality to cloud-native applications through APIs, called building blocks, that simplify microservice connectivity. 
 - **DevContainers**: To provide a consistent development environment.
 - **Docker Compose**: For orchestrating multi-container Docker applications.
 - **PostgreSQL**: A powerful, open-source relational database system.
@@ -32,6 +33,8 @@ Additionally, Test-Driven Development (TDD) and Behavior-Driven Development (BDD
 - **Github Actions**: For CI/CD pipeline.
 - **Pytest**: For unit testing and TDD.
 - **Behave**: For BDD.
+- **Azure Container Apps**: For Cloud Deployment
+- **Github Actions**: For CI/CD
 
 ## Architecture
 
@@ -178,7 +181,16 @@ https://learn.microsoft.com/en-us/azure/container-apps/github-actions
    - Automating the build and deployment process reduces the time developers spend on manual tasks, allowing them to focus on writing code and developing features.
 
 - **Integration with Other Tools**
-   - GitHub Actions integrates well with other tools and services, such as container registries.
+   - GitHub Actions integrates well with other tools and services, such as container registries.Do
+
+
+## Points to Note
+
+1. Use Dapr for interservices and Kafka messaging.
+2. Use SQLModel to communicate with Postgres Database.
+3. Docker Compose up should also create Dapr sidecar for each microservice.
+4. Use Azure Container Apps (ACA) to deploy on each git commit using Github Actions.
+5. When deploying to ACA we should run all tests and only deploy if all the tests have passed.
 
 ## Conclusion
 
