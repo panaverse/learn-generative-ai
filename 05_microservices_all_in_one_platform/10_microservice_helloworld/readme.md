@@ -18,6 +18,28 @@ Add dependecies:
 
 Add poetry virtualenv interpreter in VSCode
 
+Sometime when we run the above example poetry created virtualenv but we could not find that virtualenv in vs code to solve this problem lets run the command:
+
+    poetry env info 
+
+you will see something like this 
+
+    Virtualenv
+    Python:         3.12.1
+    Implementation: CPython
+    Path:           C:\Users\aaaa\AppData\Local\pypoetry\Cache\virtualenvs\fastapi-helloworld-p3Kdx5Ll-py3.12 
+    Executable:     C:\Users\aaaa\AppData\Local\pypoetry\Cache\virtualenvs\fastapi-helloworld-p3Kdx5Ll-py3.12\Scripts\python.exe
+    
+copy the Executable path:
+        
+        C:\Users\aaaa\AppData\Local\pypoetry\Cache\virtualenvs\fastapi-helloworld-p3Kdx5Ll-py3.12\Scripts\python.exe
+        
+Go to View > Command palette...
+under command palette > search select python interpreter
+Click on Enter intrepreter path...
+and paste the executable path and enter
+Simple relaunch your terminal and see the awesome result
+
 Write fastapi_helloworld/main.py
 
 Run project in Poetry Envirnoment:
