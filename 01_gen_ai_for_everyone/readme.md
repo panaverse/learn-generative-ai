@@ -2,7 +2,13 @@
 
 [Generative AI for Everyone Course](https://www.deeplearning.ai/courses/generative-ai-for-everyone/)
 
-[Generative AI for Everyone Slides](https://docs.google.com/presentation/d/1u3Qwf8-VHf0tgmcvuC160p7JEvdAkkoAUWdvi4afk6A/edit?usp=sharing)
+[Generative AI for Everyone Slides Week 1](https://docs.google.com/presentation/d/1u3Qwf8-VHf0tgmcvuC160p7JEvdAkkoAUWdvi4afk6A/edit?usp=sharing)
+
+[Generative AI for Everyone Slides Week 2](https://docs.google.com/presentation/d/1y2UwDc5BmSwLQklBe4JaK4wXRhru4EjLdDhMcQnvHbM/edit?usp=sharing)
+
+[Generative AI for Everyone Slides Week 3](https://docs.google.com/presentation/d/10Yc9pmQc97I1ei5O6csxiu6ttpzuUltHM-rIcdLUxdo/edit?usp=sharing)
+
+
 
 ![software app](app.png)
 
