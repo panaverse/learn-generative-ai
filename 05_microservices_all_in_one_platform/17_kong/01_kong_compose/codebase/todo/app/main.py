@@ -9,6 +9,7 @@ from aiokafka import AIOKafkaProducer, AIOKafkaConsumer
 import asyncio
 import json
 
+
 class Todo(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
     content: str = Field(index=True)
@@ -27,13 +28,14 @@ engine = create_engine(
     connection_string, connect_args={}, pool_recycle=300
 )
 
-#engine = create_engine(
+# engine = create_engine(
 #    connection_string, connect_args={"sslmode": "require"}, pool_recycle=300
-#)
+# )
 
 
-def create_db_and_tables()->None:
+def create_db_and_tables() -> None:
     SQLModel.metadata.create_all(engine)
+
 
 async def consume_messages(topic, bootstrap_servers):
     # Create a consumer instance.
@@ -49,7 +51,8 @@ async def consume_messages(topic, bootstrap_servers):
     try:
         # Continuously listen for messages.
         async for message in consumer:
-            print(f"Received message: {message.value.decode()} on topic {message.topic}")
+            print(f"Received message: {
+                  message.value.decode()} on topic {message.topic}")
             # Here you can add code to process each message.
             # Example: parse the message, store it in a database, etc.
     finally:
@@ -62,7 +65,7 @@ async def consume_messages(topic, bootstrap_servers):
 # https://fastapi.tiangolo.com/advanced/events/#lifespan-function
 # loop = asyncio.get_event_loop()
 @asynccontextmanager
-async def lifespan(app: FastAPI)-> AsyncGenerator[None, None]:
+async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     print("Creating tables..")
     # loop.run_until_complete(consume_messages('todos', 'broker:19092'))
     task = asyncio.create_task(consume_messages('todos', 'broker:19092'))
@@ -70,28 +73,33 @@ async def lifespan(app: FastAPI)-> AsyncGenerator[None, None]:
     yield
 
 
-app = FastAPI(lifespan=lifespan, title="Hello World API with DB", 
-    version="0.0.1",
-    servers=[
-        {
-            "url": "http://host.docker.internal:8085", # ADD NGROK URL Here Before Creating GPT Action
-            "description": "Development Server"
-        },{
-            "url": "http://127.0.0.1:8085",
-            "description": "Development Server"
-        }]
-    )
+app = FastAPI(root_path='/service1', docs_url="/docs", redoc_url=None, openapi_url="/openapi.json", lifespan=lifespan, title="Hello World API with DB",
+              version="0.0.1",
+              servers=[
+                  {
+                      # ADD NGROK URL Here Before Creating GPT Action
+                      "url": "http://host.docker.internal:8085",
+                      "description": "Development Server"
+                  }, {
+                      "url": "http://localhost:8085",
+                      "description": "Development  Server"
+                  },
+              ]
+              )
+
 
 def get_session():
     with Session(engine) as session:
         yield session
 
 
-@app.get("/")
+@ app.get("/")
 def read_root():
-    return {"Hello": "PanaCloud"}
+    return {"Hello": "ALiii"}
 
 # Kafka Producer as a dependency
+
+
 async def get_kafka_producer():
     producer = AIOKafkaProducer(bootstrap_servers='broker:19092')
     await producer.start()
@@ -100,20 +108,21 @@ async def get_kafka_producer():
     finally:
         await producer.stop()
 
-@app.post("/todos/", response_model=Todo)
-async def create_todo(todo: Todo, session: Annotated[Session, Depends(get_session)], producer: Annotated[AIOKafkaProducer, Depends(get_kafka_producer)])->Todo:
-        todo_dict = {field: getattr(todo, field) for field in todo.dict()}
-        todo_json = json.dumps(todo_dict).encode("utf-8")
-        print("todoJSON:", todo_json)
-        # Produce message
-        await producer.send_and_wait("todos", todo_json)
-        session.add(todo)
-        session.commit()
-        session.refresh(todo)
-        return todo
+
+@ app.post("/todos/", response_model=Todo)
+async def create_todo(todo: Todo, session: Annotated[Session, Depends(get_session)], producer: Annotated[AIOKafkaProducer, Depends(get_kafka_producer)]) -> Todo:
+    todo_dict = {field: getattr(todo, field) for field in todo.dict()}
+    todo_json = json.dumps(todo_dict).encode("utf-8")
+    print("todoJSON:", todo_json)
+    # Produce message
+    await producer.send_and_wait("todos", todo_json)
+    session.add(todo)
+    session.commit()
+    session.refresh(todo)
+    return todo
 
 
-@app.get("/todos/", response_model=list[Todo])
+@ app.get("/todos/", response_model=list[Todo])
 def read_todos(session: Annotated[Session, Depends(get_session)]):
-        todos = session.exec(select(Todo)).all()
-        return todos
+    todos = session.exec(select(Todo)).all()
+    return todos
