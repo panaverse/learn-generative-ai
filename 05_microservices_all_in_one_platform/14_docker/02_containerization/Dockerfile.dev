@@ -13,6 +13,9 @@ RUN apt-get update && apt-get install -y \
 # Install Poetry
 RUN pip install poetry
 
+# Initializing the Poetry to create pyproject.toml file
+RUN poetry init
+
 # Copy the current directory contents into the container at /code
 COPY . /code/
 
